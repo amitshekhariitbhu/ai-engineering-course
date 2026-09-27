@@ -40,7 +40,7 @@
 
 ## I teach at Outcome School
 
-This AI Engineering Course is completely free to read. If you want more practical and in-depth learning with me in live classes, I also teach a paid live program at Outcome School:
+This AI Engineering Course is completely free to read. If you want more practical and in-depth learning with me in live classes, I also teach a **paid** live program at Outcome School:
 
 - [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) (Live Classes)
 
@@ -546,7 +546,7 @@ Let's get started: [How Does The Machine Learning Library TensorFlow Work?](http
 
 - [Epoch, Batch, Batch Size, Iteration](https://www.youtube.com/watch?v=NFLlXE-6vno) (Video)
 
-> **Note:** We have now learned the foundations of Machine Learning and Deep Learning. This course is free. If you want to learn these foundations in a more practical and in-depth way with me in live classes, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+> **Note:** We have now learned the foundations of Machine Learning and Deep Learning. This course is free. If you want to learn these foundations in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -957,7 +957,7 @@ Watch the video: [Why is the context window limited in LLMs?](https://www.youtub
 
 - [Why is the context window limited in LLMs?](https://www.youtube.com/watch?v=CGIhxIaOg3M) (Video)
 
-> **Note:** We now know how LLMs generate text from the inside. If you want to go more practical and in-depth on these topics with me in live classes, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+> **Note:** We now know how LLMs generate text from the inside. If you want to go more practical and in-depth on these topics with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -1470,7 +1470,7 @@ We will cover the following:
 
 Let's get started: [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
 
-> **Note:** We have now learned how LLMs are trained, fine-tuned, and aligned. If you want to learn these in a more practical and in-depth way with me in live classes, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+> **Note:** We have now learned how LLMs are trained, fine-tuned, and aligned. If you want to learn these in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -1895,7 +1895,7 @@ Let's get started: [What is Vectorless RAG? RAG Without Embeddings or a Vector D
 - [AI Engineering Explained: LLM, RAG, MCP, Agent, Fine-Tuning, Quantization](https://www.youtube.com/watch?v=lnfWvX66FUk) (Video)
 - [Agentic RAG Explained](https://www.youtube.com/watch?v=6nSegpuWJVw) (Video)
 
-> **Note:** We now know how to build RAG systems. If you want to build them hands-on with more practical and in-depth learning with me in live classes, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+> **Note:** We now know how to build RAG systems. If you want to build them hands-on with more practical and in-depth learning with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -2419,7 +2419,7 @@ We will cover the following:
 
 Let's get started: [How does Cursor work?](https://outcomeschool.com/blog/how-does-cursor-work)
 
-> **Note:** We have now learned how AI Agents work and how they are built. If you want to learn these in a more practical and in-depth way with me in live classes, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+> **Note:** We have now learned how AI Agents work and how they are built. If you want to learn these in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -2802,7 +2802,7 @@ Let's get started: [How does TensorRT-LLM work?](https://outcomeschool.com/blog/
 - [The First-Token Latency Problem in LLMs](https://www.youtube.com/watch?v=XD8DD4cEHu0) (Video)
 - [LLM Inference Engineering (complete series)](https://github.com/amitshekhariitbhu/llm-inference-engineering) (Series)
 
-> **Note:** We now know how to make LLM inference fast and cheap in production. If you want to learn LLM Inference Engineering in a more practical and in-depth way with me in live classes, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+> **Note:** We now know how to make LLM inference fast and cheap in production. If you want to learn LLM Inference Engineering in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -2908,7 +2908,7 @@ We will cover the following:
 
 Let's get started: [What is AI Agent Observability? Traces, Spans, and Metrics Explained](https://outcomeschool.com/blog/ai-agent-observability)
 
-> **Note:** We now know how to evaluate and observe LLMs and AI Agents in production. If you want more practical and in-depth learning on these with me in live classes, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+> **Note:** We now know how to evaluate and observe LLMs and AI Agents in production. If you want more practical and in-depth learning on these with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -3344,7 +3344,7 @@ We will cover the following:
 
 Let's get started: [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
-> **Note:** We have now learned how to design and deploy complete AI systems. If you want to learn these in a more practical and in-depth way with me in live classes, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+> **Note:** We have now learned how to design and deploy complete AI systems. If you want to learn these in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -3431,7 +3431,7 @@ Now that we have learned everything from Machine Learning foundations to AI Agen
 
 - [AI Engineering Interview Questions and Answers](https://github.com/amitshekhariitbhu/ai-engineering-interview-questions)
 
-This course is free. If you want to learn all of these with me in live classes, with more practical and in-depth learning, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+This course is free. If you want to learn all of these with me in live classes, with more practical and in-depth learning, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ---
 
@@ -3520,7 +3520,7 @@ The best way to learn AI Engineering is to follow a structured path in the right
 
 Yes. This AI Engineering Course is completely free. Every lesson is a free blog. No sign-up. No paywall.
 
-If you want more practical and in-depth learning in live classes with guidance, we also have a paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School. It is optional.
+If you want more practical and in-depth learning in live classes with guidance, we also have a **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School. It is optional.
 
 ### Do I need a Machine Learning background to start this AI Engineering Course?
 
@@ -3566,7 +3566,7 @@ This AI Engineering Course is prepared and maintained by Amit Shekhar, Founder o
 
 If this AI Engineering Course helped you, please give it a star ⭐ and share it with your friends and colleagues who want to learn AI Engineering.
 
-This course is free. If you want to learn all of these with me in live classes, with more practical and in-depth learning, check out our paid live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+This course is free. If you want to learn all of these with me in live classes, with more practical and in-depth learning, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
 ## License
 
