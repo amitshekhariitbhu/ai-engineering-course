@@ -138,7 +138,7 @@ In this AI Engineering Course, we will learn:
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
 - **AI Safety and Security:** guardrails, prompt injection, and watermarking.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
-- **AI Infrastructure and System Design:** GPUs, TPUs, LPUs, cloud vs on-device deployment, LLM routing, and designing a real-time voice AI agent.
+- **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, LLM routing, and designing a real-time voice AI agent.
 - **Frontier Ideas in AI:** JEPA, world models, and recursive self-improvement.
 - **AI Engineering interview preparation.**
 
@@ -3142,15 +3142,16 @@ By the end of this module, we will be able to design an AI system end to end, fr
 **Lessons in this module:**
 
 1. [How does a GPU work for Deep Learning?](https://outcomeschool.com/blog/how-does-a-gpu-work-for-deep-learning)
-2. [How does a Google TPU work?](https://outcomeschool.com/blog/how-does-a-google-tpu-work)
-3. [How does an LPU work?](https://outcomeschool.com/blog/how-does-an-lpu-work)
-4. [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
-5. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
-6. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
-7. [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
-8. [What is System Design?](https://outcomeschool.com/blog/system-design)
-9. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-10. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+2. [How do CUDA Kernels work?](https://outcomeschool.com/blog/how-do-cuda-kernels-work)
+3. [How does a Google TPU work?](https://outcomeschool.com/blog/how-does-a-google-tpu-work)
+4. [How does an LPU work?](https://outcomeschool.com/blog/how-does-an-lpu-work)
+5. [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
+6. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
+7. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
+8. [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
+9. [What is System Design?](https://outcomeschool.com/blog/system-design)
+10. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+11. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -3176,7 +3177,27 @@ We will cover the following:
 
 Let's get started: [How does a GPU work for Deep Learning?](https://outcomeschool.com/blog/how-does-a-gpu-work-for-deep-learning)
 
-### 16.2 How does a Google TPU work?
+### 16.2 How do CUDA Kernels work?
+
+In this blog, we will learn about how CUDA Kernels work. We will also see why we need a GPU, what CUDA is, how one kernel runs on thousands of threads at the same time, how each thread finds its own work, what happens inside the GPU when a kernel runs, and why CUDA Kernels matter so much for AI.
+
+We will cover the following:
+
+- Why do we need a GPU?
+- What is CUDA?
+- What is a CUDA Kernel?
+- Threads, Blocks, and Grids
+- Host and Device
+- Writing our first CUDA Kernel
+- How a thread finds its own work
+- What happens inside the GPU when a kernel runs
+- Memory in CUDA
+- Why CUDA Kernels matter for AI
+- Where CUDA Kernels work well and where they fail
+
+Let's get started: [How do CUDA Kernels work?](https://outcomeschool.com/blog/how-do-cuda-kernels-work)
+
+### 16.3 How does a Google TPU work?
 
 In this blog, we will learn about how a Google TPU works. We will also see what a TPU is, why Google built it, how it is different from a CPU and a GPU, and how it makes machine learning fast.
 
@@ -3195,7 +3216,7 @@ We will cover the following:
 
 Let's get started: [How does a Google TPU work?](https://outcomeschool.com/blog/how-does-a-google-tpu-work)
 
-### 16.3 How does an LPU work?
+### 16.4 How does an LPU work?
 
 In this blog, we will learn about how an LPU works, the chip that was built for one single job, running a large language model and printing words on our screen as fast as possible. We will also see what an LPU actually is, how a language model writes text one token at a time, why memory and not math is the real bottleneck, how an LPU keeps the model right next to the compute, how the compiler plans every single cycle in advance, how hundreds of chips work together like an assembly line, and where it works well and where it fails.
 
@@ -3219,7 +3240,7 @@ We will cover the following:
 
 Let's get started: [How does an LPU work?](https://outcomeschool.com/blog/how-does-an-lpu-work)
 
-### 16.4 Cloud vs On-device Model Deployment
+### 16.5 Cloud vs On-device Model Deployment
 
 In this blog, we will learn about Cloud vs On-device Model Deployment, the two places where an AI model can actually run and do its work. We will also see how Cloud Deployment and On-device Deployment differ from each other, how each one works with simple examples, why one of them is very powerful but far away while the other one is very close but limited, what the hybrid approach is, and when to use which one.
 
@@ -3244,13 +3265,13 @@ We will cover the following:
 
 Let's get started: [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
 
-### 16.5 Android TensorFlow Lite Machine Learning Example
+### 16.6 Android TensorFlow Lite Machine Learning Example
 
 In this blog, we will see Android TensorFlow Lite Machine Learning example.
 
 Let's get started: [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
 
-### 16.6 What is LLM Routing? How to Send Each Query to the Right LLM
+### 16.7 What is LLM Routing? How to Send Each Query to the Right LLM
 
 In this blog, we will learn about LLM Routing, why it matters, and how to send each user query to the right LLM based on cost, latency, and quality.
 
@@ -3269,7 +3290,7 @@ We will cover the following:
 
 Let's get started: [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
 
-### 16.7 Design a Real-Time Voice AI Agent
+### 16.8 Design a Real-Time Voice AI Agent
 
 In this blog, we will learn about how to design a Real-Time Voice AI Agent, a system that listens to a person speaking, understands what they said, thinks about it, takes actions if needed, and talks back in a natural human-like voice, all within a fraction of a second. We will also see why voice is much harder than a text chatbot, the two big ways to build it (the cascaded pipeline of Speech-to-Text, LLM, and Text-to-Speech versus the end-to-end Speech-to-Speech model), how the agent knows when the user has stopped talking, how we handle interruptions, how tools and memory fit in, how we scale it to thousands of calls, the edge cases that break a voice agent in production, the pros and cons of every approach, and when to use which one.
 
@@ -3305,7 +3326,7 @@ Let's get started: [Design a Real-Time Voice AI Agent](https://outcomeschool.com
 
 **Supporting lessons for AI System Design:**
 
-### 16.8 What is System Design?
+### 16.9 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -3317,7 +3338,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.9 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.10 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -3331,7 +3352,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.10 How do Voice And Video Call Work?
+### 16.11 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
