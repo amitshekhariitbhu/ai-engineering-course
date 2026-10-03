@@ -170,7 +170,7 @@ Let's get started.
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                   | 9       |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                         | 10      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)               | 15      |
-| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                               | 4       |
+| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                               | 5       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                             | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                           | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                     | 11      |
@@ -884,7 +884,7 @@ Let's get started: [What is the Feed-Forward Network in LLMs and What Does It Do
 
 ## Module 4: How LLMs Generate Text
 
-In this module, we will learn how an LLM picks the next token, how we control its creativity, how the output reaches the user token by token, and where the context window fails.
+In this module, we will learn how an LLM picks the next token, how we control its creativity, how it knows when to stop, how the output reaches the user token by token, and where the context window fails.
 
 By the end of this module, we will know exactly what happens between the prompt and the final answer, and which knobs change the output.
 
@@ -892,8 +892,9 @@ By the end of this module, we will know exactly what happens between the prompt 
 
 1. [How does Temperature control LLM output?](https://outcomeschool.com/blog/how-does-temperature-control-llm-output)
 2. [How do Top-k and Top-p Sampling work?](https://outcomeschool.com/blog/how-do-top-k-and-top-p-sampling-work)
-3. [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
-4. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
+3. [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
+4. [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
+5. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
 
 ---
 
@@ -937,7 +938,25 @@ We will cover the following:
 
 Let's get started: [How do Top-k and Top-p Sampling work?](https://outcomeschool.com/blog/how-do-top-k-and-top-p-sampling-work)
 
-### 4.3 How does Token Streaming work?
+### 4.3 Stop Tokens in LLMs
+
+In this blog, we will learn about Stop Tokens in LLMs, the special tokens that tell a Large Language Model when to stop generating text. We will also see how an LLM generates text one token at a time, why it needs to stop, how the model learns to produce a Stop Token, how a Stop Token differs from a Stop Sequence, and how chat models use Stop Tokens to end their turn.
+
+We will cover the following:
+
+- What is a Token?
+- How does an LLM generate text?
+- Why does an LLM need to stop?
+- What is a Stop Token?
+- How does the model learn to produce a Stop Token?
+- Stop Token vs Stop Sequence
+- What happens if the model never stops?
+- Stop Tokens in Chat Models
+- Common mistakes with Stop Tokens
+
+Let's get started: [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
+
+### 4.4 How does Token Streaming work?
 
 In this blog, we will learn about how Token Streaming works. We will also see why we need it, how the server and the browser talk to each other to make it happen, and where it is used in real systems like ChatGPT and Claude.
 
@@ -956,7 +975,7 @@ We will cover the following:
 
 Let's get started: [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
 
-### 4.4 What is the Lost in the Middle Problem in LLMs and How to Fix It?
+### 4.5 What is the Lost in the Middle Problem in LLMs and How to Fix It?
 
 In this blog, we will learn about the Lost in the Middle problem in LLMs, the strange behaviour where a model reads a very long text, uses the beginning and the end very well, and quietly ignores whatever is sitting in the middle. We will also see what a context window really means, how the accuracy forms a U-shaped curve, why the middle gets forgotten, how this silently breaks RAG systems and long conversations, how we can test our own model for it, and what we can do to fix it.
 
