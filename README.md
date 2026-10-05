@@ -134,7 +134,7 @@ In this AI Engineering Course, we will learn:
 - **RAG and Vector Search:** vector databases, ANN search, semantic search, hybrid search, rerankers, ColBERT, chunking, HyDE, caching, Agentic RAG, GraphRAG, and Vectorless RAG.
 - **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, and computer-use agents.
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
-- **LLM Inference Engineering:** prefill vs decode, KV cache, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, vLLM, SGLang, and TensorRT-LLM.
+- **LLM Inference Engineering:** prefill vs decode, KV cache, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, Ollama, vLLM, SGLang, and TensorRT-LLM.
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
 - **AI Safety and Security:** guardrails, prompt injection, and watermarking.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
@@ -2487,9 +2487,10 @@ By the end of this module, we will understand TTFT, TPOT, and throughput, and kn
 12. [How does Model Quantization work?](https://outcomeschool.com/blog/how-does-model-quantization-work)
 13. [How does GGUF work?](https://outcomeschool.com/blog/how-does-gguf-work)
 14. [How does llama.cpp run LLMs on everyday hardware?](https://outcomeschool.com/blog/how-does-llama-cpp-run-llms-on-everyday-hardware)
-15. [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work)
-16. [How does SGLang work?](https://outcomeschool.com/blog/how-does-sglang-work)
-17. [How does TensorRT-LLM work?](https://outcomeschool.com/blog/how-does-tensorrt-llm-work)
+15. [How does Ollama work?](https://outcomeschool.com/blog/how-does-ollama-work)
+16. [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work)
+17. [How does SGLang work?](https://outcomeschool.com/blog/how-does-sglang-work)
+18. [How does TensorRT-LLM work?](https://outcomeschool.com/blog/how-does-tensorrt-llm-work)
 
 ---
 
@@ -2769,7 +2770,27 @@ We will cover the following:
 
 Let's get started: [How does llama.cpp run LLMs on everyday hardware?](https://outcomeschool.com/blog/how-does-llama-cpp-run-llms-on-everyday-hardware)
 
-### 12.15 How does vLLM work?
+### 12.15 How does Ollama work?
+
+In this blog, we will learn about how Ollama works. We will also see what running an LLM locally means, how quantization and the GGUF format make big models fit on a laptop, how the client and server talk to each other, what happens step by step when we run a model, and how we can use Ollama from our code.
+
+We will cover the following:
+
+- What does running an LLM locally mean
+- What is Ollama
+- The big problem: models are huge
+- Quantization and the GGUF file format
+- The architecture: client and server
+- What happens when we run a model
+- How models are downloaded and stored
+- How the model runs on CPU and GPU
+- What is a Modelfile
+- Using Ollama from code through its API
+- Where it works well and where it fails
+
+Let's get started: [How does Ollama work?](https://outcomeschool.com/blog/how-does-ollama-work)
+
+### 12.16 How does vLLM work?
 
 In this blog, we will learn about how vLLM works. We will also see why we need it, how it manages memory so cleverly, and where it is used in the real world to serve large language models to many users at once.
 
@@ -2789,7 +2810,7 @@ We will cover the following:
 
 Let's get started: [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work)
 
-### 12.16 How does SGLang work?
+### 12.17 How does SGLang work?
 
 In this blog, we will learn about how SGLang works. We will also see what problem it solves, how it makes serving large language models faster, and the clever ideas that make it special.
 
@@ -2810,7 +2831,7 @@ We will cover the following:
 
 Let's get started: [How does SGLang work?](https://outcomeschool.com/blog/how-does-sglang-work)
 
-### 12.17 How does TensorRT-LLM work?
+### 12.18 How does TensorRT-LLM work?
 
 In this blog, we will learn about how TensorRT-LLM works, NVIDIA's own engine that squeezes the highest possible speed out of an NVIDIA GPU when it runs a large language model. We will also see what inference means, what a GPU kernel is, why a normal model run wastes a lot of the GPU's time, how TensorRT-LLM prepares the model ahead of time instead of figuring things out on the fly, how kernel fusion, quantization, the paged KV cache, in-flight batching, CUDA graphs, and speculative decoding each add speed, how one model is spread across many GPUs, and where it works well and where it fails.
 
@@ -3557,6 +3578,7 @@ Quick definitions of the most important AI Engineering terms, taken from the les
 - **[Speculative Decoding](https://outcomeschool.com/blog/n-gram-speculation-in-llms):** Speculative Decoding is a technique where we first guess the next few tokens quickly, and then ask the big model to verify all those guesses in one single run.
 - **[Model Quantization](https://outcomeschool.com/blog/how-does-model-quantization-work):** Model Quantization is the process of storing and computing a model's numbers at lower precision, so the model takes less memory and runs faster.
 - **[GGUF](https://outcomeschool.com/blog/how-does-gguf-work):** GGUF is a single file format that stores everything needed to run a large language model for local inference, all in one self-contained file.
+- **[Ollama](https://outcomeschool.com/blog/how-does-ollama-work):** Ollama is an open-source tool that makes it easy to download, run, and manage LLMs on our own computer.
 - **[vLLM](https://outcomeschool.com/blog/how-does-vllm-work):** vLLM is a high-throughput engine for serving LLMs. It is built to serve as many requests as possible on a GPU by managing the KV cache memory very efficiently.
 - **[LLM Evaluation](https://outcomeschool.com/blog/llm-evaluation):** LLM Evaluation is the process of measuring how well a Large Language Model performs on the tasks we expect it to do.
 - **[LLM as a Judge](https://outcomeschool.com/blog/llm-as-a-judge):** LLM as a Judge is a technique where we use a large language model to evaluate the output of another large language model.
@@ -3611,7 +3633,7 @@ Yes. Module 9 of this AI Engineering Course covers RAG from the basics to the ad
 
 ### Does this AI Engineering Course cover LLM Inference Optimization?
 
-Yes. Module 12 of this AI Engineering Course covers LLM Inference Engineering: prefill vs decode, prefill-decode disaggregation, KV cache, KV cache compression, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, vLLM, SGLang, and TensorRT-LLM.
+Yes. Module 12 of this AI Engineering Course covers LLM Inference Engineering: prefill vs decode, prefill-decode disaggregation, KV cache, KV cache compression, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, Ollama, vLLM, SGLang, and TensorRT-LLM.
 
 ### Will this AI Engineering Course help me crack AI Engineer interviews?
 
