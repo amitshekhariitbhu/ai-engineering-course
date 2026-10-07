@@ -130,7 +130,7 @@ In this AI Engineering Course, we will learn:
 - **Modern LLM architecture:** Mixture of Experts (MoE), Grouped Query Attention (GQA), sliding window attention, attention sinks, Flash Attention, and DeepSeek-V4.
 - **Types of language models:** SLMs, Large Reasoning Models, Recursive Language Models, Diffusion Language Models, and System One Models.
 - **Fine-tuning and alignment:** fine-tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
-- **Prompt Engineering and Context Engineering:** chain-of-thought, prompt chaining, prompt caching, and context compaction.
+- **Prompt Engineering and Context Engineering:** chain-of-thought, tree of thoughts, prompt chaining, prompt caching, and context compaction.
 - **RAG and Vector Search:** vector databases, ANN search, semantic search, hybrid search, rerankers, ColBERT, chunking, Contextual Retrieval, HyDE, caching, Agentic RAG, GraphRAG, and Vectorless RAG.
 - **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, and computer-use agents.
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
@@ -174,7 +174,7 @@ Let's get started.
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                             | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                           | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                     | 11      |
-| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                       | 5       |
+| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                       | 6       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag) | 14      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                | 16      |
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                          | 8       |
@@ -1525,10 +1525,11 @@ By the end of this module, we will be able to design prompts and contexts that m
 **Lessons in this module:**
 
 1. [How does Chain-of-Thought (CoT) Prompting work?](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work)
-2. [How does Prompt Chaining work?](https://outcomeschool.com/blog/how-does-prompt-chaining-work)
-3. [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
-4. [What is Context Engineering?](https://outcomeschool.com/blog/context-engineering)
-5. [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
+2. [How does Tree of Thoughts work?](https://outcomeschool.com/blog/how-does-tree-of-thoughts-work)
+3. [How does Prompt Chaining work?](https://outcomeschool.com/blog/how-does-prompt-chaining-work)
+4. [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
+5. [What is Context Engineering?](https://outcomeschool.com/blog/context-engineering)
+6. [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
 
 ---
 
@@ -1551,7 +1552,29 @@ We will cover the following:
 
 Let's get started: [How does Chain-of-Thought (CoT) Prompting work?](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work)
 
-### 8.2 How does Prompt Chaining work?
+### 8.2 How does Tree of Thoughts work?
+
+In this blog, we will learn about how Tree of Thoughts works. We will also see the problem with the single straight path of Chain of Thought, how Tree of Thoughts lets the model explore many reasoning paths, judge them, and go back from a bad step, and where it works well and where it fails.
+
+We will cover the following:
+
+- How does an LLM answer?
+- What is Chain of Thought?
+- The problem with Chain of Thought
+- What is Tree of Thoughts?
+- What is a thought?
+- Step 1: Breaking the problem into thoughts
+- Step 2: Generating many thoughts
+- Step 3: Judging the thoughts
+- Step 4: Searching through the tree
+- A complete example: the Game of 24
+- A simple code sketch of Tree of Thoughts
+- Chain of Thought vs Tree of Thoughts
+- Where Tree of Thoughts works well and where it fails
+
+Let's get started: [How does Tree of Thoughts work?](https://outcomeschool.com/blog/how-does-tree-of-thoughts-work)
+
+### 8.3 How does Prompt Chaining work?
 
 In this blog, we will learn about how Prompt Chaining works. We will also see why we need it, how it works step by step by passing the output of one prompt into the next, and where it is used in the real world to solve bigger tasks reliably.
 
@@ -1570,7 +1593,7 @@ We will cover the following:
 
 Let's get started: [How does Prompt Chaining work?](https://outcomeschool.com/blog/how-does-prompt-chaining-work)
 
-### 8.3 How does Prompt Caching work?
+### 8.4 How does Prompt Caching work?
 
 In this blog, we will learn about how Prompt Caching works. We will also see why we need it, how it actually works inside a large language model, and where it is used in real systems like AI assistants and agents.
 
@@ -1589,7 +1612,7 @@ We will cover the following:
 
 Let's get started: [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
 
-### 8.4 What is Context Engineering?
+### 8.5 What is Context Engineering?
 
 In this blog, we will learn about Context Engineering - what it is, why it has become the most important skill for building reliable AI applications, how it differs from Prompt Engineering, the components that make up the context, common patterns like RAG, few-shot examples, tools, and memory, and the best practices and common mistakes to keep in mind.
 
@@ -1607,7 +1630,7 @@ We will cover the following:
 
 Let's get started: [What is Context Engineering?](https://outcomeschool.com/blog/context-engineering)
 
-### 8.5 How does context compaction work?
+### 8.6 How does context compaction work?
 
 In this blog, we will learn about how context compaction works in Large Language Models. We will also see why long conversations overflow the context window, how summarization shrinks the older messages without losing the important points, and where compaction is used in real AI agents.
 
@@ -3570,6 +3593,7 @@ Quick definitions of the most important AI Engineering terms, taken from the les
 - **[Continual Learning](https://outcomeschool.com/blog/continual-learning-in-llms):** Continual Learning is the ability of a model to keep learning new information over time, without forgetting what it has already learned.
 - **[RLHF](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf):** RLHF (Reinforcement Learning from Human Feedback) is a training technique where we teach a Large Language Model (LLM) to produce responses that humans prefer, by collecting human preferences and converting them into a reward signal that guides further training.
 - **[Chain-of-Thought (CoT) Prompting](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work):** Chain-of-Thought (CoT) Prompting is a technique where we ask the model to write out its reasoning steps before giving the final answer.
+- **[Tree of Thoughts](https://outcomeschool.com/blog/how-does-tree-of-thoughts-work):** Tree of Thoughts is a technique where the model explores many reasoning paths like the branches of a tree, judges each step, and drops or backtracks from the bad ones, instead of following a single straight chain of thought.
 - **[Prompt Chaining](https://outcomeschool.com/blog/how-does-prompt-chaining-work):** Prompt Chaining is a way of breaking one big task into smaller prompts, where the output of one prompt becomes the input of the next prompt.
 - **[Prompt Caching](https://outcomeschool.com/blog/how-does-prompt-caching-work):** Prompt Caching is a technique where the model saves the work it already did for a repeated part of a prompt, so that next time it can reuse that saved work instead of doing it all over again.
 - **[Context Engineering](https://outcomeschool.com/blog/context-engineering):** Context Engineering is the practice of designing, organizing, and managing everything that goes into an LLM's context window so that the model can do its task reliably.
