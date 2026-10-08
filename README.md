@@ -131,7 +131,7 @@ In this AI Engineering Course, we will learn:
 - **Types of language models:** SLMs, Large Reasoning Models, Recursive Language Models, Diffusion Language Models, and System One Models.
 - **Fine-tuning and alignment:** fine-tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
 - **Prompt Engineering and Context Engineering:** chain-of-thought, tree of thoughts, prompt chaining, prompt caching, and context compaction.
-- **RAG and Vector Search:** vector databases, ANN search, semantic search, hybrid search, rerankers, ColBERT, chunking, Contextual Retrieval, HyDE, caching, Agentic RAG, GraphRAG, and Vectorless RAG.
+- **RAG and Vector Search:** vector databases, ANN search, semantic search, hybrid search, rerankers, ColBERT, chunking, Contextual Retrieval, HyDE, query rewriting, multi-query retrieval, caching, Agentic RAG, GraphRAG, and Vectorless RAG.
 - **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, and computer-use agents.
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 - **LLM Inference Engineering:** prefill vs decode, KV cache, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, Ollama, vLLM, SGLang, and TensorRT-LLM.
@@ -175,7 +175,7 @@ Let's get started.
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                           | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                     | 11      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                       | 6       |
-| 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag) | 14      |
+| 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag) | 15      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                | 16      |
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                          | 8       |
 | 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                        | 17      |
@@ -1669,11 +1669,12 @@ By the end of this module, we will be able to build a production-grade RAG pipel
 7. [How to Chunk Documents for RAG? Chunking Strategies Explained](https://outcomeschool.com/blog/chunking-strategies-for-rag)
 8. [How does Contextual Retrieval work?](https://outcomeschool.com/blog/how-does-contextual-retrieval-work)
 9. [How does HyDE work in RAG?](https://outcomeschool.com/blog/how-does-hyde-work)
-10. [How does an Embedding Cache work?](https://outcomeschool.com/blog/how-does-an-embedding-cache-work)
-11. [How does Semantic Caching work?](https://outcomeschool.com/blog/how-does-semantic-caching-work)
-12. [What is Agentic RAG? How It Works and When to Use It](https://outcomeschool.com/blog/agentic-rag)
-13. [What is GraphRAG? How Knowledge Graphs Improve RAG](https://outcomeschool.com/blog/graphrag)
-14. [What is Vectorless RAG? RAG Without Embeddings or a Vector Database](https://outcomeschool.com/blog/vectorless-rag)
+10. [How do Query Rewriting and Multi-Query Retrieval work?](https://outcomeschool.com/blog/how-do-query-rewriting-and-multi-query-retrieval-work)
+11. [How does an Embedding Cache work?](https://outcomeschool.com/blog/how-does-an-embedding-cache-work)
+12. [How does Semantic Caching work?](https://outcomeschool.com/blog/how-does-semantic-caching-work)
+13. [What is Agentic RAG? How It Works and When to Use It](https://outcomeschool.com/blog/agentic-rag)
+14. [What is GraphRAG? How Knowledge Graphs Improve RAG](https://outcomeschool.com/blog/graphrag)
+15. [What is Vectorless RAG? RAG Without Embeddings or a Vector Database](https://outcomeschool.com/blog/vectorless-rag)
 
 ---
 
@@ -1875,7 +1876,28 @@ We will cover the following:
 
 Let's get started: [How does HyDE work in RAG?](https://outcomeschool.com/blog/how-does-hyde-work)
 
-### 9.10 How does an Embedding Cache work?
+### 9.10 How do Query Rewriting and Multi-Query Retrieval work?
+
+In this blog, we will learn about how Query Rewriting and Multi-Query Retrieval work, which are two simple ways to improve the search step of a RAG system. We will also see why the user's question is often not a good search query, how Reciprocal Rank Fusion (RRF) merges the results of many searches, and when to use which one.
+
+We will cover the following:
+
+- Why the user's question is not a good search query
+- What is Query Rewriting
+- How Query Rewriting works
+- Types of Query Rewriting
+- Query Rewriting in code
+- The problem that Query Rewriting does not solve
+- What is Multi-Query Retrieval
+- How Multi-Query Retrieval works
+- How to merge the results with Reciprocal Rank Fusion (RRF)
+- Multi-Query Retrieval in code
+- Query Rewriting vs Multi-Query Retrieval
+- Where they work well and where they fail
+
+Let's get started: [How do Query Rewriting and Multi-Query Retrieval work?](https://outcomeschool.com/blog/how-do-query-rewriting-and-multi-query-retrieval-work)
+
+### 9.11 How does an Embedding Cache work?
 
 In this blog, we will learn about how an Embedding Cache works. We will also see what an embedding is, why an Embedding Cache saves us a lot of money and time, how the cache key is built, and where it is used in real systems like RAG and semantic search.
 
@@ -1895,7 +1917,7 @@ We will cover the following:
 
 Let's get started: [How does an Embedding Cache work?](https://outcomeschool.com/blog/how-does-an-embedding-cache-work)
 
-### 9.11 How does Semantic Caching work?
+### 9.12 How does Semantic Caching work?
 
 In this blog, we will learn about how Semantic Caching works. We will also see why traditional caching falls short for AI apps, how Semantic Caching uses embeddings and similarity to reuse past answers, and how setting the right threshold makes it work in the real world.
 
@@ -1914,7 +1936,7 @@ We will cover the following:
 
 Let's get started: [How does Semantic Caching work?](https://outcomeschool.com/blog/how-does-semantic-caching-work)
 
-### 9.12 What is Agentic RAG? How It Works and When to Use It
+### 9.13 What is Agentic RAG? How It Works and When to Use It
 
 In this blog, we will learn about Agentic RAG - what it is, why standard RAG falls short, the agentic RAG loop, the three building blocks, the common patterns, when to use it, and the limitations to keep in mind.
 
@@ -1938,7 +1960,7 @@ Let's get started: [What is Agentic RAG? How It Works and When to Use It](https:
 
 Watch the video: [Agentic RAG Explained](https://www.youtube.com/watch?v=6nSegpuWJVw)
 
-### 9.13 What is GraphRAG? How Knowledge Graphs Improve RAG
+### 9.14 What is GraphRAG? How Knowledge Graphs Improve RAG
 
 In this blog, we will learn about GraphRAG and how it improves retrieval by using a knowledge graph along with [vector search](https://outcomeschool.com/blog/how-does-a-vector-database-work).
 
@@ -1956,7 +1978,7 @@ We will cover the following:
 
 Let's get started: [What is GraphRAG? How Knowledge Graphs Improve RAG](https://outcomeschool.com/blog/graphrag)
 
-### 9.14 What is Vectorless RAG? RAG Without Embeddings or a Vector Database
+### 9.15 What is Vectorless RAG? RAG Without Embeddings or a Vector Database
 
 In this blog, we will learn about Vectorless RAG, a way of answering questions from our own documents without converting those documents into numbers and without using any vector database. We will also see how the normal RAG works, why the vector part creates problems, how a Vectorless RAG system reads a document the way a human reads a book, how the tree structure and the search happen step by step, what the advantages and disadvantages are, and when to use which one.
 
@@ -3675,7 +3697,7 @@ Yes. Module 10 and Module 11 of this AI Engineering Course cover AI Agents in de
 
 ### Does this AI Engineering Course cover RAG?
 
-Yes. Module 9 of this AI Engineering Course covers RAG from the basics to the advanced: vector databases, ANN search, semantic search, hybrid search, rerankers, ColBERT, chunking strategies, Contextual Retrieval, HyDE, embedding cache, semantic caching, Agentic RAG, GraphRAG, and Vectorless RAG.
+Yes. Module 9 of this AI Engineering Course covers RAG from the basics to the advanced: vector databases, ANN search, semantic search, hybrid search, rerankers, ColBERT, chunking strategies, Contextual Retrieval, HyDE, query rewriting, multi-query retrieval, embedding cache, semantic caching, Agentic RAG, GraphRAG, and Vectorless RAG.
 
 ### Does this AI Engineering Course cover LLM Inference Optimization?
 
