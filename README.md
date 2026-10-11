@@ -132,7 +132,7 @@ In this AI Engineering Course, we will learn:
 - **Fine-tuning and alignment:** fine-tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
 - **Prompt Engineering and Context Engineering:** chain-of-thought, tree of thoughts, prompt chaining, prompt caching, and context compaction.
 - **RAG and Vector Search:** vector databases, ANN search, semantic search, hybrid search, rerankers, ColBERT, chunking, Contextual Retrieval, HyDE, query rewriting, multi-query retrieval, caching, Agentic RAG, GraphRAG, and Vectorless RAG.
-- **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, and computer-use agents.
+- **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, and browser agents.
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 - **LLM Inference Engineering:** prefill vs decode, KV cache, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, Ollama, vLLM, SGLang, and TensorRT-LLM.
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
@@ -2032,6 +2032,7 @@ By the end of this module, we will be able to design a single agent, give it too
 14. [What is AI Orchestration? How It Works and the Common Patterns](https://outcomeschool.com/blog/ai-orchestration)
 15. [What is Sakana Fugu? The Technical Report Explained](https://outcomeschool.com/blog/decoding-sakana-fugu)
 16. [How do Computer-Use Agents work?](https://outcomeschool.com/blog/how-do-computer-use-agents-work)
+17. [How do Browser Agents work?](https://outcomeschool.com/blog/how-do-browser-agents-work)
 
 ---
 
@@ -2350,6 +2351,27 @@ We will cover the following:
 - Conclusion
 
 Let's get started: [How do Computer-Use Agents work?](https://outcomeschool.com/blog/how-do-computer-use-agents-work)
+
+### 10.17 How do Browser Agents work?
+
+In this blog, we will learn about how browser agents work. We will also see how a browser agent sees a web page, how it takes actions, and how the observe-think-act loop completes a task from start to finish.
+
+We will cover the following:
+
+- What is an AI agent?
+- Why do we need Browser Agents?
+- What is a Browser Agent?
+- The parts of a Browser Agent
+- How does a Browser Agent see a web page?
+- How does a Browser Agent take actions?
+- The observe-think-act loop
+- A complete example: ordering a book
+- A simple code example
+- Screenshots vs page structure
+- Problems and how they are handled
+- Where it works well and where it fails
+
+Let's get started: [How do Browser Agents work?](https://outcomeschool.com/blog/how-do-browser-agents-work)
 
 ---
 
@@ -3693,7 +3715,7 @@ An AI Engineer needs to understand how LLMs work from the inside (Transformers, 
 
 ### Does this AI Engineering Course cover AI Agents and Agentic AI?
 
-Yes. Module 10 and Module 11 of this AI Engineering Course cover AI Agents in depth: the agent loop, function calling, ReAct, Plan-and-Execute, Reflection, agent memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
+Yes. Module 10 and Module 11 of this AI Engineering Course cover AI Agents in depth: the agent loop, function calling, ReAct, Plan-and-Execute, Reflection, agent memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 
 ### Does this AI Engineering Course cover RAG?
 
