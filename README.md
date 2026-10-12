@@ -2023,16 +2023,17 @@ By the end of this module, we will be able to design a single agent, give it too
 5. [What is a Plan-and-Execute Agent and How Does It Work?](https://outcomeschool.com/blog/plan-and-execute-agent)
 6. [What is a Reflection Agent? How It Generates, Critiques, and Revises](https://outcomeschool.com/blog/reflection-agent)
 7. [How Does AI Agent Memory Work? The Memory Stack Explained](https://outcomeschool.com/blog/ai-agent-memory)
-8. [What is MCP (Model Context Protocol)?](https://outcomeschool.com/blog/what-is-mcp-model-context-protocol)
-9. [What are Agent Skills?](https://outcomeschool.com/blog/what-are-agent-skills)
-10. [What is OKF (Open Knowledge Format)?](https://outcomeschool.com/blog/what-is-okf-open-knowledge-format)
-11. [What are Multi-Agent Systems and When Should We Use Them?](https://outcomeschool.com/blog/multi-agent-systems)
-12. [What are AI SubAgents? Why We Need Them and How They Work](https://outcomeschool.com/blog/ai-subagents)
-13. [How AI Agents Communicate](https://outcomeschool.com/blog/how-ai-agents-communicate)
-14. [What is AI Orchestration? How It Works and the Common Patterns](https://outcomeschool.com/blog/ai-orchestration)
-15. [What is Sakana Fugu? The Technical Report Explained](https://outcomeschool.com/blog/decoding-sakana-fugu)
-16. [How do Computer-Use Agents work?](https://outcomeschool.com/blog/how-do-computer-use-agents-work)
-17. [How do Browser Agents work?](https://outcomeschool.com/blog/how-do-browser-agents-work)
+8. [How does ChatGPT remember you?](https://outcomeschool.com/blog/how-does-chatgpt-remember-you)
+9. [What is MCP (Model Context Protocol)?](https://outcomeschool.com/blog/what-is-mcp-model-context-protocol)
+10. [What are Agent Skills?](https://outcomeschool.com/blog/what-are-agent-skills)
+11. [What is OKF (Open Knowledge Format)?](https://outcomeschool.com/blog/what-is-okf-open-knowledge-format)
+12. [What are Multi-Agent Systems and When Should We Use Them?](https://outcomeschool.com/blog/multi-agent-systems)
+13. [What are AI SubAgents? Why We Need Them and How They Work](https://outcomeschool.com/blog/ai-subagents)
+14. [How AI Agents Communicate](https://outcomeschool.com/blog/how-ai-agents-communicate)
+15. [What is AI Orchestration? How It Works and the Common Patterns](https://outcomeschool.com/blog/ai-orchestration)
+16. [What is Sakana Fugu? The Technical Report Explained](https://outcomeschool.com/blog/decoding-sakana-fugu)
+17. [How do Computer-Use Agents work?](https://outcomeschool.com/blog/how-do-computer-use-agents-work)
+18. [How do Browser Agents work?](https://outcomeschool.com/blog/how-do-browser-agents-work)
 
 ---
 
@@ -2165,7 +2166,28 @@ We will cover the following:
 
 Let's get started: [How Does AI Agent Memory Work? The Memory Stack Explained](https://outcomeschool.com/blog/ai-agent-memory)
 
-### 10.8 What is MCP (Model Context Protocol)?
+### 10.8 How does ChatGPT remember you?
+
+In this blog, we will learn how ChatGPT remembers us across chats even though the model itself remembers nothing. We will see why LLMs forget by default, how saved memories, chat history, and Custom Instructions work, and how these memories are added to the prompt before every reply.
+
+We will cover the following:
+
+- Why LLMs forget by default
+- The context window
+- Memory within one chat
+- What ChatGPT Memory is
+- Saved memories
+- Reference chat history
+- Custom Instructions
+- How memories enter the prompt
+- An end-to-end example
+- Viewing and deleting memories
+- Temporary Chat
+- Where memory helps and where it fails
+
+Let's get started: [How does ChatGPT remember you?](https://outcomeschool.com/blog/how-does-chatgpt-remember-you)
+
+### 10.9 What is MCP (Model Context Protocol)?
 
 In this blog, we will learn about MCP (Model Context Protocol). We will also see the problem it solves, the pieces it is made of, how a request travels from the AI model all the way to a tool and back, and what we must be careful about while using it.
 
@@ -2186,7 +2208,7 @@ We will cover the following:
 
 Let's get started: [What is MCP (Model Context Protocol)?](https://outcomeschool.com/blog/what-is-mcp-model-context-protocol)
 
-### 10.9 What are Agent Skills?
+### 10.10 What are Agent Skills?
 
 In this blog, we will learn about Agent Skills. We will also see why we need them, what is inside a Skill, how the description makes an agent pick up the right Skill by itself, how progressive disclosure keeps the context window free, how Agent Skills differ from MCP, and how we can create our own Skill.
 
@@ -2208,7 +2230,7 @@ We will cover the following:
 
 Let's get started: [What are Agent Skills?](https://outcomeschool.com/blog/what-are-agent-skills)
 
-### 10.10 What is OKF (Open Knowledge Format)?
+### 10.11 What is OKF (Open Knowledge Format)?
 
 In this blog, we will learn about OKF (Open Knowledge Format). We will also see why the knowledge about our data stays scattered across many places, how OKF writes that knowledge down as a folder of plain markdown files which any AI agent or any tool can read, and where it fits along with [MCP](https://outcomeschool.com/blog/what-is-mcp-model-context-protocol) and [Agent Skills](https://outcomeschool.com/blog/what-are-agent-skills) in the real world.
 
@@ -2228,7 +2250,7 @@ We will cover the following:
 
 Let's get started: [What is OKF (Open Knowledge Format)?](https://outcomeschool.com/blog/what-is-okf-open-knowledge-format)
 
-### 10.11 What are Multi-Agent Systems and When Should We Use Them?
+### 10.12 What are Multi-Agent Systems and When Should We Use Them?
 
 In this blog, we will learn about Multi-Agent Systems - what they are, the three pillars that hold them together, the common agent roles, how agents communicate and coordinate, the trade-offs, and when to use them.
 
@@ -2247,7 +2269,7 @@ We will cover the following:
 
 Let's get started: [What are Multi-Agent Systems and When Should We Use Them?](https://outcomeschool.com/blog/multi-agent-systems)
 
-### 10.12 What are AI SubAgents? Why We Need Them and How They Work
+### 10.13 What are AI SubAgents? Why We Need Them and How They Work
 
 In this blog, we will learn about AI SubAgents. We will understand what they are, why we need them, how they work, and how to use them to build AI systems that can handle big and complex tasks.
 
@@ -2264,7 +2286,7 @@ We will cover the following:
 
 Let's get started: [What are AI SubAgents? Why We Need Them and How They Work](https://outcomeschool.com/blog/ai-subagents)
 
-### 10.13 How AI Agents Communicate
+### 10.14 How AI Agents Communicate
 
 In this blog, we will learn about how AI agents communicate. We will understand why agents need to communicate, the main ways they talk to each other, the message format, and the protocols that make agents work together to finish complex tasks.
 
@@ -2286,7 +2308,7 @@ We will cover the following:
 
 Let's get started: [How AI Agents Communicate](https://outcomeschool.com/blog/how-ai-agents-communicate)
 
-### 10.14 What is AI Orchestration? How It Works and the Common Patterns
+### 10.15 What is AI Orchestration? How It Works and the Common Patterns
 
 In this blog, we will learn about AI Orchestration. We will understand what it is, why we need it, how it is different from [AI Agents](https://outcomeschool.com/blog/ai-agent), and the common patterns we use to coordinate multiple LLMs, tools, and steps together to build real AI products.
 
@@ -2309,7 +2331,7 @@ We will cover the following:
 
 Let's get started: [What is AI Orchestration? How It Works and the Common Patterns](https://outcomeschool.com/blog/ai-orchestration)
 
-### 10.15 What is Sakana Fugu? The Technical Report Explained
+### 10.16 What is Sakana Fugu? The Technical Report Explained
 
 In this blog, we are going to learn about Sakana Fugu, a family of AI models that work like a conductor for a team of other AI models.
 
@@ -2332,7 +2354,7 @@ We will cover the following:
 
 Let's get started: [What is Sakana Fugu? The Technical Report Explained](https://outcomeschool.com/blog/decoding-sakana-fugu)
 
-### 10.16 How do Computer-Use Agents work?
+### 10.17 How do Computer-Use Agents work?
 
 In this blog, we will learn about how computer-use agents work.
 
@@ -2352,7 +2374,7 @@ We will cover the following:
 
 Let's get started: [How do Computer-Use Agents work?](https://outcomeschool.com/blog/how-do-computer-use-agents-work)
 
-### 10.17 How do Browser Agents work?
+### 10.18 How do Browser Agents work?
 
 In this blog, we will learn about how browser agents work. We will also see how a browser agent sees a web page, how it takes actions, and how the observe-think-act loop completes a task from start to finish.
 
