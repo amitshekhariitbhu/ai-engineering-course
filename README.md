@@ -170,7 +170,7 @@ Let's get started.
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                   | 9       |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                         | 10      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)               | 15      |
-| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                               | 5       |
+| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                               | 6       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                             | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                           | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                     | 11      |
@@ -895,6 +895,7 @@ By the end of this module, we will know exactly what happens between the prompt 
 3. [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
 4. [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
 5. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
+6. [Why Do LLMs Hallucinate? The Token-Level Explanation](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation)
 
 ---
 
@@ -994,6 +995,24 @@ We will cover the following:
 Let's get started: [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
 
 Watch the video: [Why is the context window limited in LLMs?](https://www.youtube.com/watch?v=CGIhxIaOg3M)
+
+### 4.6 Why Do LLMs Hallucinate? The Token-Level Explanation
+
+In this blog, we will learn about why LLMs hallucinate, explained at the level of a single token. We will also see what a hallucination really is, how an LLM picks one token at a time with no step for checking whether something is true, why the tokens that carry facts are the risky ones, how a sharp guess differs from a flat guess, the six reasons hallucinations happen, and how we can reduce them at the token level.
+
+We will cover the following:
+
+- What is a hallucination?
+- What is a token?
+- How does an LLM pick the next token?
+- Easy tokens vs fact tokens
+- Sharp guess vs flat guess
+- Picking a token in code
+- Why hallucinations happen: six reasons
+- How to reduce hallucinations at the token level
+- Frequently asked questions
+
+Let's get started: [Why Do LLMs Hallucinate? The Token-Level Explanation](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation)
 
 **Videos and more resources for Module 4:**
 
