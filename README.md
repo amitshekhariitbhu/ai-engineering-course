@@ -3342,9 +3342,10 @@ By the end of this module, we will be able to design an AI system end to end, fr
 6. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
 7. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
 8. [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
-9. [What is System Design?](https://outcomeschool.com/blog/system-design)
-10. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-11. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+9. [What is turn-taking in a voice AI agent?](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent)
+10. [What is System Design?](https://outcomeschool.com/blog/system-design)
+11. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+12. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -3517,9 +3518,29 @@ We will cover the following:
 
 Let's get started: [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
 
+### 16.9 What is turn-taking in a voice AI agent?
+
+In this blog, we will learn about turn-taking in a voice AI agent, how the agent decides when the user has finished speaking, when it is its turn to talk, and what to do when the user starts speaking again while the agent is talking. We will also see why silence alone is not enough, how semantic turn detection reads the meaning of the words, how barge-in and backchannels are handled, and how half-duplex agents differ from full-duplex agents.
+
+We will cover the following:
+
+- What is turn-taking?
+- How humans take turns
+- How a voice AI agent works
+- Why turn-taking is hard for a machine
+- The two jobs of turn-taking
+- Approach 1: Wait for silence
+- Approach 2: Understand the meaning
+- Handling interruptions
+- Not every sound is a new turn
+- Half-duplex vs full-duplex agents
+- A complete walkthrough
+
+Let's get started: [What is turn-taking in a voice AI agent?](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent)
+
 **Supporting lessons for AI System Design:**
 
-### 16.9 What is System Design?
+### 16.10 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -3531,7 +3552,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.10 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.11 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -3545,7 +3566,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.11 How do Voice And Video Call Work?
+### 16.12 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
