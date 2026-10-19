@@ -3343,9 +3343,10 @@ By the end of this module, we will be able to design an AI system end to end, fr
 7. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
 8. [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
 9. [What is turn-taking in a voice AI agent?](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent)
-10. [What is System Design?](https://outcomeschool.com/blog/system-design)
-11. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-12. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+10. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
+11. [What is System Design?](https://outcomeschool.com/blog/system-design)
+12. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+13. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -3538,9 +3539,28 @@ We will cover the following:
 
 Let's get started: [What is turn-taking in a voice AI agent?](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent)
 
+### 16.10 What is barge-in in a voice AI agent?
+
+In this blog, we will learn about barge-in in a voice AI agent, what happens when the user starts speaking while the agent is still talking, and how the agent stops so it can listen. We will also see why the agent can hear its own voice and how echo cancellation fixes it, how the agent tells a real interruption apart from "uh-huh", a cough, or background noise, what it does after a barge-in, and why it must remember only the part of the reply the user actually heard.
+
+We will cover the following:
+
+- What is barge-in?
+- Where the word barge-in comes from
+- How a voice AI agent speaks and listens
+- Problem 1: The agent hears itself
+- Problem 2: Not every sound is an interruption
+- How the agent detects barge-in
+- What the agent does after barge-in
+- Remembering what the user actually heard
+- Why barge-in must be fast
+- A complete walkthrough
+
+Let's get started: [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
+
 **Supporting lessons for AI System Design:**
 
-### 16.10 What is System Design?
+### 16.11 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -3552,7 +3572,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.11 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.12 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -3566,7 +3586,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.12 How do Voice And Video Call Work?
+### 16.13 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
