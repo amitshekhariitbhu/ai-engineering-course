@@ -3366,9 +3366,10 @@ By the end of this module, we will be able to design an AI system end to end, fr
 11. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
 12. [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
 13. [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency)
-14. [What is System Design?](https://outcomeschool.com/blog/system-design)
-15. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-16. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+14. [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio)
+15. [What is System Design?](https://outcomeschool.com/blog/system-design)
+16. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+17. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -3634,9 +3635,27 @@ We will cover the following:
 
 Let's get started: [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency)
 
+### 16.14 Why does the time-to-first-audio matter more than total response time?
+
+In this blog, we will learn about why the time-to-first-audio matters more than total response time. We will also see what each of these two times measures, how people experience silence in a conversation, how streaming lets an agent start speaking before the full reply is ready, which steps decide the time-to-first-audio, and when the total response time still matters.
+
+We will cover the following:
+
+- What is time-to-first-audio?
+- What is total response time?
+- How do people experience waiting on a voice call?
+- Why does the time-to-first-audio matter more?
+- An example with two voice agents
+- How does streaming bring the first audio early?
+- What decides the time-to-first-audio?
+- The rest of the reply must keep up
+- When does the total response time still matter?
+
+Let's get started: [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio)
+
 **Supporting lessons for AI System Design:**
 
-### 16.14 What is System Design?
+### 16.15 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -3648,7 +3667,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.15 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.16 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -3662,7 +3681,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.16 How do Voice And Video Call Work?
+### 16.17 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
