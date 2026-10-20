@@ -3365,9 +3365,10 @@ By the end of this module, we will be able to design an AI system end to end, fr
 10. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
 11. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
 12. [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
-13. [What is System Design?](https://outcomeschool.com/blog/system-design)
-14. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-15. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+13. [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency)
+14. [What is System Design?](https://outcomeschool.com/blog/system-design)
+15. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+16. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -3615,9 +3616,27 @@ We will cover the following:
 
 Let's get started: [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
 
+### 16.13 How does the voice-to-voice latency of a voice agent get measured?
+
+In this blog, we will learn about how the voice-to-voice latency of a voice agent gets measured. We will also see where the time goes inside a voice agent, why the server logs give the wrong answer, how a two-channel recording gives the right answer, how we automate it over many calls, why we look at percentiles instead of the average, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is voice-to-voice latency?
+- Why is this latency important?
+- Where does the time go?
+- Approach 1: Using the logs on the server
+- Approach 2: Adding timestamps at every step
+- Approach 3: Recording the call on one timeline
+- Automating the measurement over many calls
+- Why do we look at percentiles and not the average?
+- Where it works well and where it fails
+
+Let's get started: [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency)
+
 **Supporting lessons for AI System Design:**
 
-### 16.13 What is System Design?
+### 16.14 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -3629,7 +3648,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.14 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.15 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -3643,7 +3662,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.15 How do Voice And Video Call Work?
+### 16.16 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
