@@ -182,7 +182,7 @@ Let's get started.
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                  | 4       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                              | 3       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                    | 6       |
-| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)            | 12      |
+| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)            | 18      |
 | 17     | [Frontier Ideas in AI](#module-17-frontier-ideas-in-ai)                                                                  | 3       |
 | 18     | [Prepare for AI Engineering Interviews](#module-18-prepare-for-ai-engineering-interviews)                                | 1       |
 
@@ -3384,8 +3384,9 @@ By the end of this module, we will be able to design an AI system end to end, fr
 12. [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
 13. [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency)
 14. [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio)
-15. [What is System Design?](https://outcomeschool.com/blog/system-design)
-16. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+15. [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts)
+16. [What is System Design?](https://outcomeschool.com/blog/system-design)
+17. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 17. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
@@ -3670,9 +3671,28 @@ We will cover the following:
 
 Let's get started: [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio)
 
+### 16.15 How does sentence chunking feed LLM output into TTS faster?
+
+In this blog, we will learn about how sentence chunking feeds LLM output into TTS faster. We will also see why waiting for the full reply makes a voice agent slow, how a buffer collects tokens until a sentence is complete, how the chunker finds where a sentence ends, how it handles tricky cases like "Dr." and "3.5", how the first chunk is made smaller to start speaking even sooner, and where it works well and where it fails.
+
+We will cover the following:
+
+- The problem: the voice waits for the full reply
+- What is sentence chunking?
+- Why not send every token to the TTS?
+- How does the chunker work?
+- Finding the end of a sentence
+- The tricky cases
+- Making the first chunk smaller
+- A walkthrough with numbers
+- What happens when the user interrupts?
+- Where it works well and where it fails
+
+Let's get started: [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts)
+
 **Supporting lessons for AI System Design:**
 
-### 16.15 What is System Design?
+### 16.16 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -3684,7 +3704,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.16 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.17 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -3698,7 +3718,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.17 How do Voice And Video Call Work?
+### 16.18 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
