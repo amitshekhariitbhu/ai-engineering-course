@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 6       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 10      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 4       |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 7       |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -3709,6 +3709,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 5. [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts)
 6. [How does speculative LLM generation start replying before the user finishes?](https://outcomeschool.com/blog/speculative-generation-in-voice-agents)
 7. [How do filler phrases hide latency in a voice agent?](https://outcomeschool.com/blog/filler-phrases-in-voice-agents)
+8. [How does a voice agent hide the delay of a slow tool call?](https://outcomeschool.com/blog/slow-tool-calls-in-voice-agents)
 
 ---
 
@@ -3839,6 +3840,24 @@ We will cover the following:
 - Where filler phrases help and where they hurt
 
 Let's get started: [How do filler phrases hide latency in a voice agent?](https://outcomeschool.com/blog/filler-phrases-in-voice-agents)
+
+### 18.8 How does a voice agent hide the delay of a slow tool call?
+
+In this blog, we will learn about how a voice agent hides the delay of a slow tool call. We will also see why a slow tool call hurts so much on a voice call, how the agent speaks a short line right away, how it gives progress updates during a long wait, how it keeps talking while the tool runs in the background, how it starts the tool early to cut the delay itself, and what it says when the tool takes too long.
+
+We will cover the following:
+
+- The problem: a slow tool call on a voice call
+- What is a tool call in a voice agent?
+- Technique 1: Speak a short line right away
+- Technique 2: Progress updates during a long wait
+- Technique 3: Keep talking while the tool runs in the background
+- Technique 4: Start the tool early
+- Technique 5: Make the tool itself faster
+- What if the tool takes too long?
+- Putting it all together in code
+
+Let's get started: [How does a voice agent hide the delay of a slow tool call?](https://outcomeschool.com/blog/slow-tool-calls-in-voice-agents)
 
 ---
 
