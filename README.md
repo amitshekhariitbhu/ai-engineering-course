@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 6       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 10      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 4       |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 6       |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 7       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -3691,6 +3691,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 4. [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts)
 5. [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts)
 6. [How does speculative LLM generation start replying before the user finishes?](https://outcomeschool.com/blog/speculative-generation-in-voice-agents)
+7. [How do filler phrases hide latency in a voice agent?](https://outcomeschool.com/blog/filler-phrases-in-voice-agents)
 
 ---
 
@@ -3804,6 +3805,23 @@ We will cover the following:
 - When to use it and when not to
 
 Let's get started: [How does speculative LLM generation start replying before the user finishes?](https://outcomeschool.com/blog/speculative-generation-in-voice-agents)
+
+### 18.7 How do filler phrases hide latency in a voice agent?
+
+In this blog, we will learn about how filler phrases hide latency in a voice agent. We will also see why silence feels so bad on a voice call, what a filler phrase is, when the agent decides to say one, the different ways to produce it, how it fits into the conversation memory, what to do when the user interrupts it, and where it helps and where it hurts.
+
+We will cover the following:
+
+- The problem: silence on a voice call
+- What is a filler phrase?
+- How a filler phrase hides latency
+- When should the agent say a filler phrase?
+- Ways to produce a filler phrase
+- Adding the filler phrase to the conversation memory
+- Handling an interruption during a filler phrase
+- Where filler phrases help and where they hurt
+
+Let's get started: [How do filler phrases hide latency in a voice agent?](https://outcomeschool.com/blog/filler-phrases-in-voice-agents)
 
 ---
 
