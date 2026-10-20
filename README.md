@@ -182,7 +182,7 @@ Let's get started.
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                  | 4       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                              | 3       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                    | 6       |
-| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)            | 11      |
+| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)            | 12      |
 | 17     | [Frontier Ideas in AI](#module-17-frontier-ideas-in-ai)                                                                  | 3       |
 | 18     | [Prepare for AI Engineering Interviews](#module-18-prepare-for-ai-engineering-interviews)                                | 1       |
 
@@ -3364,9 +3364,10 @@ By the end of this module, we will be able to design an AI system end to end, fr
 9. [What is turn-taking in a voice AI agent?](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent)
 10. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
 11. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
-12. [What is System Design?](https://outcomeschool.com/blog/system-design)
-13. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-14. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+12. [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
+13. [What is System Design?](https://outcomeschool.com/blog/system-design)
+14. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+15. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -3595,9 +3596,28 @@ We will cover the following:
 
 Let's get started: [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
 
+### 16.12 How do you build a latency budget for a voice AI agent?
+
+In this blog, we will learn about how to build a latency budget for a voice AI agent. We will also see why a voice AI agent needs one, how to pick the total target and split it across every stage, how to measure the real numbers and cut the biggest delays first, how streaming and tool calls change the budget, and what trade-off we must accept.
+
+We will cover the following:
+
+- What is a latency budget?
+- Why does a voice AI agent need a latency budget?
+- Step 1: Pick the total target
+- Step 2: List every stage of the pipeline
+- Step 3: Give each stage its share of the time
+- Step 4: Measure the real numbers
+- Step 5: Cut the biggest delay first
+- How streaming changes the budget
+- How tool calls fit into the budget
+- The trade-off we must accept
+
+Let's get started: [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
+
 **Supporting lessons for AI System Design:**
 
-### 16.12 What is System Design?
+### 16.13 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -3609,7 +3629,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.13 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.14 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -3623,7 +3643,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.14 How do Voice And Video Call Work?
+### 16.15 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
