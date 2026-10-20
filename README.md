@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 6       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 10      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 4       |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 5       |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 6       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -3690,6 +3690,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 3. [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio)
 4. [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts)
 5. [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts)
+6. [How does speculative LLM generation start replying before the user finishes?](https://outcomeschool.com/blog/speculative-generation-in-voice-agents)
 
 ---
 
@@ -3784,6 +3785,25 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts)
+
+### 18.6 How does speculative LLM generation start replying before the user finishes?
+
+In this blog, we will learn about how speculative LLM generation starts replying before the user finishes. We will also see where the waiting time goes in a normal voice agent, how the agent makes an early guess from the words it has so far, what happens when the guess is right or wrong, how it can prepare the voice early too, what it costs, and when to use it.
+
+We will cover the following:
+
+- The normal way a voice agent replies
+- Where the waiting time goes
+- What is speculative LLM generation?
+- How speculative LLM generation works step by step
+- What happens when the guess is right
+- What happens when the guess is wrong
+- How does the agent know that the words changed?
+- Preparing the voice early too
+- The cost of speculative LLM generation
+- When to use it and when not to
+
+Let's get started: [How does speculative LLM generation start replying before the user finishes?](https://outcomeschool.com/blog/speculative-generation-in-voice-agents)
 
 ---
 
