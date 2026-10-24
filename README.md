@@ -77,15 +77,17 @@ This AI Engineering Course is completely free to read. If you want more practica
 - [Module 14: AI Safety and Security](#module-14-ai-safety-and-security)
 - [Module 15: Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)
 - [Module 16: AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)
-- [Module 17: Frontier Ideas in AI](#module-17-frontier-ideas-in-ai)
-- [Module 18: Prepare for AI Engineering Interviews](#module-18-prepare-for-ai-engineering-interviews)
+- [Module 17: Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)
+- [Module 18: Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)
+- [Module 19: Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)
+- [Module 20: Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)
 - [AI Engineering Key Concepts Glossary](#ai-engineering-key-concepts-glossary)
 - [AI Engineering Course FAQs](#ai-engineering-course-faqs)
 - [License](#license)
 
 ## About This AI Engineering Course
 
-**This AI Engineering Course is a free, structured, and step-by-step curriculum to learn AI Engineering from scratch. It has 18 modules and 146+ in-depth lessons, and every lesson is a detailed blog that explains one concept in simple words with examples, diagrams, and math wherever it is needed.**
+**This AI Engineering Course is a free, structured, and step-by-step curriculum to learn AI Engineering from scratch. It has 20 modules and 146+ in-depth lessons, and every lesson is a detailed blog that explains one concept in simple words with examples, diagrams, and math wherever it is needed.**
 
 In simple words, this is the course that I wish I had when I started learning AI Engineering. We start with the basics of Machine Learning, and slowly move to how a Transformer works from the inside, how an LLM generates text, how we fine-tune and align an LLM, how we build RAG systems and AI Agents, how we serve an LLM fast and cheap in production, how we evaluate and secure it, and finally how we design a complete AI system end to end.
 
@@ -138,7 +140,8 @@ In this AI Engineering Course, we will learn:
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
 - **AI Safety and Security:** guardrails, prompt injection, and watermarking.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
-- **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, LLM routing, and designing a real-time voice AI agent.
+- **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, LLM routing, and system design.
+- **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, and streaming TTS.
 - **Frontier Ideas in AI:** JEPA, world models, and recursive self-improvement.
 - **AI Engineering interview preparation.**
 
@@ -164,27 +167,29 @@ Let's get started.
 
 ## AI Engineering Course Curriculum at a Glance
 
-| Module | Topic                                                                                                                    | Lessons |
-| ------ | ------------------------------------------------------------------------------------------------------------------------ | ------- |
-| 0      | [Must Know](#module-0-must-know)                                                                                         | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                   | 9       |
-| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                         | 12      |
-| 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)               | 15      |
-| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                               | 6       |
-| 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                             | 7       |
-| 6      | [Types of Language Models](#module-6-types-of-language-models)                                                           | 5       |
-| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                     | 11      |
-| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                       | 6       |
-| 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag) | 15      |
-| 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                | 16      |
-| 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                          | 8       |
-| 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                        | 17      |
-| 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                  | 4       |
-| 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                              | 3       |
-| 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                    | 6       |
-| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)            | 19      |
-| 17     | [Frontier Ideas in AI](#module-17-frontier-ideas-in-ai)                                                                  | 3       |
-| 18     | [Prepare for AI Engineering Interviews](#module-18-prepare-for-ai-engineering-interviews)                                | 1       |
+| Module | Topic                                                                                                                                  | Lessons |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 9       |
+| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 12      |
+| 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 15      |
+| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 6       |
+| 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
+| 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
+| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 11      |
+| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 6       |
+| 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 15      |
+| 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 16      |
+| 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                        | 8       |
+| 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                      | 17      |
+| 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                | 4       |
+| 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 3       |
+| 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 6       |
+| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 10      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 4       |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 5       |
+| 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
+| 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
 ## AI Engineering Learning Path
 
@@ -205,7 +210,9 @@ flowchart TD
     M --> N[AI Safety and Security]
     N --> O[Multimodal AI and Generative Models]
     O --> P[AI Infrastructure and System Design]
-    P --> Q[Frontier Ideas in AI]
+    P --> S[Voice AI Agents: Turn-Taking]
+    S --> T[Voice AI Agents: Latency and Telephony]
+    T --> Q[Frontier Ideas in AI]
     Q --> R[AI Engineering Interviews]
 ```
 
@@ -3377,18 +3384,9 @@ By the end of this module, we will be able to design an AI system end to end, fr
 5. [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
 6. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
 7. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
-8. [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
-9. [What is turn-taking in a voice AI agent?](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent)
-10. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
-11. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
-12. [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
-13. [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency)
-14. [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio)
-15. [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts)
-16. [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts)
-17. [What is System Design?](https://outcomeschool.com/blog/system-design)
-18. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-19. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+8. [What is System Design?](https://outcomeschool.com/blog/system-design)
+9. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+10. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -3527,7 +3525,67 @@ We will cover the following:
 
 Let's get started: [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
 
-### 16.8 Design a Real-Time Voice AI Agent
+**Supporting lessons for AI System Design:**
+
+### 16.8 What is System Design?
+
+In this blog, we will learn what is System Design.
+
+We will cover the following:
+
+- What is System Design?
+- Why do we need it?
+- What are the required concepts?
+
+Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
+
+### 16.9 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+
+In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
+
+We will cover the following:
+
+- HTTP request
+- HTTP Polling
+- HTTP Long Polling
+- WebSocket
+- Server-Send Events(SSE)
+
+Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+
+### 16.10 How do Voice And Video Call Work?
+
+This blog is all about how voice and video call works on a high level.
+
+We will cover the following:
+
+- Signaling
+- Peer-to-Peer Connection
+- STUN Server
+- TURN Server
+
+Let's get started: [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+
+> **Note:** We have now learned how to design and deploy complete AI systems. If you want to learn these in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
+
+---
+
+## Module 17: Voice AI Agents: Architecture, Turn-Taking, and Interruptions
+
+In this module, we will learn how a real-time voice AI agent is designed, how it knows when the user has finished speaking, how it handles interruptions and backchannels, and how full-duplex models listen and speak at the same time.
+
+By the end of this module, we will understand how a voice agent holds a natural conversation, turn by turn.
+
+**Lessons in this module:**
+
+1. [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
+2. [What is turn-taking in a voice AI agent?](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent)
+3. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
+4. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
+
+---
+
+### 17.1 Design a Real-Time Voice AI Agent
 
 In this blog, we will learn about how to design a Real-Time Voice AI Agent, a system that listens to a person speaking, understands what they said, thinks about it, takes actions if needed, and talks back in a natural human-like voice, all within a fraction of a second. We will also see why voice is much harder than a text chatbot, the two big ways to build it (the cascaded pipeline of Speech-to-Text, LLM, and Text-to-Speech versus the end-to-end Speech-to-Speech model), how the agent knows when the user has stopped talking, how we handle interruptions, how tools and memory fit in, how we scale it to thousands of calls, the edge cases that break a voice agent in production, the pros and cons of every approach, and when to use which one.
 
@@ -3561,7 +3619,7 @@ We will cover the following:
 
 Let's get started: [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
 
-### 16.9 What is turn-taking in a voice AI agent?
+### 17.2 What is turn-taking in a voice AI agent?
 
 In this blog, we will learn about turn-taking in a voice AI agent, how the agent decides when the user has finished speaking, when it is its turn to talk, and what to do when the user starts speaking again while the agent is talking. We will also see why silence alone is not enough, how semantic turn detection reads the meaning of the words, how barge-in and backchannels are handled, and how half-duplex agents differ from full-duplex agents.
 
@@ -3581,7 +3639,7 @@ We will cover the following:
 
 Let's get started: [What is turn-taking in a voice AI agent?](https://outcomeschool.com/blog/what-is-turn-taking-in-a-voice-ai-agent)
 
-### 16.10 What is barge-in in a voice AI agent?
+### 17.3 What is barge-in in a voice AI agent?
 
 In this blog, we will learn about barge-in in a voice AI agent, what happens when the user starts speaking while the agent is still talking, and how the agent stops so it can listen. We will also see why the agent can hear its own voice and how echo cancellation fixes it, how the agent tells a real interruption apart from "uh-huh", a cough, or background noise, what it does after a barge-in, and why it must remember only the part of the reply the user actually heard.
 
@@ -3600,7 +3658,7 @@ We will cover the following:
 
 Let's get started: [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
 
-### 16.11 Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?
+### 17.4 Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?
 
 In this blog, we will learn about Cascaded vs Speech-to-Speech and how to choose the right voice agent architecture. We will also see how a cascaded voice agent works, how a speech-to-speech voice agent works, how the two differ in delay, tone, control, and cost, what a half-cascade in the middle looks like, and when to use which one.
 
@@ -3617,7 +3675,25 @@ We will cover the following:
 
 Let's get started: [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
 
-### 16.12 How do you build a latency budget for a voice AI agent?
+---
+
+## Module 18: Voice AI Agents: Latency, Audio, and Telephony
+
+In this module, we will learn where the latency of a voice agent comes from and how to cut it, how audio travels through a real-time pipeline over the network, and how a voice agent connects to the phone network.
+
+By the end of this module, we will be able to make a voice agent respond fast and sound clear, on the web and on a phone call.
+
+**Lessons in this module:**
+
+1. [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
+2. [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency)
+3. [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio)
+4. [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts)
+5. [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts)
+
+---
+
+### 18.1 How do you build a latency budget for a voice AI agent?
 
 In this blog, we will learn about how to build a latency budget for a voice AI agent. We will also see why a voice AI agent needs one, how to pick the total target and split it across every stage, how to measure the real numbers and cut the biggest delays first, how streaming and tool calls change the budget, and what trade-off we must accept.
 
@@ -3636,7 +3712,7 @@ We will cover the following:
 
 Let's get started: [How do you build a latency budget for a voice AI agent?](https://outcomeschool.com/blog/voice-agent-latency-budget)
 
-### 16.13 How does the voice-to-voice latency of a voice agent get measured?
+### 18.2 How does the voice-to-voice latency of a voice agent get measured?
 
 In this blog, we will learn about how the voice-to-voice latency of a voice agent gets measured. We will also see where the time goes inside a voice agent, why the server logs give the wrong answer, how a two-channel recording gives the right answer, how we automate it over many calls, why we look at percentiles instead of the average, and where it works well and where it fails.
 
@@ -3654,7 +3730,7 @@ We will cover the following:
 
 Let's get started: [How does the voice-to-voice latency of a voice agent get measured?](https://outcomeschool.com/blog/voice-to-voice-latency)
 
-### 16.14 Why does the time-to-first-audio matter more than total response time?
+### 18.3 Why does the time-to-first-audio matter more than total response time?
 
 In this blog, we will learn about why the time-to-first-audio matters more than total response time. We will also see what each of these two times measures, how people experience silence in a conversation, how streaming lets an agent start speaking before the full reply is ready, which steps decide the time-to-first-audio, and when the total response time still matters.
 
@@ -3672,7 +3748,7 @@ We will cover the following:
 
 Let's get started: [Why does the time-to-first-audio matter more than total response time?](https://outcomeschool.com/blog/time-to-first-audio)
 
-### 16.15 How does sentence chunking feed LLM output into TTS faster?
+### 18.4 How does sentence chunking feed LLM output into TTS faster?
 
 In this blog, we will learn about how sentence chunking feeds LLM output into TTS faster. We will also see why waiting for the full reply makes a voice agent slow, how a buffer collects tokens until a sentence is complete, how the chunker finds where a sentence ends, how it handles tricky cases like "Dr." and "3.5", how the first chunk is made smaller to start speaking even sooner, and where it works well and where it fails.
 
@@ -3691,7 +3767,7 @@ We will cover the following:
 
 Let's get started: [How does sentence chunking feed LLM output into TTS faster?](https://outcomeschool.com/blog/sentence-chunking-for-tts)
 
-### 16.16 How does a TTS model start speaking before the full sentence arrives?
+### 18.5 How does a TTS model start speaking before the full sentence arrives?
 
 In this blog, we will learn about how a TTS model starts speaking before the full sentence arrives. We will also see why waiting for the full sentence makes a voice assistant feel slow, why a TTS model wants to see the future words, how speaking sentence by sentence and word by word compare, how a small lookahead of a few words solves the problem, how newer models read text and speak at the same time, and where it works well and where it fails.
 
@@ -3709,52 +3785,9 @@ We will cover the following:
 
 Let's get started: [How does a TTS model start speaking before the full sentence arrives?](https://outcomeschool.com/blog/streaming-tts)
 
-**Supporting lessons for AI System Design:**
-
-### 16.17 What is System Design?
-
-In this blog, we will learn what is System Design.
-
-We will cover the following:
-
-- What is System Design?
-- Why do we need it?
-- What are the required concepts?
-
-Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
-
-### 16.18 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
-
-In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
-
-We will cover the following:
-
-- HTTP request
-- HTTP Polling
-- HTTP Long Polling
-- WebSocket
-- Server-Send Events(SSE)
-
-Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-
-### 16.19 How do Voice And Video Call Work?
-
-This blog is all about how voice and video call works on a high level.
-
-We will cover the following:
-
-- Signaling
-- Peer-to-Peer Connection
-- STUN Server
-- TURN Server
-
-Let's get started: [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
-
-> **Note:** We have now learned how to design and deploy complete AI systems. If you want to learn these in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
-
 ---
 
-## Module 17: Frontier Ideas in AI
+## Module 19: Frontier Ideas in AI
 
 In this module, we will learn the ideas that are shaping the future of AI, from models that learn an internal picture of the world to systems that improve themselves.
 
@@ -3768,7 +3801,7 @@ By the end of this module, we will understand where AI research is heading next.
 
 ---
 
-### 17.1 What is Joint Embedding Predictive Architecture (JEPA) and How Does It Work?
+### 19.1 What is Joint Embedding Predictive Architecture (JEPA) and How Does It Work?
 
 In this blog, we will learn about Joint Embedding Predictive Architecture (JEPA).
 
@@ -3790,7 +3823,7 @@ We will cover the following:
 
 Let's get started: [What is Joint Embedding Predictive Architecture (JEPA) and How Does It Work?](https://outcomeschool.com/blog/joint-embedding-predictive-architecture-jepa)
 
-### 17.2 How do World Models work?
+### 19.2 How do World Models work?
 
 In this blog, we will learn about how World Models work. We will also see why we need them, how they actually learn an internal picture of an environment, and where they are used in real systems like robotics, game-playing, and video generation.
 
@@ -3809,7 +3842,7 @@ We will cover the following:
 
 Let's get started: [How do World Models work?](https://outcomeschool.com/blog/how-do-world-models-work)
 
-### 17.3 What is Recursive Self-Improvement (RSI)?
+### 19.3 What is Recursive Self-Improvement (RSI)?
 
 In this blog, we will learn about Recursive Self-Improvement (RSI), the idea of an AI system that makes itself smarter, and then uses that new smartness to make itself even smarter, again and again. We will also see why it matters, how an AI gets better today, how the self-improvement loop works step by step, a simple example with numbers, what already exists in the real world today, why people talk about an intelligence explosion, where it works well and where it fails, and why keeping humans in the loop is very important.
 
@@ -3831,7 +3864,7 @@ Let's get started: [What is Recursive Self-Improvement (RSI)?](https://outcomesc
 
 ---
 
-## Module 18: Prepare for AI Engineering Interviews
+## Module 20: Prepare for AI Engineering Interviews
 
 Now that we have learned everything from Machine Learning foundations to AI Agents in production, it's time to prepare for the interviews.
 
