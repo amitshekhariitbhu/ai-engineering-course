@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 17      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 18      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -4242,6 +4242,7 @@ By the end of this module, we will understand how a voice agent holds a natural 
 15. [Why does TTS audio buffering make interruptions slow?](https://outcomeschool.com/blog/tts-audio-buffering)
 16. [How does a voice agent truncate its memory to only what the user actually heard?](https://outcomeschool.com/blog/truncating-context-on-interruption)
 17. [How does a voice agent recover from a false interruption?](https://outcomeschool.com/blog/false-interruption-recovery)
+18. [How does a voice agent handle the user and agent talking at the same time?](https://outcomeschool.com/blog/overlapping-speech-in-voice-agents)
 
 ---
 
@@ -4584,6 +4585,29 @@ We will cover the following:
 - Tuning the waiting time
 
 Let's get started: [How does a voice agent recover from a false interruption?](https://outcomeschool.com/blog/false-interruption-recovery)
+
+---
+
+### 17.18 How does a voice agent handle the user and agent talking at the same time?
+
+In this blog, we will learn about how a voice agent handles the user and agent talking at the same time. We will also see why overlapping speech is a hard problem, the different kinds of overlap, how the agent hears the user over its own voice and decides whether to stop or continue, how it keeps the conversation history correct after it stops, how full-duplex models handle overlap in a different way, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is overlapping speech?
+- Why is overlapping speech a hard problem for a voice agent?
+- The different kinds of overlap
+- Step 1: Keep listening while speaking
+- Step 2: Remove the agent's own voice
+- Step 3: Decide what kind of overlap it is
+- Step 4: Act on the decision
+- Step 5: Keep the conversation history correct
+- What if both start speaking at the same moment?
+- How full-duplex models handle overlap
+- A complete example
+- Where it works well and where it fails
+
+Let's get started: [How does a voice agent handle the user and agent talking at the same time?](https://outcomeschool.com/blog/overlapping-speech-in-voice-agents)
 
 ---
 
