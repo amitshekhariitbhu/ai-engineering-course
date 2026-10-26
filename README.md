@@ -176,7 +176,7 @@ Let's get started.
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
-| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 13      |
+| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 14      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 6       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 17      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 16      |
@@ -1844,6 +1844,7 @@ By the end of this module, we will know when to fine-tune, how LoRA makes it che
 11. [What is Proximal Policy Optimization (PPO) and How Does It Work?](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
 12. [What is Direct Preference Optimization (DPO) and How Does It Work?](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
 13. [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+14. [What is Reward Hacking in Reinforcement Learning and How Do We Prevent It?](https://outcomeschool.com/blog/reward-hacking)
 
 ---
 
@@ -2100,6 +2101,21 @@ We will cover the following:
 - Conclusion.
 
 Let's get started: [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+
+### 7.14 What is Reward Hacking in Reinforcement Learning and How Do We Prevent It?
+
+In this blog, we will learn about reward hacking in reinforcement learning. We will also see why a reward is only a proxy for what we really want, how Goodhart's law explains the problem, real examples from games and LLMs, why reward hacking happens, and how we prevent it with methods like the KL penalty, better reward models, robust checks, and held-out evaluation.
+
+We will cover the following:
+
+- Reward is a Proxy for What We Want
+- What is Reward Hacking?
+- Goodhart's Law
+- Examples of Reward Hacking
+- Why does Reward Hacking Happen?
+- How do We Prevent Reward Hacking?
+
+Let's get started: [What is Reward Hacking in Reinforcement Learning and How Do We Prevent It?](https://outcomeschool.com/blog/reward-hacking)
 
 > **Note:** We have now learned how LLMs are trained, fine-tuned, and aligned. If you want to learn these in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
