@@ -176,7 +176,7 @@ Let's get started.
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
-| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 12      |
+| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 13      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 6       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 17      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 16      |
@@ -1821,9 +1821,10 @@ By the end of this module, we will know when to fine-tune, how LoRA makes it che
 7. [What is Deep RL from Human Preferences? The Paper That Started RLHF](https://outcomeschool.com/blog/decoding-deep-rl-from-human-preferences)
 8. [What is InstructGPT? How GPT-3 Learned to Follow Instructions](https://outcomeschool.com/blog/decoding-instructgpt)
 9. [What is RLHF? Reinforcement Learning from Human Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf)
-10. [What is Proximal Policy Optimization (PPO) and How Does It Work?](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
-11. [What is Direct Preference Optimization (DPO) and How Does It Work?](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
-12. [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+10. [What is a Reward Model and How Is It Trained?](https://outcomeschool.com/blog/reward-model)
+11. [What is Proximal Policy Optimization (PPO) and How Does It Work?](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
+12. [What is Direct Preference Optimization (DPO) and How Does It Work?](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
+13. [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
 
 ---
 
@@ -2007,7 +2008,24 @@ We will cover the following:
 
 Let's get started: [What is RLHF? Reinforcement Learning from Human Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf)
 
-### 7.10 What is Proximal Policy Optimization (PPO) and How Does It Work?
+### 7.10 What is a Reward Model and How Is It Trained?
+
+In this blog, we will learn about what a Reward Model is and how it is trained. We will also see why we need it, how its architecture turns text into one score, how human preference data is collected, how the pairwise loss trains it step by step, how it is used in RLHF and for Best-of-N, and where it fails.
+
+We will cover the following:
+
+- Why do we need a Reward Model?
+- What is a Reward Model?
+- Collecting human preference data
+- The pairwise loss
+- Worked example of the pairwise loss
+- How is a Reward Model trained?
+- How is a Reward Model used?
+- Limitations of a Reward Model
+
+Let's get started: [What is a Reward Model and How Is It Trained?](https://outcomeschool.com/blog/reward-model)
+
+### 7.11 What is Proximal Policy Optimization (PPO) and How Does It Work?
 
 In this blog, we are going to learn about Proximal Policy Optimization (PPO). We will also see how PPO works step-by-step and how it is used in training Large Language Models with RLHF.
 
@@ -2026,7 +2044,7 @@ We will cover the following:
 
 Let's get started: [What is Proximal Policy Optimization (PPO) and How Does It Work?](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
 
-### 7.11 What is Direct Preference Optimization (DPO) and How Does It Work?
+### 7.12 What is Direct Preference Optimization (DPO) and How Does It Work?
 
 In this blog, we are going to learn about Direct Preference Optimization (DPO). We will also see how DPO works step-by-step and how it differs from RLHF (PPO).
 
@@ -2045,7 +2063,7 @@ We will cover the following:
 
 Let's get started: [What is Direct Preference Optimization (DPO) and How Does It Work?](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
 
-### 7.12 What is Group Relative Policy Optimization (GRPO) and How Does It Work?
+### 7.13 What is Group Relative Policy Optimization (GRPO) and How Does It Work?
 
 In this blog, we are going to learn about Group Relative Policy Optimization (GRPO). We will also see how GRPO works step-by-step and when to use it based on our use case.
 
