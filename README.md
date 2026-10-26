@@ -135,7 +135,7 @@ In this AI Engineering Course, we will learn:
 - **Fine-tuning and alignment:** fine-tuning, instruction tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
 - **Prompt Engineering and Context Engineering:** in-context learning, chain-of-thought, tree of thoughts, prompt chaining, prompt caching, context compaction, and system prompts.
 - **RAG and Vector Search:** vector databases, ANN search, semantic search, inverted index, BM25, hybrid search, rerankers, ColBERT, chunking, Contextual Retrieval, HyDE, query rewriting, multi-query retrieval, caching, Agentic RAG, GraphRAG, and Vectorless RAG.
-- **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, and human-in-the-loop agents.
+- **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, human-in-the-loop agents, and deep research agents.
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 - **LLM Inference Engineering:** prefill vs decode, KV cache, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, Ollama, vLLM, SGLang, and TensorRT-LLM.
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
@@ -180,7 +180,7 @@ Let's get started.
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                               | 18      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                                 | 9       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)                           | 20      |
-| 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                                          | 19      |
+| 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                                          | 20      |
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                                    | 8       |
 | 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                                  | 19      |
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                            | 5       |
@@ -3273,6 +3273,7 @@ By the end of this module, we will be able to design a single agent, give it too
 17. [How do Computer-Use Agents work?](https://outcomeschool.com/blog/how-do-computer-use-agents-work)
 18. [How do Browser Agents work?](https://outcomeschool.com/blog/how-do-browser-agents-work)
 19. [How do Human-in-the-Loop agents work?](https://outcomeschool.com/blog/human-in-the-loop-agents)
+20. [How does a deep research agent work?](https://outcomeschool.com/blog/deep-research-agent)
 
 ---
 
@@ -3651,6 +3652,28 @@ We will cover the following:
 - Advantages and disadvantages
 
 Let's get started: [How do Human-in-the-Loop agents work?](https://outcomeschool.com/blog/human-in-the-loop-agents)
+
+### 10.20 How does a deep research agent work?
+
+In this blog, we will learn about how a deep research agent works. We will also see why a normal LLM answer is not enough for big questions, how the agent plans, searches, reads, takes notes, and finds gaps in a loop, how many helper agents can research in parallel, how the final report with sources is written, and where deep research works well and where it fails.
+
+We will cover the following:
+
+- The problem with a normal LLM answer
+- What is a deep research agent?
+- How does a deep research agent work?
+- Step 1: Understand the question
+- Step 2: Make a research plan
+- Step 3: Search and read
+- Step 4: Take notes
+- Step 5: Reflect and find the gaps
+- Step 6: Write the report with sources
+- Many agents working together
+- A simple code example
+- Normal chat vs deep research
+- Where it works well and where it fails
+
+Let's get started: [How does a deep research agent work?](https://outcomeschool.com/blog/deep-research-agent)
 
 ---
 
@@ -6275,7 +6298,7 @@ An AI Engineer needs to understand how LLMs work from the inside (Transformers, 
 
 ### Does this AI Engineering Course cover AI Agents and Agentic AI?
 
-Yes. Module 10 and Module 11 of this AI Engineering Course cover AI Agents in depth: the agent loop, function calling, ReAct, Plan-and-Execute, Reflection, agent memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, human-in-the-loop agents, harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
+Yes. Module 10 and Module 11 of this AI Engineering Course cover AI Agents in depth: the agent loop, function calling, ReAct, Plan-and-Execute, Reflection, agent memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, human-in-the-loop agents, deep research agents, harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 
 ### Does this AI Engineering Course cover RAG?
 
