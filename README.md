@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 20      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 21      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 22      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
@@ -263,6 +263,7 @@ By the end of this module, we will know how a model learns from data, how we mea
 18. [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
 19. [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
 20. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+21. [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
 
 ---
 
@@ -592,6 +593,24 @@ We will cover the following:
 - Real-world use cases of Contrastive Learning.
 
 Let's get started: [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+
+### 1.21 How does Self-Supervised Learning work?
+
+In this blog, we will learn about how Self-Supervised Learning works. We will also see why plain Supervised Learning runs into trouble, how Self-Supervised Learning teaches itself from raw data through pretraining and fine-tuning, and where it is used in the real world.
+
+We will cover the following:
+
+- What is Supervised Learning?
+- What is the problem with Supervised Learning?
+- What is Self-Supervised Learning?
+- How does Self-Supervised Learning work?
+- A step-by-step example with text
+- A step-by-step example with images
+- The two phases: Pretraining and Fine-tuning
+- Why Self-Supervised Learning works so well
+- Where Self-Supervised Learning is used
+
+Let's get started: [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
 
 **Videos and more resources for Module 1:**
 
