@@ -134,7 +134,7 @@ In this AI Engineering Course, we will learn:
 - **Fine-tuning and alignment:** fine-tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
 - **Prompt Engineering and Context Engineering:** chain-of-thought, tree of thoughts, prompt chaining, prompt caching, and context compaction.
 - **RAG and Vector Search:** vector databases, ANN search, semantic search, hybrid search, rerankers, ColBERT, chunking, Contextual Retrieval, HyDE, query rewriting, multi-query retrieval, caching, Agentic RAG, GraphRAG, and Vectorless RAG.
-- **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, and browser agents.
+- **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, and human-in-the-loop agents.
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 - **LLM Inference Engineering:** prefill vs decode, KV cache, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, Ollama, vLLM, SGLang, and TensorRT-LLM.
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
@@ -179,7 +179,7 @@ Let's get started.
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 14      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 6       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 17      |
-| 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 16      |
+| 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 19      |
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                        | 8       |
 | 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                      | 19      |
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                | 4       |
@@ -2678,6 +2678,7 @@ By the end of this module, we will be able to design a single agent, give it too
 16. [What is Sakana Fugu? The Technical Report Explained](https://outcomeschool.com/blog/decoding-sakana-fugu)
 17. [How do Computer-Use Agents work?](https://outcomeschool.com/blog/how-do-computer-use-agents-work)
 18. [How do Browser Agents work?](https://outcomeschool.com/blog/how-do-browser-agents-work)
+19. [How do Human-in-the-Loop agents work?](https://outcomeschool.com/blog/human-in-the-loop-agents)
 
 ---
 
@@ -3038,6 +3039,24 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How do Browser Agents work?](https://outcomeschool.com/blog/how-do-browser-agents-work)
+
+### 10.19 How do Human-in-the-Loop agents work?
+
+In this blog, we will learn about how Human-in-the-Loop agents work. We will also see why a fully automatic agent is risky, the points where a human can step in, how an agent pauses and continues after the human replies, how to decide which actions need a human, and where this approach works well and where it slows us down.
+
+We will cover the following:
+
+- The problem with fully automatic agents
+- What is a Human-in-the-Loop agent?
+- Where can a human step in?
+- How does a Human-in-the-Loop agent work?
+- How does the agent pause and continue?
+- A simple code example
+- Which actions need a human?
+- Common mistakes
+- Advantages and disadvantages
+
+Let's get started: [How do Human-in-the-Loop agents work?](https://outcomeschool.com/blog/human-in-the-loop-agents)
 
 ---
 
@@ -5028,7 +5047,7 @@ An AI Engineer needs to understand how LLMs work from the inside (Transformers, 
 
 ### Does this AI Engineering Course cover AI Agents and Agentic AI?
 
-Yes. Module 10 and Module 11 of this AI Engineering Course cover AI Agents in depth: the agent loop, function calling, ReAct, Plan-and-Execute, Reflection, agent memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
+Yes. Module 10 and Module 11 of this AI Engineering Course cover AI Agents in depth: the agent loop, function calling, ReAct, Plan-and-Execute, Reflection, agent memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, human-in-the-loop agents, harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 
 ### Does this AI Engineering Course cover RAG?
 
