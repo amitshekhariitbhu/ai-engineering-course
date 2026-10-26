@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 12      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 17      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 18      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -5026,6 +5026,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 15. [How does a voice AI agent answer a phone call?](https://outcomeschool.com/blog/phone-calls-in-voice-agents)
 16. [How do SIP and RTP carry a phone call to a voice agent?](https://outcomeschool.com/blog/sip-and-rtp)
 17. [Why does phone audio make speech recognition worse?](https://outcomeschool.com/blog/phone-audio-and-speech-recognition)
+18. [How does DTMF keypad input work in a voice agent?](https://outcomeschool.com/blog/dtmf-in-voice-agents)
 
 ---
 
@@ -5352,6 +5353,26 @@ We will cover the following:
 - How to Make Speech Recognition Work Better on Phone Audio
 
 Let's get started: [Why does phone audio make speech recognition worse?](https://outcomeschool.com/blog/phone-audio-and-speech-recognition)
+
+---
+
+### 18.18 How does DTMF keypad input work in a voice agent?
+
+In this blog, we will learn about how DTMF keypad input works in a voice agent. We will also see what DTMF is, why every key is made of two tones, how those tones travel and get detected, how the agent collects the digits and passes them to the LLM, how it keeps sensitive digits private, and how the agent presses keys by itself.
+
+We will cover the following:
+
+- What is DTMF?
+- Why does a voice agent need keypad input?
+- The keypad grid: two tones for every key
+- How DTMF travels over a phone call
+- How a voice agent detects the tones
+- Collecting the digits: terminator key and timeout
+- How the digits reach the LLM
+- Keeping sensitive digits away from the LLM
+- When the voice agent presses the keys
+
+Let's get started: [How does DTMF keypad input work in a voice agent?](https://outcomeschool.com/blog/dtmf-in-voice-agents)
 
 ---
 
