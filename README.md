@@ -173,7 +173,7 @@ Let's get started.
 | 0      | [Must Know](#module-0-must-know)                                                                                                                   | 1       |
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                             | 30      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                                   | 29      |
-| 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                                         | 17      |
+| 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                                         | 18      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                                         | 9       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                                       | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                                     | 5       |
@@ -1361,17 +1361,18 @@ By the end of this module, we will be able to draw the Transformer from memory a
 4. [Tokenization in LLMs](https://outcomeschool.com/blog/tokenization-in-llms)
 5. [What is Byte Pair Encoding (BPE) in LLMs?](https://outcomeschool.com/blog/bpe-in-llms)
 6. [What are Embeddings?](https://outcomeschool.com/blog/what-are-embeddings)
-7. [How do RNNs and Transformers differ?](https://outcomeschool.com/blog/how-do-rnns-and-transformers-differ)
-8. [How Does the Transformer Architecture Work?](https://outcomeschool.com/blog/decoding-transformer-architecture)
-9. [Encoder vs Decoder in Transformers](https://outcomeschool.com/blog/encoder-vs-decoder-in-transformers)
-10. [What is Self Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/self-attention-in-transformers)
-11. [How Does Attention Work? The Math Behind Q, K, and V Step by Step](https://outcomeschool.com/blog/math-behind-attention-qkv)
-12. [Why Do We Scale Attention by √dₖ? The Math Behind the Scaling Factor](https://outcomeschool.com/blog/scaling-dot-product-attention)
-13. [What is Causal Masking in Attention and Why Do LLMs Need It?](https://outcomeschool.com/blog/causal-masking-in-attention)
-14. [What is Multi-Head Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/multi-head-attention-in-transformers)
-15. [What is Cross Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/cross-attention-in-transformers)
-16. [What is RoPE (Rotary Position Embedding)? The Math Behind It](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
-17. [What is the Feed-Forward Network in LLMs and What Does It Do?](https://outcomeschool.com/blog/feed-forward-networks-in-llms)
+7. [How does Word2Vec work?](https://outcomeschool.com/blog/word2vec)
+8. [How do RNNs and Transformers differ?](https://outcomeschool.com/blog/how-do-rnns-and-transformers-differ)
+9. [How Does the Transformer Architecture Work?](https://outcomeschool.com/blog/decoding-transformer-architecture)
+10. [Encoder vs Decoder in Transformers](https://outcomeschool.com/blog/encoder-vs-decoder-in-transformers)
+11. [What is Self Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/self-attention-in-transformers)
+12. [How Does Attention Work? The Math Behind Q, K, and V Step by Step](https://outcomeschool.com/blog/math-behind-attention-qkv)
+13. [Why Do We Scale Attention by √dₖ? The Math Behind the Scaling Factor](https://outcomeschool.com/blog/scaling-dot-product-attention)
+14. [What is Causal Masking in Attention and Why Do LLMs Need It?](https://outcomeschool.com/blog/causal-masking-in-attention)
+15. [What is Multi-Head Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/multi-head-attention-in-transformers)
+16. [What is Cross Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/cross-attention-in-transformers)
+17. [What is RoPE (Rotary Position Embedding)? The Math Behind It](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
+18. [What is the Feed-Forward Network in LLMs and What Does It Do?](https://outcomeschool.com/blog/feed-forward-networks-in-llms)
 
 ---
 
@@ -1498,7 +1499,28 @@ Let's get started: [What are Embeddings?](https://outcomeschool.com/blog/what-ar
 
 Watch the video: [Embeddings in Machine Learning](https://www.youtube.com/watch?v=LedXW6xl21s)
 
-### 3.7 How do RNNs and Transformers differ?
+### 3.7 How does Word2Vec work?
+
+In this blog, we will learn about how Word2Vec works. We will also see why we need Word2Vec, how a computer turns a word into a vector, how it learns these vectors through CBOW and Skip-gram, how word math works, what its limitations are, and where it is used in the real world.
+
+We will cover the following:
+
+- What is Word2Vec?
+- Why do we need Word2Vec?
+- How does a computer represent a word?
+- The core idea: a word is known by the company it keeps
+- What is a word vector?
+- The two architectures: CBOW and Skip-gram
+- A step-by-step walk-through of Skip-gram
+- How Word2Vec learns the vectors
+- Word math (king - man + woman = queen)
+- A simple code example
+- Limitations of Word2Vec
+- Where Word2Vec is used
+
+Let's get started: [How does Word2Vec work?](https://outcomeschool.com/blog/word2vec)
+
+### 3.8 How do RNNs and Transformers differ?
 
 In this blog, we will learn about how RNNs and Transformers differ. These are the two main ways a computer reads a sequence like a sentence, and we will learn why one of them reads word by word, why the other reads everything at once, and when to use which one.
 
@@ -1516,7 +1538,7 @@ We will cover the following:
 
 Let's get started: [How do RNNs and Transformers differ?](https://outcomeschool.com/blog/how-do-rnns-and-transformers-differ)
 
-### 3.8 How Does the Transformer Architecture Work?
+### 3.9 How Does the Transformer Architecture Work?
 
 In this blog, we will learn about the Transformer architecture by decoding it piece by piece - understanding what each component does, how they work together, and why this architecture powers every modern Large Language Model (LLM).
 
@@ -1534,7 +1556,7 @@ We will cover the following:
 
 Let's get started: [How Does the Transformer Architecture Work?](https://outcomeschool.com/blog/decoding-transformer-architecture)
 
-### 3.9 Encoder vs Decoder in Transformers
+### 3.10 Encoder vs Decoder in Transformers
 
 In this blog, we will learn about Encoder vs Decoder in Transformers, the two building blocks behind almost every modern AI model that works with language. We will also see how the Encoder and the Decoder differ from each other, how each one works with simple examples, why one of them reads in both directions while the other one looks only backward, what the three types of Transformers are, and when to use which one.
 
@@ -1552,7 +1574,7 @@ We will cover the following:
 
 Let's get started: [Encoder vs Decoder in Transformers](https://outcomeschool.com/blog/encoder-vs-decoder-in-transformers)
 
-### 3.10 What is Self Attention in Transformers and How Does It Work?
+### 3.11 What is Self Attention in Transformers and How Does It Work?
 
 In this blog, we will learn about Self Attention in Transformers. We will understand what it is, how it works step by step, and why it is the heart of modern Large Language Models like BERT and GPT.
 
@@ -1569,7 +1591,7 @@ We will cover the following:
 
 Let's get started: [What is Self Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/self-attention-in-transformers)
 
-### 3.11 How Does Attention Work? The Math Behind Q, K, and V Step by Step
+### 3.12 How Does Attention Work? The Math Behind Q, K, and V Step by Step
 
 In this blog, we will learn about the math behind Attention: Query(Q), Key(K), and Value(V) with a step-by-step numeric example.
 
@@ -1588,7 +1610,7 @@ Let's get started: [How Does Attention Work? The Math Behind Q, K, and V Step by
 
 Watch the video: [Softmax Activation Function in Machine Learning](https://www.youtube.com/watch?v=2Zx6x01WwWM)
 
-### 3.12 Why Do We Scale Attention by √dₖ? The Math Behind the Scaling Factor
+### 3.13 Why Do We Scale Attention by √dₖ? The Math Behind the Scaling Factor
 
 In this blog, we will learn about why we scale the dot product attention by √dₖ in the Transformer architecture with a step-by-step numeric example.
 
@@ -1606,7 +1628,7 @@ We will cover the following:
 
 Let's get started: [Why Do We Scale Attention by √dₖ? The Math Behind the Scaling Factor](https://outcomeschool.com/blog/scaling-dot-product-attention)
 
-### 3.13 What is Causal Masking in Attention and Why Do LLMs Need It?
+### 3.14 What is Causal Masking in Attention and Why Do LLMs Need It?
 
 In this blog, we will learn about **causal masking in attention**.
 
@@ -1619,7 +1641,7 @@ We will cover the following:
 
 Let's get started: [What is Causal Masking in Attention and Why Do LLMs Need It?](https://outcomeschool.com/blog/causal-masking-in-attention)
 
-### 3.14 What is Multi-Head Attention in Transformers and How Does It Work?
+### 3.15 What is Multi-Head Attention in Transformers and How Does It Work?
 
 In this blog, we will learn about Multi-Head Attention in Transformers. We will understand what it is, how it works step by step, and why it gives Transformers their power to understand language so well.
 
@@ -1635,7 +1657,7 @@ We will cover the following:
 
 Let's get started: [What is Multi-Head Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/multi-head-attention-in-transformers)
 
-### 3.15 What is Cross Attention in Transformers and How Does It Work?
+### 3.16 What is Cross Attention in Transformers and How Does It Work?
 
 In this blog, we will learn about Cross Attention in Transformers. We will understand what it is, how it works step by step, how it is different from Self Attention, and where it is used.
 
@@ -1652,7 +1674,7 @@ We will cover the following:
 
 Let's get started: [What is Cross Attention in Transformers and How Does It Work?](https://outcomeschool.com/blog/cross-attention-in-transformers)
 
-### 3.16 What is RoPE (Rotary Position Embedding)? The Math Behind It
+### 3.17 What is RoPE (Rotary Position Embedding)? The Math Behind It
 
 In this blog, we will learn about the math behind Rotary Position Embedding (RoPE) and why it is used in modern Large Language Models.
 
@@ -1671,7 +1693,7 @@ We will cover the following:
 
 Let's get started: [What is RoPE (Rotary Position Embedding)? The Math Behind It](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
 
-### 3.17 What is the Feed-Forward Network in LLMs and What Does It Do?
+### 3.18 What is the Feed-Forward Network in LLMs and What Does It Do?
 
 In this blog, we will learn about Feed-Forward Networks in LLMs - understanding what they are, how they work inside the Transformer architecture, why every Transformer layer needs one, and what role they play in making Large Language Models so powerful.
 
