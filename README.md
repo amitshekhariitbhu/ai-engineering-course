@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 15      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 9       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 10      |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5834,6 +5834,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 7. [How does a voice agent decide when to end the call?](https://outcomeschool.com/blog/call-ending-in-voice-agents)
 8. [How does SSML control how a voice agent speaks?](https://outcomeschool.com/blog/speech-synthesis-markup-language-ssml)
 9. [How do pronunciation dictionaries fix how TTS says names and brands?](https://outcomeschool.com/blog/pronunciation-dictionaries-for-tts)
+10. [How does keyword boosting help ASR recognize domain words?](https://outcomeschool.com/blog/keyword-boosting-in-asr)
 
 ---
 
@@ -6036,6 +6037,26 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How do pronunciation dictionaries fix how TTS says names and brands?](https://outcomeschool.com/blog/pronunciation-dictionaries-for-tts)
+
+---
+
+### 19.10 How does keyword boosting help ASR recognize domain words?
+
+In this blog, we will learn about how keyword boosting helps ASR recognize domain words. We will also see why ASR gets domain words wrong, how ASR picks one word over another using scores, how a boost changes those scores during decoding, how a word gets boosted piece by piece, how to pick the right boost strength, and where keyword boosting works well and where it fails.
+
+We will cover the following:
+
+- What is ASR?
+- Why does ASR get domain words wrong?
+- What is keyword boosting?
+- How does ASR pick one word over another?
+- How does keyword boosting change the scores?
+- Boosting a word piece by piece
+- How strong should the boost be?
+- Keyword boosting in a voice agent
+- Where keyword boosting works well and where it fails
+
+Let's get started: [How does keyword boosting help ASR recognize domain words?](https://outcomeschool.com/blog/keyword-boosting-in-asr)
 
 ---
 
