@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 13      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 20      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 21      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -5113,6 +5113,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 18. [How does DTMF keypad input work in a voice agent?](https://outcomeschool.com/blog/dtmf-in-voice-agents)
 19. [How does voicemail and answering machine detection work?](https://outcomeschool.com/blog/answering-machine-detection)
 20. [How does an outbound calling voice agent work?](https://outcomeschool.com/blog/outbound-calling-voice-agent)
+21. [How does a voice agent transfer a call to a human with context?](https://outcomeschool.com/blog/call-transfer-with-context)
 
 ---
 
@@ -5502,6 +5503,25 @@ We will cover the following:
 - Where outbound calling voice agents are used
 
 Let's get started: [How does an outbound calling voice agent work?](https://outcomeschool.com/blog/outbound-calling-voice-agent)
+
+---
+
+### 18.21 How does a voice agent transfer a call to a human with context?
+
+In this blog, we will learn about how a voice agent transfers a call to a human with context. We will also see why a voice agent needs to hand off a call at all, how it decides the right moment to transfer, what context it must pass along, the difference between a cold transfer and a warm transfer, how the call and the context travel together, and what happens when no human is free to take the call.
+
+We will cover the following:
+
+- The problem: transferring a call without context
+- What is a call transfer with context?
+- When does a voice agent decide to transfer?
+- What context must travel with the call?
+- Cold transfer vs Warm transfer
+- How do the call and the context travel together?
+- Putting it all together in code
+- What if no human is available?
+
+Let's get started: [How does a voice agent transfer a call to a human with context?](https://outcomeschool.com/blog/call-transfer-with-context)
 
 ---
 
