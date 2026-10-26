@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 10      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 11      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -4802,6 +4802,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 8. [How does a voice agent hide the delay of a slow tool call?](https://outcomeschool.com/blog/slow-tool-calls-in-voice-agents)
 9. [What are audio frames and chunk sizes in a real-time voice pipeline?](https://outcomeschool.com/blog/audio-frames-and-chunk-sizes)
 10. [Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?](https://outcomeschool.com/blog/sample-rates-for-voice-agents)
+11. [How do WebRTC and WebSocket differ for voice AI agents?](https://outcomeschool.com/blog/webrtc-vs-websocket-for-voice-ai)
 
 ---
 
@@ -4986,6 +4987,25 @@ We will cover the following:
 - How to Pick the Right Sample Rate
 
 Let's get started: [Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?](https://outcomeschool.com/blog/sample-rates-for-voice-agents)
+
+### 18.11 How do WebRTC and WebSocket differ for voice AI agents?
+
+In this blog, we will learn about how WebRTC and WebSocket differ for voice AI agents. We will also see what a voice AI agent needs from the network, how WebSocket carries audio, how WebRTC carries audio, why a lost packet hurts one of them more than the other, what extra work WebRTC does for voice, and when to use which one.
+
+We will cover the following:
+
+- What a voice AI agent needs from the network
+- How audio travels over the internet
+- What is WebSocket?
+- How a voice agent uses WebSocket
+- What is WebRTC?
+- How a voice agent uses WebRTC
+- What happens when a packet is lost
+- The extra work WebRTC does for voice
+- WebRTC vs WebSocket
+- When to use which one
+
+Let's get started: [How do WebRTC and WebSocket differ for voice AI agents?](https://outcomeschool.com/blog/webrtc-vs-websocket-for-voice-ai)
 
 ---
 
