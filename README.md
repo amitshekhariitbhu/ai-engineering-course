@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 15      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 11      |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 12      |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5901,6 +5901,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 9. [How do pronunciation dictionaries fix how TTS says names and brands?](https://outcomeschool.com/blog/pronunciation-dictionaries-for-tts)
 10. [How does keyword boosting help ASR recognize domain words?](https://outcomeschool.com/blog/keyword-boosting-in-asr)
 11. [How does a voice agent handle accents and noisy environments?](https://outcomeschool.com/blog/accents-and-noise-in-voice-agents)
+12. [How does a voice agent detect and switch the user's language mid-call?](https://outcomeschool.com/blog/language-switching-in-voice-agents)
 
 ---
 
@@ -6142,6 +6143,28 @@ We will cover the following:
 - Where it works well and where it still fails
 
 Let's get started: [How does a voice agent handle accents and noisy environments?](https://outcomeschool.com/blog/accents-and-noise-in-voice-agents)
+
+---
+
+### 19.12 How does a voice agent detect and switch the user's language mid-call?
+
+In this blog, we will learn about how a voice agent detects and switches the user's language mid-call. We will also see why a fixed language breaks the call, the different ways to find the spoken language, how a confidence score protects us from wrong switches, what changes inside the agent during a switch, how mixed-language speech is handled, and where this works well and where it fails.
+
+We will cover the following:
+
+- The problem with a fixed language
+- How a voice agent works
+- What is language detection?
+- Approach 1: Ask the user
+- Approach 2: Detect the language from the audio
+- Approach 3: Detect the language from the text
+- Confidence: when does the agent switch?
+- What changes when the agent switches
+- A full call example
+- Mixed-language speech
+- Where it works well and where it fails
+
+Let's get started: [How does a voice agent detect and switch the user's language mid-call?](https://outcomeschool.com/blog/language-switching-in-voice-agents)
 
 ---
 
