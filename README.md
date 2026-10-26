@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 3       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 10      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 9       |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 10      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -3801,8 +3801,9 @@ By the end of this module, we will understand how a voice agent holds a natural 
 5. [How does dynamic endpointing adapt to how fast a user talks?](https://outcomeschool.com/blog/dynamic-endpointing)
 6. [How does a voice agent handle long pauses when the user is thinking?](https://outcomeschool.com/blog/long-pauses-in-voice-agents)
 7. [How does a voice agent know a phone number or email is not finished yet?](https://outcomeschool.com/blog/unfinished-input-in-voice-agents)
-8. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
-9. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
+8. [Why does a voice agent cut people off mid-sentence?](https://outcomeschool.com/blog/voice-agents-cutting-users-off)
+9. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
+10. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
 
 ---
 
@@ -3953,7 +3954,23 @@ We will cover the following:
 
 Let's get started: [How does a voice agent know a phone number or email is not finished yet?](https://outcomeschool.com/blog/unfinished-input-in-voice-agents)
 
-### 17.8 What is barge-in in a voice AI agent?
+### 17.8 Why does a voice agent cut people off mid-sentence?
+
+In this blog, we will learn about why a voice agent cuts people off mid-sentence. We will also see how a voice agent listens and decides when to reply, why a simple silence timer gets it wrong, the common situations that cause it, why making the agent wait longer creates a new problem, how modern voice agents fix it by understanding the meaning of what we said, and how they recover when they still get it wrong.
+
+We will cover the following:
+
+- How a voice agent decides it is time to reply
+- The silence timer
+- Why a pause is not the end of a sentence
+- Common reasons a voice agent cuts us off
+- Why not just wait longer?
+- How does semantic turn detection fix it?
+- Recovering when the agent still gets it wrong
+
+Let's get started: [Why does a voice agent cut people off mid-sentence?](https://outcomeschool.com/blog/voice-agents-cutting-users-off)
+
+### 17.9 What is barge-in in a voice AI agent?
 
 In this blog, we will learn about barge-in in a voice AI agent, what happens when the user starts speaking while the agent is still talking, and how the agent stops so it can listen. We will also see why the agent can hear its own voice and how echo cancellation fixes it, how the agent tells a real interruption apart from "uh-huh", a cough, or background noise, what it does after a barge-in, and why it must remember only the part of the reply the user actually heard.
 
@@ -3972,7 +3989,7 @@ We will cover the following:
 
 Let's get started: [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
 
-### 17.9 Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?
+### 17.10 Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?
 
 In this blog, we will learn about Cascaded vs Speech-to-Speech and how to choose the right voice agent architecture. We will also see how a cascaded voice agent works, how a speech-to-speech voice agent works, how the two differ in delay, tone, control, and cost, what a half-cascade in the middle looks like, and when to use which one.
 
