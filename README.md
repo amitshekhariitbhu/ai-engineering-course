@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 3       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 11      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 12      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -3898,6 +3898,7 @@ By the end of this module, we will understand how a voice agent holds a natural 
 9. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
 10. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
 11. [How do half-duplex and full-duplex voice agents differ?](https://outcomeschool.com/blog/half-duplex-vs-full-duplex-voice-agents)
+12. [How does a voice agent tell a real interruption from a cough or background noise?](https://outcomeschool.com/blog/interruption-vs-background-noise)
 
 ---
 
@@ -4118,6 +4119,26 @@ We will cover the following:
 - When to use which one
 
 Let's get started: [How do half-duplex and full-duplex voice agents differ?](https://outcomeschool.com/blog/half-duplex-vs-full-duplex-voice-agents)
+
+### 17.12 How does a voice agent tell a real interruption from a cough or background noise?
+
+In this blog, we will learn about how a voice agent tells a real interruption from a cough or background noise. We will also see why this is hard, how the agent cleans the sound before judging it, how it checks for human speech, length, and real words, how it pauses first and resumes when it was wrong, how a trained model helps, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is an interruption in a voice agent?
+- Why is it hard to tell a real interruption from noise?
+- Step 1: Remove the agent's own voice
+- Step 2: Remove the background noise
+- Step 3: Is it human speech?
+- Step 4: Did it last long enough?
+- Step 5: Did the user say real words?
+- Step 6: Pause first, then decide
+- Using a trained interruption model
+- Putting it all together
+- Where it works well and where it fails
+
+Let's get started: [How does a voice agent tell a real interruption from a cough or background noise?](https://outcomeschool.com/blog/interruption-vs-background-noise)
 
 ---
 
