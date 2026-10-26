@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 11      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 12      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 19      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 6       |
@@ -252,8 +252,9 @@ By the end of this module, we will know how a model learns from data, how we mea
 7. [What Are L1 and L2 Loss Functions?](https://outcomeschool.com/blog/l1-and-l2-loss-functions)
 8. [What is Regularization in Machine Learning? L1 vs L2 Explained](https://outcomeschool.com/blog/regularization-in-machine-learning)
 9. [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
-10. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
-11. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+10. [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
+11. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
+12. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -373,7 +374,24 @@ We will cover the following:
 
 Let's get started: [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
 
-### 1.10 What is Reinforcement Learning?
+### 1.10 How does Data Augmentation work?
+
+In this blog, we will learn about how Data Augmentation works. We will also see why we need it, how it creates new training examples from images and text, a simple code example, a step-by-step numeric walkthrough, and when to use it.
+
+We will cover the following:
+
+- What is Data Augmentation?
+- Why do we need Data Augmentation?
+- How does Data Augmentation work?
+- Data Augmentation for images
+- A simple code example
+- Data Augmentation for text
+- A step-by-step numeric walkthrough
+- When to use Data Augmentation
+
+Let's get started: [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
+
+### 1.11 What is Reinforcement Learning?
 
 In this blog, we will learn about Reinforcement Learning, the branch of machine learning where an agent learns to make decisions by interacting with an environment and getting rewards or penalties for its actions.
 
@@ -394,7 +412,7 @@ We will cover the following:
 
 Let's get started: [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
 
-### 1.11 What is Contrastive Learning? How It Works Step by Step
+### 1.12 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
