@@ -128,7 +128,7 @@ In this AI Engineering Course, we will learn:
 - **Machine Learning foundations:** supervised, unsupervised, and reinforcement learning, loss functions, regularization, precision and recall.
 - **Deep Learning:** gradient descent, backpropagation, cross-entropy, dropout, normalization, CNNs, RNNs, PyTorch, and TensorFlow.
 - **The Transformer architecture:** tokenization, BPE, embeddings, self attention, the math behind Q, K, and V, multi-head attention, causal masking, RoPE, and the feed-forward network.
-- **How LLMs generate text:** temperature, top-k and top-p sampling, logprobs, token streaming, the context window, and the lost in the middle problem.
+- **How LLMs generate text:** temperature, top-k and top-p sampling, greedy decoding and beam search, logprobs, token streaming, the context window, and the lost in the middle problem.
 - **Modern LLM architecture:** Mixture of Experts (MoE), Grouped Query Attention (GQA), sliding window attention, attention sinks, Flash Attention, and DeepSeek-V4.
 - **Types of language models:** SLMs, Large Reasoning Models, Recursive Language Models, Diffusion Language Models, and System One Models.
 - **Fine-tuning and alignment:** fine-tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
@@ -173,7 +173,7 @@ Let's get started.
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 21      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 23      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
-| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
+| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 9       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 16      |
@@ -1403,12 +1403,13 @@ By the end of this module, we will know exactly what happens between the prompt 
 
 1. [How does Temperature control LLM output?](https://outcomeschool.com/blog/how-does-temperature-control-llm-output)
 2. [How do Top-k and Top-p Sampling work?](https://outcomeschool.com/blog/how-do-top-k-and-top-p-sampling-work)
-3. [What are Log Probabilities (Logprobs) in LLMs?](https://outcomeschool.com/blog/logprobs-in-llms)
-4. [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
-5. [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
-6. [How does the Context Window work?](https://outcomeschool.com/blog/context-window)
-7. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
-8. [Why Do LLMs Hallucinate? The Token-Level Explanation](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation)
+3. [How do Greedy Decoding and Beam Search differ?](https://outcomeschool.com/blog/greedy-decoding-vs-beam-search)
+4. [What are Log Probabilities (Logprobs) in LLMs?](https://outcomeschool.com/blog/logprobs-in-llms)
+5. [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
+6. [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
+7. [How does the Context Window work?](https://outcomeschool.com/blog/context-window)
+8. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
+9. [Why Do LLMs Hallucinate? The Token-Level Explanation](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation)
 
 ---
 
@@ -1452,7 +1453,28 @@ We will cover the following:
 
 Let's get started: [How do Top-k and Top-p Sampling work?](https://outcomeschool.com/blog/how-do-top-k-and-top-p-sampling-work)
 
-### 4.3 What are Log Probabilities (Logprobs) in LLMs?
+### 4.3 How do Greedy Decoding and Beam Search differ?
+
+In this blog, we will learn about how Greedy Decoding and Beam Search differ. We will also see what decoding means, how Greedy Decoding works step by step, where it fails, how Beam Search fixes that failure by keeping multiple options, the cost and the problems of Beam Search, and when to use which one.
+
+We will cover the following:
+
+- How does an LLM write text?
+- What is decoding?
+- What is Greedy Decoding?
+- The problem with Greedy Decoding
+- What is Beam Search?
+- How does Beam Search work step by step?
+- Greedy Decoding vs Beam Search on the same example
+- Greedy Decoding and Beam Search in code
+- Two practical details of Beam Search
+- The problems with Beam Search
+- Greedy Decoding vs Beam Search
+- When to use which one
+
+Let's get started: [How do Greedy Decoding and Beam Search differ?](https://outcomeschool.com/blog/greedy-decoding-vs-beam-search)
+
+### 4.4 What are Log Probabilities (Logprobs) in LLMs?
 
 In this blog, we will learn about Log Probabilities (Logprobs) in LLMs, the log of the probability that the model gives to each token it can write next. We will also see how an LLM gives a probability to every next token, what a log is in plain words, why we use logprobs instead of plain probabilities, how to get the probability of a full sentence by adding logprobs, what top logprobs are, and where logprobs are used in the real world.
 
@@ -1468,7 +1490,7 @@ We will cover the following:
 
 Let's get started: [What are Log Probabilities (Logprobs) in LLMs?](https://outcomeschool.com/blog/logprobs-in-llms)
 
-### 4.4 Stop Tokens in LLMs
+### 4.5 Stop Tokens in LLMs
 
 In this blog, we will learn about Stop Tokens in LLMs, the special tokens that tell a Large Language Model when to stop generating text. We will also see how an LLM generates text one token at a time, why it needs to stop, how the model learns to produce a Stop Token, how a Stop Token differs from a Stop Sequence, and how chat models use Stop Tokens to end their turn.
 
@@ -1486,7 +1508,7 @@ We will cover the following:
 
 Let's get started: [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
 
-### 4.5 How does Token Streaming work?
+### 4.6 How does Token Streaming work?
 
 In this blog, we will learn about how Token Streaming works. We will also see why we need it, how the server and the browser talk to each other to make it happen, and where it is used in real systems like ChatGPT and Claude.
 
@@ -1505,7 +1527,7 @@ We will cover the following:
 
 Let's get started: [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
 
-### 4.6 How does the Context Window work?
+### 4.7 How does the Context Window work?
 
 In this blog, we will learn about how the Context Window works in Large Language Models. We will also see why we need it, what tokens are, how the model reads everything inside it, what happens when it gets full, how to manage it, and the common mistakes we must avoid.
 
@@ -1522,7 +1544,7 @@ We will cover the following:
 
 Let's get started: [How does the Context Window work?](https://outcomeschool.com/blog/context-window)
 
-### 4.7 What is the Lost in the Middle Problem in LLMs and How to Fix It?
+### 4.8 What is the Lost in the Middle Problem in LLMs and How to Fix It?
 
 In this blog, we will learn about the Lost in the Middle problem in LLMs, the strange behaviour where a model reads a very long text, uses the beginning and the end very well, and quietly ignores whatever is sitting in the middle. We will also see what a context window really means, how the accuracy forms a U-shaped curve, why the middle gets forgotten, how this silently breaks RAG systems and long conversations, how we can test our own model for it, and what we can do to fix it.
 
@@ -1542,7 +1564,7 @@ Let's get started: [What is the Lost in the Middle Problem in LLMs and How to Fi
 
 Watch the video: [Why is the context window limited in LLMs?](https://www.youtube.com/watch?v=CGIhxIaOg3M)
 
-### 4.8 Why Do LLMs Hallucinate? The Token-Level Explanation
+### 4.9 Why Do LLMs Hallucinate? The Token-Level Explanation
 
 In this blog, we will learn about why LLMs hallucinate, explained at the level of a single token. We will also see what a hallucination really is, how an LLM picks one token at a time with no step for checking whether something is true, why the tokens that carry facts are the risky ones, how a sharp guess differs from a flat guess, the six reasons hallucinations happen, and how we can reduce them at the token level.
 
