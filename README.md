@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 15      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 12      |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 13      |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5943,6 +5943,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 10. [How does keyword boosting help ASR recognize domain words?](https://outcomeschool.com/blog/keyword-boosting-in-asr)
 11. [How does a voice agent handle accents and noisy environments?](https://outcomeschool.com/blog/accents-and-noise-in-voice-agents)
 12. [How does a voice agent detect and switch the user's language mid-call?](https://outcomeschool.com/blog/language-switching-in-voice-agents)
+13. [How does a voice agent match its tone and emotion to the user?](https://outcomeschool.com/blog/emotion-matching-in-voice-agents)
 
 ---
 
@@ -6206,6 +6207,30 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How does a voice agent detect and switch the user's language mid-call?](https://outcomeschool.com/blog/language-switching-in-voice-agents)
+
+---
+
+### 19.13 How does a voice agent match its tone and emotion to the user?
+
+In this blog, we will learn about how a voice agent matches its tone and emotion to the user. We will also see why matching does not mean copying, how the agent detects emotion from the words and the voice, how it decides the tone of its reply, how it speaks that reply with the right feeling, how it keeps the tone steady across a call, and where it works well and where it fails.
+
+We will cover the following:
+
+- What do tone and emotion mean in a voice?
+- Why a voice agent must match the tone of the user
+- Matching does not mean copying
+- Where emotion fits in a voice agent
+- Step 1: Detecting the emotion from the words
+- Step 2: Detecting the emotion from the voice
+- Step 3: Combining both signals
+- Step 4: Deciding the tone of the reply
+- Step 5: Choosing the right words
+- Step 6: Speaking with the right tone
+- Speech-to-speech models
+- Keeping the tone steady across the call
+- Where it works well and where it fails
+
+Let's get started: [How does a voice agent match its tone and emotion to the user?](https://outcomeschool.com/blog/emotion-matching-in-voice-agents)
 
 ---
 
