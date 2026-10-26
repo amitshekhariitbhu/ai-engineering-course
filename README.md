@@ -171,7 +171,7 @@ Let's get started.
 | Module | Topic                                                                                                                                              | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                                   | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                             | 26      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                             | 27      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                                   | 27      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                                         | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                                         | 9       |
@@ -270,8 +270,9 @@ By the end of this module, we will know how a model learns from data, how we mea
 22. [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
 23. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 24. [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
-25. [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
-26. [What is Explainable AI?](https://outcomeschool.com/blog/explainable-ai-xai)
+25. [How does Semi-Supervised Learning work?](https://outcomeschool.com/blog/semi-supervised-learning)
+26. [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
+27. [What is Explainable AI?](https://outcomeschool.com/blog/explainable-ai-xai)
 
 ---
 
@@ -675,7 +676,23 @@ We will cover the following:
 
 Let's get started: [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
 
-### 1.25 How does a Recommendation System work?
+### 1.25 How does Semi-Supervised Learning work?
+
+In this blog, we will learn about how Semi-Supervised Learning works. We will also see the difference between labeled and unlabeled data, why labels are expensive, the key assumption behind it, how self-training and label propagation work, and where it is used.
+
+We will cover the following:
+
+- Labeled data vs unlabeled data
+- The problem: labels are expensive
+- What is semi-supervised learning?
+- The key assumption behind it
+- How self-training works
+- How label propagation works
+- Where semi-supervised learning is used
+
+Let's get started: [How does Semi-Supervised Learning work?](https://outcomeschool.com/blog/semi-supervised-learning)
+
+### 1.26 How does a Recommendation System work?
 
 In this blog, we will learn about how a Recommendation System works. We will also see the main techniques behind it, the problems that arise, and how big platforms like Netflix and YouTube put it all together.
 
@@ -694,7 +711,7 @@ We will cover the following:
 
 Let's get started: [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
 
-### 1.26 What is Explainable AI?
+### 1.27 What is Explainable AI?
 
 In this blog, we will learn about Explainable AI. We will also see the problem of the black box, why explanations are important, the difference between global and local explanations, the common methods, the accuracy and explainability trade-off, and where it is used.
 
