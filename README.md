@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 12      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 13      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 14      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -4905,6 +4905,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 11. [How do WebRTC and WebSocket differ for voice AI agents?](https://outcomeschool.com/blog/webrtc-vs-websocket-for-voice-ai)
 12. [How does the Opus codec compress voice for real-time calls?](https://outcomeschool.com/blog/opus-codec)
 13. [How does a jitter buffer keep voice audio smooth over a bad network?](https://outcomeschool.com/blog/jitter-buffer)
+14. [How does packet loss concealment hide missing audio?](https://outcomeschool.com/blog/packet-loss-concealment)
 
 ---
 
@@ -5148,6 +5149,27 @@ We will cover the following:
 - Where the jitter buffer sits in a voice AI agent
 
 Let's get started: [How does a jitter buffer keep voice audio smooth over a bad network?](https://outcomeschool.com/blog/jitter-buffer)
+
+---
+
+### 18.14 How does packet loss concealment hide missing audio?
+
+In this blog, we will learn about how packet loss concealment hides missing audio. We will also see what packet loss is, why a gap in audio sounds so bad, how the approaches evolved from playing silence to repeating the pitch of the voice, how codecs like Opus and neural networks make a better guess, where it fits in a voice AI agent, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is packet loss?
+- Why does a gap in audio sound so bad?
+- What is packet loss concealment?
+- Approach 1: Play silence
+- Approach 2: Repeat the last packet
+- Approach 3: Repeat one pitch cycle and fade out
+- Approach 4: Let the codec guess
+- Approach 5: Let a neural network guess
+- Where does packet loss concealment fit in a voice AI agent?
+- Where it works well and where it fails
+
+Let's get started: [How does packet loss concealment hide missing audio?](https://outcomeschool.com/blog/packet-loss-concealment)
 
 ---
 
