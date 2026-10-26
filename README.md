@@ -184,7 +184,7 @@ Let's get started.
 | 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                      | 17      |
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                | 4       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 3       |
-| 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 6       |
+| 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 10      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 8       |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
@@ -3380,9 +3380,10 @@ By the end of this module, we will know how models see images and how they gener
 1. [What is Multimodal AI? How It Works and Where It Is Used](https://outcomeschool.com/blog/multimodal-ai)
 2. [What is a Vision Transformer (ViT) and How Does It Work?](https://outcomeschool.com/blog/decoding-vision-transformer-vit)
 3. [How do Image Embeddings work?](https://outcomeschool.com/blog/how-do-image-embeddings-work)
-4. [What are Diffusion Models and How Do They Generate Images?](https://outcomeschool.com/blog/diffusion-models)
-5. [What are Generative Adversarial Networks (GANs) and How Do They Work?](https://outcomeschool.com/blog/generative-adversarial-networks)
-6. [What are Variational Autoencoders (VAEs) and How Do They Work?](https://outcomeschool.com/blog/variational-autoencoders)
+4. [How does a Vision-Language Model (VLM) work?](https://outcomeschool.com/blog/vision-language-model-vlm)
+5. [What are Diffusion Models and How Do They Generate Images?](https://outcomeschool.com/blog/diffusion-models)
+6. [What are Generative Adversarial Networks (GANs) and How Do They Work?](https://outcomeschool.com/blog/generative-adversarial-networks)
+7. [What are Variational Autoencoders (VAEs) and How Do They Work?](https://outcomeschool.com/blog/variational-autoencoders)
 
 ---
 
@@ -3443,7 +3444,28 @@ We will cover the following:
 
 Let's get started: [How do Image Embeddings work?](https://outcomeschool.com/blog/how-do-image-embeddings-work)
 
-### 15.4 What are Diffusion Models and How Do They Generate Images?
+### 15.4 How does a Vision-Language Model (VLM) work?
+
+In this blog, we will learn about how a Vision-Language Model (VLM) works. We will also see how a computer sees an image as numbers, how a vision encoder cuts an image into patches and understands them, how CLIP connected images and text, how a projector turns image patches into tokens that an LLM can read, how a VLM is trained, and where VLMs work well and where they fail.
+
+We will cover the following:
+
+- What is a Vision-Language Model?
+- How does a computer see an image?
+- The main problem: images are not words
+- The three parts of a VLM
+- Part 1: The vision encoder
+- How did CLIP teach images and text the same language?
+- Part 2: The projector
+- Part 3: The language model
+- VLM in code
+- How is a VLM trained?
+- Other ways to connect vision and language
+- Where VLMs work well and where they fail
+
+Let's get started: [How does a Vision-Language Model (VLM) work?](https://outcomeschool.com/blog/vision-language-model-vlm)
+
+### 15.5 What are Diffusion Models and How Do They Generate Images?
 
 In this blog, we will learn about Diffusion Models. We will understand what they are, why we need them, how they work step by step, and how they generate amazing images like the ones we see in tools such as DALL-E, Stable Diffusion, and Midjourney.
 
@@ -3463,7 +3485,7 @@ We will cover the following:
 
 Let's get started: [What are Diffusion Models and How Do They Generate Images?](https://outcomeschool.com/blog/diffusion-models)
 
-### 15.5 What are Generative Adversarial Networks (GANs) and How Do They Work?
+### 15.6 What are Generative Adversarial Networks (GANs) and How Do They Work?
 
 In this blog, we will learn about Generative Adversarial Networks (GANs), one of the most fascinating ideas in Machine Learning that can create brand new images, faces, and art that never existed before.
 
@@ -3482,7 +3504,7 @@ We will cover the following:
 
 Let's get started: [What are Generative Adversarial Networks (GANs) and How Do They Work?](https://outcomeschool.com/blog/generative-adversarial-networks)
 
-### 15.6 What are Variational Autoencoders (VAEs) and How Do They Work?
+### 15.7 What are Variational Autoencoders (VAEs) and How Do They Work?
 
 In this blog, we will learn about Variational Autoencoders. We will understand what they are, why we need them, how they work step by step, and how they are able to generate brand new data like images that never existed before.
 
