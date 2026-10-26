@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 13      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 14      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 21      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
@@ -253,9 +253,10 @@ By the end of this module, we will know how a model learns from data, how we mea
 8. [What is Regularization in Machine Learning? L1 vs L2 Explained](https://outcomeschool.com/blog/regularization-in-machine-learning)
 9. [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
 10. [How does the Bias-Variance Tradeoff work?](https://outcomeschool.com/blog/bias-variance-tradeoff)
-11. [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
-12. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
-13. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+11. [How do Decision Trees and Random Forests work?](https://outcomeschool.com/blog/decision-trees-and-random-forests)
+12. [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
+13. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
+14. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -394,7 +395,28 @@ We will cover the following:
 
 Let's get started: [How does the Bias-Variance Tradeoff work?](https://outcomeschool.com/blog/bias-variance-tradeoff)
 
-### 1.11 How does Data Augmentation work?
+### 1.11 How do Decision Trees and Random Forests work?
+
+In this blog, we will learn about how Decision Trees and Random Forests work. We will also see what a Decision Tree looks like, how it picks the best question to ask at each step, why a single tree overfits so easily, how a Random Forest fixes that by building many trees on random samples of data, how the trees vote, and when to use which one.
+
+We will cover the following:
+
+- What is a Decision Tree?
+- Parts of a Decision Tree
+- How does a Decision Tree make a prediction?
+- How does a Decision Tree learn which question to ask?
+- Measuring mixedness with Gini Impurity
+- When does the tree stop growing?
+- The problem with a single Decision Tree
+- What is a Random Forest?
+- How does a Random Forest add randomness?
+- How does a Random Forest make a prediction?
+- Seeing it in code
+- Decision Tree vs Random Forest
+
+Let's get started: [How do Decision Trees and Random Forests work?](https://outcomeschool.com/blog/decision-trees-and-random-forests)
+
+### 1.12 How does Data Augmentation work?
 
 In this blog, we will learn about how Data Augmentation works. We will also see why we need it, how it creates new training examples from images and text, a simple code example, a step-by-step numeric walkthrough, and when to use it.
 
@@ -411,7 +433,7 @@ We will cover the following:
 
 Let's get started: [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
 
-### 1.12 What is Reinforcement Learning?
+### 1.13 What is Reinforcement Learning?
 
 In this blog, we will learn about Reinforcement Learning, the branch of machine learning where an agent learns to make decisions by interacting with an environment and getting rewards or penalties for its actions.
 
@@ -432,7 +454,7 @@ We will cover the following:
 
 Let's get started: [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
 
-### 1.13 What is Contrastive Learning? How It Works Step by Step
+### 1.14 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
