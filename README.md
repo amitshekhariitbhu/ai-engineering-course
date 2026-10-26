@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 11      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 12      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -4849,6 +4849,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 9. [What are audio frames and chunk sizes in a real-time voice pipeline?](https://outcomeschool.com/blog/audio-frames-and-chunk-sizes)
 10. [Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?](https://outcomeschool.com/blog/sample-rates-for-voice-agents)
 11. [How do WebRTC and WebSocket differ for voice AI agents?](https://outcomeschool.com/blog/webrtc-vs-websocket-for-voice-ai)
+12. [How does the Opus codec compress voice for real-time calls?](https://outcomeschool.com/blog/opus-codec)
 
 ---
 
@@ -5052,6 +5053,26 @@ We will cover the following:
 - When to use which one
 
 Let's get started: [How do WebRTC and WebSocket differ for voice AI agents?](https://outcomeschool.com/blog/webrtc-vs-websocket-for-voice-ai)
+
+### 18.12 How does the Opus codec compress voice for real-time calls?
+
+In this blog, we will learn about how the Opus codec compresses voice for real-time calls. We will also see why raw voice is too big to send, what a codec does, how Opus cuts the voice into small frames, how its two engines SILK and CELT shrink the sound, how it handles silence and lost packets, and why it is used in WebRTC and voice AI agents.
+
+We will cover the following:
+
+- Why raw voice is too big for a call
+- What is a codec?
+- What is the Opus codec?
+- Step 1: Cutting the voice into small frames
+- Step 2: Keeping only what our ears can hear
+- Step 3: SILK, the speech engine
+- Step 4: CELT, the music engine
+- Step 5: Hybrid mode, using both engines together
+- How Opus saves data during silence
+- How Opus handles lost packets
+- Why Opus is used for real-time calls and voice agents
+
+Let's get started: [How does the Opus codec compress voice for real-time calls?](https://outcomeschool.com/blog/opus-codec)
 
 ---
 
