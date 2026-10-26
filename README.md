@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 15      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 16      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 21      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
@@ -257,7 +257,8 @@ By the end of this module, we will know how a model learns from data, how we mea
 12. [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
 13. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
 14. [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
-15. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+15. [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
+16. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -473,7 +474,28 @@ We will cover the following:
 
 Let's get started: [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
 
-### 1.15 What is Contrastive Learning? How It Works Step by Step
+### 1.15 What is Exploration vs Exploitation in Reinforcement Learning?
+
+In this blog, we will learn about exploration vs exploitation in reinforcement learning, the choice an agent faces at every step: use the action it already knows works well, or try a different action to learn something new that can work even better.
+
+We will cover the following:
+
+- What is Exploitation?
+- What is Exploration?
+- The Exploration vs Exploitation Dilemma
+- The Multi-Armed Bandit Problem
+- Greedy Strategy
+- Epsilon-Greedy Strategy
+- Decaying Epsilon
+- Optimistic Initial Values
+- Upper Confidence Bound (UCB)
+- Softmax Exploration with Temperature
+- Comparing the Strategies
+- Exploration in LLM Reinforcement Learning
+
+Let's get started: [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
+
+### 1.16 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
