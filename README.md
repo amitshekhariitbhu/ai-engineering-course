@@ -126,7 +126,7 @@ This AI Engineering Course is for:
 In this AI Engineering Course, we will learn:
 
 - **Machine Learning foundations:** supervised, unsupervised, and reinforcement learning, loss functions, regularization, precision and recall.
-- **Deep Learning:** gradient descent, backpropagation, cross-entropy, dropout, normalization, RNNs, PyTorch, and TensorFlow.
+- **Deep Learning:** gradient descent, backpropagation, cross-entropy, dropout, normalization, CNNs, RNNs, PyTorch, and TensorFlow.
 - **The Transformer architecture:** tokenization, BPE, embeddings, self attention, the math behind Q, K, and V, multi-head attention, causal masking, RoPE, and the feed-forward network.
 - **How LLMs generate text:** temperature, top-k and top-p sampling, logprobs, token streaming, the context window, and the lost in the middle problem.
 - **Modern LLM architecture:** Mixture of Experts (MoE), Grouped Query Attention (GQA), sliding window attention, attention sinks, Flash Attention, and DeepSeek-V4.
@@ -171,7 +171,7 @@ Let's get started.
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 16      |
-| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 21      |
+| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 22      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
@@ -545,9 +545,10 @@ By the end of this module, we will be able to explain how a neural network train
 16. [What is Dropout in Neural Networks and How Does It Work?](https://outcomeschool.com/blog/dropout-in-neural-networks)
 17. [Batch Normalization vs Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization)
 18. [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
-19. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
-20. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
-21. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
+19. [Convolutional Neural Networks](https://outcomeschool.com/blog/convolutional-neural-network-cnn)
+20. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
+21. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
+22. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
 
 ---
 
@@ -861,13 +862,36 @@ We will cover the following:
 
 Let's get started: [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
 
-### 2.19 What is a Recurrent Neural Network (RNN)?
+### 2.19 Convolutional Neural Networks
+
+In this blog, we will learn about Convolutional Neural Networks. We will also see why a normal neural network struggles with images, how a filter slides over an image to find patterns, what feature maps, stride, padding, and pooling are, how many layers work together to go from edges to whole objects, how to write a small CNN in code, and where CNNs work well and where they fail.
+
+We will cover the following:
+
+- How does a computer see an image?
+- Why does a normal neural network struggle with images?
+- What is a Convolutional Neural Network?
+- What is a filter and how does convolution work?
+- What is a feature map?
+- Stride and padding
+- What is ReLU?
+- What is pooling?
+- Putting the layers together
+- How does a CNN learn its filters?
+- Why are CNNs so efficient?
+- A simple CNN in code
+- Famous CNNs
+- Where CNNs work well and where they fail
+
+Let's get started: [Convolutional Neural Networks](https://outcomeschool.com/blog/convolutional-neural-network-cnn)
+
+### 2.20 What is a Recurrent Neural Network (RNN)?
 
 In this blog, we will learn about the Recurrent Neural Network.
 
 Let's get started: [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
 
-### 2.20 How does PyTorch work?
+### 2.21 How does PyTorch work?
 
 In this blog, we will learn about how PyTorch works. We will also see what a tensor is, how the computation graph and autograd work together to train a model, and why PyTorch uses the GPU to become one of the most popular tools in the real world.
 
@@ -884,7 +908,7 @@ We will cover the following:
 
 Let's get started: [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
 
-### 2.21 How Does The Machine Learning Library TensorFlow Work?
+### 2.22 How Does The Machine Learning Library TensorFlow Work?
 
 In this blog, we will learn how the Machine Learning library TensorFlow works.
 
