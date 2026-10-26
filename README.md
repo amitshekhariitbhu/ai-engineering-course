@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 14      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 6       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 7       |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5751,6 +5751,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 4. [How does a voice agent confirm and correct misheard information?](https://outcomeschool.com/blog/confirm-and-correct-in-voice-agents)
 5. [How does a voice agent manage conversation state across a long call?](https://outcomeschool.com/blog/conversation-state-in-voice-agents)
 6. [How do multi-agent handoffs work in a voice AI system?](https://outcomeschool.com/blog/multi-agent-handoffs-in-voice-ai)
+7. [How does a voice agent decide when to end the call?](https://outcomeschool.com/blog/call-ending-in-voice-agents)
 
 ---
 
@@ -5885,6 +5886,29 @@ We will cover the following:
 - Putting it all together in code
 
 Let's get started: [How do multi-agent handoffs work in a voice AI system?](https://outcomeschool.com/blog/multi-agent-handoffs-in-voice-ai)
+
+---
+
+### 19.7 How does a voice agent decide when to end the call?
+
+In this blog, we will learn about how a voice agent decides when to end the call. We will also see why ending a call is harder than it looks, how the agent reacts when the user hangs up first, how the LLM recommends ending the call with an end call tool, how the agent says goodbye without cutting it off, how silence and time limits end a call, and how we stop the agent from hanging up too early.
+
+We will cover the following:
+
+- What does ending a call mean for a voice agent?
+- Why is ending a call hard?
+- The signals that end a call
+- Signal 1: The user hangs up
+- Signal 2: The LLM recommends ending the call
+- Saying goodbye without cutting it off
+- Signal 3: The user goes silent
+- Signal 4: The call hits a time limit
+- Signal 5: The call is transferred or reaches a voicemail
+- Stopping the agent from hanging up too early
+- What happens after the call ends
+- Putting it all together in code
+
+Let's get started: [How does a voice agent decide when to end the call?](https://outcomeschool.com/blog/call-ending-in-voice-agents)
 
 ---
 
