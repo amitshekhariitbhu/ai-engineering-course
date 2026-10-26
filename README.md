@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 24      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 25      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 25      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 9       |
@@ -253,20 +253,21 @@ By the end of this module, we will know how a model learns from data, how we mea
 8. [What Are L1 and L2 Loss Functions?](https://outcomeschool.com/blog/l1-and-l2-loss-functions)
 9. [What is Regularization in Machine Learning? L1 vs L2 Explained](https://outcomeschool.com/blog/regularization-in-machine-learning)
 10. [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
-11. [How does the Bias-Variance Tradeoff work?](https://outcomeschool.com/blog/bias-variance-tradeoff)
-12. [How do Decision Trees and Random Forests work?](https://outcomeschool.com/blog/decision-trees-and-random-forests)
-13. [How does K-Means Clustering work?](https://outcomeschool.com/blog/k-means-clustering)
-14. [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
-15. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
-16. [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
-17. [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
-18. [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
-19. [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
-20. [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
-21. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
-22. [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
-23. [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
-24. [What is Explainable AI?](https://outcomeschool.com/blog/explainable-ai-xai)
+11. [How does Cross-Validation work?](https://outcomeschool.com/blog/cross-validation)
+12. [How does the Bias-Variance Tradeoff work?](https://outcomeschool.com/blog/bias-variance-tradeoff)
+13. [How do Decision Trees and Random Forests work?](https://outcomeschool.com/blog/decision-trees-and-random-forests)
+14. [How does K-Means Clustering work?](https://outcomeschool.com/blog/k-means-clustering)
+15. [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
+16. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
+17. [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
+18. [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
+19. [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
+20. [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
+21. [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
+22. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+23. [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
+24. [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
+25. [What is Explainable AI?](https://outcomeschool.com/blog/explainable-ai-xai)
 
 ---
 
@@ -401,7 +402,26 @@ We will cover the following:
 
 Let's get started: [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
 
-### 1.11 How does the Bias-Variance Tradeoff work?
+### 1.11 How does Cross-Validation work?
+
+In this blog, we will learn about how Cross-Validation works. We will also see why testing a model on just one split can fool us, how K-Fold Cross-Validation works step by step and how to pick the value of K, the popular types like Stratified, Leave-One-Out, Group, and Time Series Cross-Validation, how we use it to pick the best model, the common mistakes that leak information, and when to use which one.
+
+We will cover the following:
+
+- The problem with one single split
+- What is Cross-Validation?
+- How does K-Fold Cross-Validation work?
+- A step-by-step example with numbers
+- Seeing it in code
+- Using Cross-Validation to pick the best model
+- How to choose the value of K?
+- Types of Cross-Validation
+- Common mistakes while using Cross-Validation
+- Where Cross-Validation works well and where it fails
+
+Let's get started: [How does Cross-Validation work?](https://outcomeschool.com/blog/cross-validation)
+
+### 1.12 How does the Bias-Variance Tradeoff work?
 
 In this blog, we will learn about how the Bias-Variance Tradeoff works. We will also see what error means in Machine Learning, what bias and variance are, how they connect to underfitting and overfitting, why reducing one usually increases the other, how we can spot each problem by comparing training and validation errors, and what we can do to fix each one for our use case.
 
@@ -420,7 +440,7 @@ We will cover the following:
 
 Let's get started: [How does the Bias-Variance Tradeoff work?](https://outcomeschool.com/blog/bias-variance-tradeoff)
 
-### 1.12 How do Decision Trees and Random Forests work?
+### 1.13 How do Decision Trees and Random Forests work?
 
 In this blog, we will learn about how Decision Trees and Random Forests work. We will also see what a Decision Tree looks like, how it picks the best question to ask at each step, why a single tree overfits so easily, how a Random Forest fixes that by building many trees on random samples of data, how the trees vote, and when to use which one.
 
@@ -441,7 +461,7 @@ We will cover the following:
 
 Let's get started: [How do Decision Trees and Random Forests work?](https://outcomeschool.com/blog/decision-trees-and-random-forests)
 
-### 1.13 How does K-Means Clustering work?
+### 1.14 How does K-Means Clustering work?
 
 In this blog, we will learn about how K-Means Clustering works. We will also see what clustering means, what a centroid is, the four steps that K-Means repeats with a full example with numbers, how to pick the right value of K using the elbow method, the common problems like bad starting points and unscaled data, and where it works well and where it fails.
 
@@ -460,7 +480,7 @@ We will cover the following:
 
 Let's get started: [How does K-Means Clustering work?](https://outcomeschool.com/blog/k-means-clustering)
 
-### 1.14 How does Data Augmentation work?
+### 1.15 How does Data Augmentation work?
 
 In this blog, we will learn about how Data Augmentation works. We will also see why we need it, how it creates new training examples from images and text, a simple code example, a step-by-step numeric walkthrough, and when to use it.
 
@@ -477,7 +497,7 @@ We will cover the following:
 
 Let's get started: [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
 
-### 1.15 What is Reinforcement Learning?
+### 1.16 What is Reinforcement Learning?
 
 In this blog, we will learn about Reinforcement Learning, the branch of machine learning where an agent learns to make decisions by interacting with an environment and getting rewards or penalties for its actions.
 
@@ -498,7 +518,7 @@ We will cover the following:
 
 Let's get started: [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
 
-### 1.16 What is a Markov Decision Process (MDP)?
+### 1.17 What is a Markov Decision Process (MDP)?
 
 In this blog, we will learn about the Markov Decision Process (MDP), the standard way to write down a reinforcement learning problem, where an agent makes decisions step by step, each decision changes the situation, and each step brings a reward.
 
@@ -516,7 +536,7 @@ We will cover the following:
 
 Let's get started: [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
 
-### 1.17 What is Exploration vs Exploitation in Reinforcement Learning?
+### 1.18 What is Exploration vs Exploitation in Reinforcement Learning?
 
 In this blog, we will learn about exploration vs exploitation in reinforcement learning, the choice an agent faces at every step: use the action it already knows works well, or try a different action to learn something new that can work even better.
 
@@ -537,7 +557,7 @@ We will cover the following:
 
 Let's get started: [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
 
-### 1.18 What is a Value Function? Q-Learning Explained Step by Step
+### 1.19 What is a Value Function? Q-Learning Explained Step by Step
 
 In this blog, we will learn about what a Value Function is and how Q-Learning works step by step, where an agent learns how much total reward it can expect from every situation and action by trial and error.
 
@@ -558,7 +578,7 @@ We will cover the following:
 
 Let's get started: [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
 
-### 1.19 What is Policy Gradient? The REINFORCE Algorithm Explained
+### 1.20 What is Policy Gradient? The REINFORCE Algorithm Explained
 
 In this blog, we will learn about Policy Gradient and the REINFORCE algorithm, a way to train an AI agent by directly making the actions that led to good results more likely, and the actions that led to bad results less likely.
 
@@ -577,7 +597,7 @@ We will cover the following:
 
 Let's get started: [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
 
-### 1.20 What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained
+### 1.21 What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained
 
 In this blog, we will learn about Actor-Critic in Reinforcement Learning and the Advantage Function, a way to train an AI agent where one part, the Actor, picks the actions, and another part, the Critic, judges how good each action was right after it happens.
 
@@ -595,7 +615,7 @@ We will cover the following:
 
 Let's get started: [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
 
-### 1.21 What is Contrastive Learning? How It Works Step by Step
+### 1.22 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
@@ -612,7 +632,7 @@ We will cover the following:
 
 Let's get started: [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
-### 1.22 How does Self-Supervised Learning work?
+### 1.23 How does Self-Supervised Learning work?
 
 In this blog, we will learn about how Self-Supervised Learning works. We will also see why plain Supervised Learning runs into trouble, how Self-Supervised Learning teaches itself from raw data through pretraining and fine-tuning, and where it is used in the real world.
 
@@ -630,7 +650,7 @@ We will cover the following:
 
 Let's get started: [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
 
-### 1.23 How does a Recommendation System work?
+### 1.24 How does a Recommendation System work?
 
 In this blog, we will learn about how a Recommendation System works. We will also see the main techniques behind it, the problems that arise, and how big platforms like Netflix and YouTube put it all together.
 
@@ -649,7 +669,7 @@ We will cover the following:
 
 Let's get started: [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
 
-### 1.24 What is Explainable AI?
+### 1.25 What is Explainable AI?
 
 In this blog, we will learn about Explainable AI. We will also see the problem of the black box, why explanations are important, the difference between global and local explanations, the common methods, the accuracy and explainability trade-off, and where it is used.
 
