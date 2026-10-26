@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 12      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 13      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -4870,6 +4870,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 10. [Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?](https://outcomeschool.com/blog/sample-rates-for-voice-agents)
 11. [How do WebRTC and WebSocket differ for voice AI agents?](https://outcomeschool.com/blog/webrtc-vs-websocket-for-voice-ai)
 12. [How does the Opus codec compress voice for real-time calls?](https://outcomeschool.com/blog/opus-codec)
+13. [How does a jitter buffer keep voice audio smooth over a bad network?](https://outcomeschool.com/blog/jitter-buffer)
 
 ---
 
@@ -5093,6 +5094,26 @@ We will cover the following:
 - Why Opus is used for real-time calls and voice agents
 
 Let's get started: [How does the Opus codec compress voice for real-time calls?](https://outcomeschool.com/blog/opus-codec)
+
+---
+
+### 18.13 How does a jitter buffer keep voice audio smooth over a bad network?
+
+In this blog, we will learn about how a jitter buffer keeps voice audio smooth over a bad network. We will also see how voice travels over the internet in small packets, what jitter is and why it breaks the audio, how the jitter buffer fixes it step by step, how a fixed jitter buffer differs from an adaptive one, what happens when a packet arrives too late or never arrives, and where the jitter buffer sits in a voice AI agent.
+
+We will cover the following:
+
+- How voice travels over the internet
+- What is jitter?
+- Why uneven arrival breaks the audio
+- What is a jitter buffer?
+- How a jitter buffer works step by step
+- The trade-off: smoothness vs delay
+- Fixed jitter buffer vs adaptive jitter buffer
+- What happens when a packet is late or lost
+- Where the jitter buffer sits in a voice AI agent
+
+Let's get started: [How does a jitter buffer keep voice audio smooth over a bad network?](https://outcomeschool.com/blog/jitter-buffer)
 
 ---
 
