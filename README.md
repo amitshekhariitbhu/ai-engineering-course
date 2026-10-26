@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 3       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 12      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 13      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -3934,6 +3934,7 @@ By the end of this module, we will understand how a voice agent holds a natural 
 10. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
 11. [How do half-duplex and full-duplex voice agents differ?](https://outcomeschool.com/blog/half-duplex-vs-full-duplex-voice-agents)
 12. [How does a voice agent tell a real interruption from a cough or background noise?](https://outcomeschool.com/blog/interruption-vs-background-noise)
+13. [What are backchannels, and why should "mm-hmm" not stop the agent?](https://outcomeschool.com/blog/backchannels-in-voice-agents)
 
 ---
 
@@ -4174,6 +4175,23 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How does a voice agent tell a real interruption from a cough or background noise?](https://outcomeschool.com/blog/interruption-vs-background-noise)
+
+### 17.13 What are backchannels, and why should "mm-hmm" not stop the agent?
+
+In this blog, we will learn about what backchannels are and why "mm-hmm" should not stop the agent. We will also see how backchannels work in a normal human conversation, what goes wrong when a voice agent treats them as interruptions, how an agent tells a backchannel apart from a real interruption, what the agent does while it is still unsure, and where this works well and where it fails.
+
+We will cover the following:
+
+- What is a backchannel?
+- Backchannels in a normal conversation
+- What goes wrong when "mm-hmm" stops the agent
+- Backchannel vs real interruption
+- How a voice agent tells them apart
+- What the agent does while it is unsure
+- A complete example
+- Where it works well and where it fails
+
+Let's get started: [What are backchannels, and why should "mm-hmm" not stop the agent?](https://outcomeschool.com/blog/backchannels-in-voice-agents)
 
 ---
 
