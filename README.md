@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 12      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 16      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 17      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -4989,6 +4989,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 14. [How does packet loss concealment hide missing audio?](https://outcomeschool.com/blog/packet-loss-concealment)
 15. [How does a voice AI agent answer a phone call?](https://outcomeschool.com/blog/phone-calls-in-voice-agents)
 16. [How do SIP and RTP carry a phone call to a voice agent?](https://outcomeschool.com/blog/sip-and-rtp)
+17. [Why does phone audio make speech recognition worse?](https://outcomeschool.com/blog/phone-audio-and-speech-recognition)
 
 ---
 
@@ -5295,6 +5296,26 @@ We will cover the following:
 - SIP vs RTP
 
 Let's get started: [How do SIP and RTP carry a phone call to a voice agent?](https://outcomeschool.com/blog/sip-and-rtp)
+
+---
+
+### 18.17 Why does phone audio make speech recognition worse?
+
+In this blog, we will learn about why phone audio makes speech recognition worse. We will also see how our voice travels over a phone call, why the phone cuts off the high sounds of our voice, how compression and lost packets damage the audio further, how noise and echo add to the problem, why a model trained on clean audio struggles with phone audio, and what we can do to make speech recognition work better on phone calls.
+
+We will cover the following:
+
+- What is Speech Recognition?
+- How Does Our Voice Travel Over a Phone Call?
+- Reason 1: The Phone Cuts Off the High Sounds
+- Reason 2: Compression Throws Away More Detail
+- Reason 3: Lost Packets Leave Holes in the Audio
+- Reason 4: Noise, Echo, and Small Microphones
+- Reason 5: The Model Learned From Different Audio
+- How All the Problems Stack Up
+- How to Make Speech Recognition Work Better on Phone Audio
+
+Let's get started: [Why does phone audio make speech recognition worse?](https://outcomeschool.com/blog/phone-audio-and-speech-recognition)
 
 ---
 
