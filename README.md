@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 13      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 3       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 4       |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5666,6 +5666,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 1. [How do you write a system prompt for a voice agent, not a chat bot?](https://outcomeschool.com/blog/voice-agent-system-prompt)
 2. [How does function calling work in a voice AI agent?](https://outcomeschool.com/blog/function-calling-in-voice-agents)
 3. [How does a voice agent handle structured inputs like dates, numbers, and addresses?](https://outcomeschool.com/blog/structured-inputs-in-voice-agents)
+4. [How does a voice agent confirm and correct misheard information?](https://outcomeschool.com/blog/confirm-and-correct-in-voice-agents)
 
 ---
 
@@ -5734,6 +5735,26 @@ We will cover the following:
 - Handling names, spellings, and addresses
 
 Let's get started: [How does a voice agent handle structured inputs like dates, numbers, and addresses?](https://outcomeschool.com/blog/structured-inputs-in-voice-agents)
+
+---
+
+### 19.4 How does a voice agent confirm and correct misheard information?
+
+In this blog, we will learn about how a voice agent confirms and corrects misheard information. We will also see why a voice agent mishears in the first place, how it uses a confidence score to decide when to confirm, the difference between explicit and implicit confirmation, how it reads numbers and spellings back clearly, how it fixes only the wrong part when the caller says "no", and when to confirm and when to skip it.
+
+We will cover the following:
+
+- Why does a voice agent mishear?
+- What does it mean to confirm and correct?
+- What is a confidence score?
+- Explicit confirmation vs Implicit confirmation
+- Reading back numbers and spellings
+- Correcting only the wrong part
+- Checking the value with simple rules
+- Putting it all together in code
+- When to confirm and when to skip
+
+Let's get started: [How does a voice agent confirm and correct misheard information?](https://outcomeschool.com/blog/confirm-and-correct-in-voice-agents)
 
 ---
 
