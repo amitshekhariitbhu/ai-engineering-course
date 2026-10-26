@@ -176,7 +176,7 @@ Let's get started.
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
-| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 11      |
+| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 12      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 6       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 16      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 16      |
@@ -1685,21 +1685,44 @@ By the end of this module, we will know when to fine-tune, how LoRA makes it che
 
 **Lessons in this module:**
 
-1. [How does fine-tuning work?](https://outcomeschool.com/blog/how-does-fine-tuning-work)
-2. [What is LoRA (Low-Rank Adaptation) and How Does It Fine-Tune LLMs?](https://outcomeschool.com/blog/lora-low-rank-adaptation-of-llms)
-3. [How does Prefix Tuning work?](https://outcomeschool.com/blog/how-does-prefix-tuning-work)
-4. [How does Knowledge Distillation work?](https://outcomeschool.com/blog/how-does-knowledge-distillation-work)
-5. [What is Continual Learning in LLMs? Solving Catastrophic Forgetting](https://outcomeschool.com/blog/continual-learning-in-llms)
-6. [What is Deep RL from Human Preferences? The Paper That Started RLHF](https://outcomeschool.com/blog/decoding-deep-rl-from-human-preferences)
-7. [What is InstructGPT? How GPT-3 Learned to Follow Instructions](https://outcomeschool.com/blog/decoding-instructgpt)
-8. [What is RLHF? Reinforcement Learning from Human Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf)
-9. [What is Proximal Policy Optimization (PPO) and How Does It Work?](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
-10. [What is Direct Preference Optimization (DPO) and How Does It Work?](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
-11. [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+1. [How does Pretraining work?](https://outcomeschool.com/blog/llm-pretraining)
+2. [How does fine-tuning work?](https://outcomeschool.com/blog/how-does-fine-tuning-work)
+3. [What is LoRA (Low-Rank Adaptation) and How Does It Fine-Tune LLMs?](https://outcomeschool.com/blog/lora-low-rank-adaptation-of-llms)
+4. [How does Prefix Tuning work?](https://outcomeschool.com/blog/how-does-prefix-tuning-work)
+5. [How does Knowledge Distillation work?](https://outcomeschool.com/blog/how-does-knowledge-distillation-work)
+6. [What is Continual Learning in LLMs? Solving Catastrophic Forgetting](https://outcomeschool.com/blog/continual-learning-in-llms)
+7. [What is Deep RL from Human Preferences? The Paper That Started RLHF](https://outcomeschool.com/blog/decoding-deep-rl-from-human-preferences)
+8. [What is InstructGPT? How GPT-3 Learned to Follow Instructions](https://outcomeschool.com/blog/decoding-instructgpt)
+9. [What is RLHF? Reinforcement Learning from Human Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf)
+10. [What is Proximal Policy Optimization (PPO) and How Does It Work?](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
+11. [What is Direct Preference Optimization (DPO) and How Does It Work?](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
+12. [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
 
 ---
 
-### 7.1 How does fine-tuning work?
+### 7.1 How does Pretraining work?
+
+In this blog, we will learn about how pretraining works. We will also see what simple game the model plays during pretraining, where the training text comes from and how it is cleaned, how the model learns from its mistakes, why it needs so much data and computing power, what we get at the end of pretraining, and how pretraining is different from the stages that come after it.
+
+We will cover the following:
+
+- What is Pretraining?
+- Why is it called "pre" training?
+- The simple game: predict the next word
+- Why no human labels are needed
+- Step 1: Collecting the text
+- Step 2: Cleaning the text
+- Step 3: Breaking text into tokens
+- Step 4: The training loop
+- A tiny example of learning from a mistake
+- Why does pretraining need so much data and compute?
+- What do we get after pretraining?
+- What comes after pretraining?
+- Pretraining vs Fine-tuning
+
+Let's get started: [How does Pretraining work?](https://outcomeschool.com/blog/llm-pretraining)
+
+### 7.2 How does fine-tuning work?
 
 In this blog, we will learn about how Fine-tuning works. We will also see why we need it, how it works step by step with a simple example, how full fine-tuning and LoRA differ and when to use which one based on our use case.
 
@@ -1716,7 +1739,7 @@ We will cover the following:
 
 Let's get started: [How does fine-tuning work?](https://outcomeschool.com/blog/how-does-fine-tuning-work)
 
-### 7.2 What is LoRA (Low-Rank Adaptation) and How Does It Fine-Tune LLMs?
+### 7.3 What is LoRA (Low-Rank Adaptation) and How Does It Fine-Tune LLMs?
 
 In this blog, we will learn about LoRA - Low-Rank Adaptation of Large Language Models.
 
@@ -1734,7 +1757,7 @@ We will cover the following:
 
 Let's get started: [What is LoRA (Low-Rank Adaptation) and How Does It Fine-Tune LLMs?](https://outcomeschool.com/blog/lora-low-rank-adaptation-of-llms)
 
-### 7.3 How does Prefix Tuning work?
+### 7.4 How does Prefix Tuning work?
 
 In this blog, we will learn about Prefix Tuning, a cheap way to adapt a large language model to a new task without changing the model itself. It saves memory, saves money, and lets one big model serve many different tasks at once. We will also see why full fine-tuning is so expensive, how the prefix is added and trained without changing the model, how Prefix Tuning differs from full fine-tuning and prompt tuning and when to use which one based on our use case, where it falls short and how it compares with LoRA, and where it is used in the real world.
 
@@ -1758,7 +1781,7 @@ We will cover the following:
 
 Let's get started: [How does Prefix Tuning work?](https://outcomeschool.com/blog/how-does-prefix-tuning-work)
 
-### 7.4 How does Knowledge Distillation work?
+### 7.5 How does Knowledge Distillation work?
 
 In this blog, we will learn about how Knowledge Distillation works. We will also see why we need it, how a small model learns from a big model, and how this lets us run powerful AI on a phone, on an edge device, and at low cost.
 
@@ -1777,7 +1800,7 @@ We will cover the following:
 
 Let's get started: [How does Knowledge Distillation work?](https://outcomeschool.com/blog/how-does-knowledge-distillation-work)
 
-### 7.5 What is Continual Learning in LLMs? Solving Catastrophic Forgetting
+### 7.6 What is Continual Learning in LLMs? Solving Catastrophic Forgetting
 
 In this blog, we will learn about Continual Learning in LLMs. We will understand what it is, why we need it, the big problem of catastrophic forgetting, the approaches used to solve it, and where it is used in the real world.
 
@@ -1792,7 +1815,7 @@ We will cover the following:
 
 Let's get started: [What is Continual Learning in LLMs? Solving Catastrophic Forgetting](https://outcomeschool.com/blog/continual-learning-in-llms)
 
-### 7.6 What is Deep RL from Human Preferences? The Paper That Started RLHF
+### 7.7 What is Deep RL from Human Preferences? The Paper That Started RLHF
 
 In this blog, we are going to learn about Deep Reinforcement Learning from Human Preferences, the 2017 paper that started it all. It taught machines what we want by simply asking us to pick which of two behaviors looks better. This is the origin of RLHF, the technique behind ChatGPT.
 
@@ -1814,7 +1837,7 @@ We will cover the following:
 
 Let's get started: [What is Deep RL from Human Preferences? The Paper That Started RLHF](https://outcomeschool.com/blog/decoding-deep-rl-from-human-preferences)
 
-### 7.7 What is InstructGPT? How GPT-3 Learned to Follow Instructions
+### 7.8 What is InstructGPT? How GPT-3 Learned to Follow Instructions
 
 In this blog, we are going to learn about InstructGPT, the model that taught GPT-3 to actually follow our instructions, and the work that led directly to ChatGPT.
 
@@ -1836,7 +1859,7 @@ We will cover the following:
 
 Let's get started: [What is InstructGPT? How GPT-3 Learned to Follow Instructions](https://outcomeschool.com/blog/decoding-instructgpt)
 
-### 7.8 What is RLHF? Reinforcement Learning from Human Feedback Explained
+### 7.9 What is RLHF? Reinforcement Learning from Human Feedback Explained
 
 In this blog, we will learn about Reinforcement Learning from Human Feedback (RLHF), the training technique that turns a raw pre-trained LLM into a helpful, honest, and safe assistant by teaching it from human preferences.
 
@@ -1857,7 +1880,7 @@ We will cover the following:
 
 Let's get started: [What is RLHF? Reinforcement Learning from Human Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf)
 
-### 7.9 What is Proximal Policy Optimization (PPO) and How Does It Work?
+### 7.10 What is Proximal Policy Optimization (PPO) and How Does It Work?
 
 In this blog, we are going to learn about Proximal Policy Optimization (PPO). We will also see how PPO works step-by-step and how it is used in training Large Language Models with RLHF.
 
@@ -1876,7 +1899,7 @@ We will cover the following:
 
 Let's get started: [What is Proximal Policy Optimization (PPO) and How Does It Work?](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
 
-### 7.10 What is Direct Preference Optimization (DPO) and How Does It Work?
+### 7.11 What is Direct Preference Optimization (DPO) and How Does It Work?
 
 In this blog, we are going to learn about Direct Preference Optimization (DPO). We will also see how DPO works step-by-step and how it differs from RLHF (PPO).
 
@@ -1895,7 +1918,7 @@ We will cover the following:
 
 Let's get started: [What is Direct Preference Optimization (DPO) and How Does It Work?](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
 
-### 7.11 What is Group Relative Policy Optimization (GRPO) and How Does It Work?
+### 7.12 What is Group Relative Policy Optimization (GRPO) and How Does It Work?
 
 In this blog, we are going to learn about Group Relative Policy Optimization (GRPO). We will also see how GRPO works step-by-step and when to use it based on our use case.
 
