@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 12      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 14      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 15      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -4930,6 +4930,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 12. [How does the Opus codec compress voice for real-time calls?](https://outcomeschool.com/blog/opus-codec)
 13. [How does a jitter buffer keep voice audio smooth over a bad network?](https://outcomeschool.com/blog/jitter-buffer)
 14. [How does packet loss concealment hide missing audio?](https://outcomeschool.com/blog/packet-loss-concealment)
+15. [How does a voice AI agent answer a phone call?](https://outcomeschool.com/blog/phone-calls-in-voice-agents)
 
 ---
 
@@ -5194,6 +5195,27 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How does packet loss concealment hide missing audio?](https://outcomeschool.com/blog/packet-loss-concealment)
+
+---
+
+### 18.15 How does a voice AI agent answer a phone call?
+
+In this blog, we will learn about how a voice AI agent answers a phone call. We will also see how a call travels from the caller's phone to our server, what the phone number and the telephony provider do, how the caller's voice reaches our agent as a stream of audio chunks, how the agent listens, thinks, and speaks back into the call, how it handles interruptions, and how the call ends or gets transferred to a human.
+
+We will cover the following:
+
+- What is a voice AI agent on a phone call?
+- The journey of a phone call
+- Step 1: The caller dials a phone number
+- Step 2: The telephony provider receives the call
+- Step 3: Our server decides what to do with the call
+- Step 4: The caller's voice reaches our agent
+- Step 5: The agent listens, thinks, and speaks
+- Step 6: The agent's voice goes back into the call
+- Handling interruptions on a phone call
+- How the call ends
+
+Let's get started: [How does a voice AI agent answer a phone call?](https://outcomeschool.com/blog/phone-calls-in-voice-agents)
 
 ---
 
