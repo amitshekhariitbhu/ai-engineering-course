@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 16      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 13      |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 14      |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5968,6 +5968,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 11. [How does a voice agent handle accents and noisy environments?](https://outcomeschool.com/blog/accents-and-noise-in-voice-agents)
 12. [How does a voice agent detect and switch the user's language mid-call?](https://outcomeschool.com/blog/language-switching-in-voice-agents)
 13. [How does a voice agent match its tone and emotion to the user?](https://outcomeschool.com/blog/emotion-matching-in-voice-agents)
+14. [How do you evaluate a voice AI agent?](https://outcomeschool.com/blog/voice-agent-evaluation)
 
 ---
 
@@ -6255,6 +6256,27 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How does a voice agent match its tone and emotion to the user?](https://outcomeschool.com/blog/emotion-matching-in-voice-agents)
+
+### 19.14 How do you evaluate a voice AI agent?
+
+In this blog, we will learn about how we evaluate a voice AI agent. We will also see why it is harder than evaluating a chat agent, the five checks we run on every call, how we test it with simulated callers before launch, how we evaluate real calls after launch, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is a voice AI agent?
+- What does it mean to evaluate a voice AI agent?
+- Why is it harder than evaluating a chat agent?
+- The five things we check
+- Check 1: Did it hear correctly?
+- Check 2: Did it do the right thing?
+- Check 3: Did it speak well?
+- Check 4: Was it fast enough?
+- Check 5: Did it take turns naturally?
+- Testing with simulated callers before launch
+- Evaluating real calls after launch
+- Where it works well and where it fails
+
+Let's get started: [How do you evaluate a voice AI agent?](https://outcomeschool.com/blog/voice-agent-evaluation)
 
 ---
 
