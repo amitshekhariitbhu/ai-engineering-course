@@ -129,7 +129,7 @@ In this AI Engineering Course, we will learn:
 - **Machine Learning foundations:** supervised, unsupervised, and reinforcement learning, loss functions, regularization, precision and recall.
 - **Deep Learning:** gradient descent, backpropagation, cross-entropy, dropout, normalization, CNNs, RNNs, PyTorch, and TensorFlow.
 - **The Transformer architecture:** tokenization, BPE, embeddings, self attention, the math behind Q, K, and V, multi-head attention, causal masking, RoPE, and the feed-forward network.
-- **How LLMs generate text:** temperature, top-k and top-p sampling, greedy decoding and beam search, logprobs, token streaming, the context window, and the lost in the middle problem.
+- **How LLMs generate text:** temperature, top-k and top-p sampling, greedy decoding and beam search, logprobs, constrained decoding, token streaming, the context window, and the lost in the middle problem.
 - **Modern LLM architecture:** Mixture of Experts (MoE), Grouped Query Attention (GQA), sliding window attention, attention sinks, Flash Attention, and DeepSeek-V4.
 - **Types of language models:** SLMs, Large Reasoning Models, Recursive Language Models, Diffusion Language Models, and System One Models.
 - **Fine-tuning and alignment:** fine-tuning, instruction tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
@@ -174,7 +174,7 @@ Let's get started.
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                             | 30      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                                   | 30      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                                         | 18      |
-| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                                         | 9       |
+| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                                         | 10      |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                                       | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                                     | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                               | 18      |
@@ -1755,10 +1755,11 @@ By the end of this module, we will know exactly what happens between the prompt 
 3. [How do Greedy Decoding and Beam Search differ?](https://outcomeschool.com/blog/greedy-decoding-vs-beam-search)
 4. [What are Log Probabilities (Logprobs) in LLMs?](https://outcomeschool.com/blog/logprobs-in-llms)
 5. [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
-6. [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
-7. [How does the Context Window work?](https://outcomeschool.com/blog/context-window)
-8. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
-9. [Why Do LLMs Hallucinate? The Token-Level Explanation](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation)
+6. [How does Constrained Decoding work?](https://outcomeschool.com/blog/constrained-decoding)
+7. [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
+8. [How does the Context Window work?](https://outcomeschool.com/blog/context-window)
+9. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
+10. [Why Do LLMs Hallucinate? The Token-Level Explanation](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation)
 
 ---
 
@@ -1857,7 +1858,27 @@ We will cover the following:
 
 Let's get started: [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
 
-### 4.6 How does Token Streaming work?
+### 4.6 How does Constrained Decoding work?
+
+In this blog, we will learn about how Constrained Decoding works, a way of forcing an LLM to only pick tokens that follow a fixed set of rules, like a valid JSON format. We will also see why we need it, how an LLM normally picks one token at a time, how a mask blocks the wrong tokens, how rules like JSON and regex are turned into a small state machine, a step-by-step walkthrough with simple numbers, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is decoding in an LLM?
+- The problem: LLMs do not always follow the format
+- What is Constrained Decoding?
+- The core idea: masking the wrong tokens
+- A step-by-step example
+- How do the rules become a state machine?
+- Constrained Decoding for JSON
+- The tricky part: tokens are not characters
+- Constrained Decoding in code
+- Constrained Decoding vs asking in the prompt
+- Where it works well and where it fails
+
+Let's get started: [How does Constrained Decoding work?](https://outcomeschool.com/blog/constrained-decoding)
+
+### 4.7 How does Token Streaming work?
 
 In this blog, we will learn about how Token Streaming works. We will also see why we need it, how the server and the browser talk to each other to make it happen, and where it is used in real systems like ChatGPT and Claude.
 
@@ -1876,7 +1897,7 @@ We will cover the following:
 
 Let's get started: [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
 
-### 4.7 How does the Context Window work?
+### 4.8 How does the Context Window work?
 
 In this blog, we will learn about how the Context Window works in Large Language Models. We will also see why we need it, what tokens are, how the model reads everything inside it, what happens when it gets full, how to manage it, and the common mistakes we must avoid.
 
@@ -1893,7 +1914,7 @@ We will cover the following:
 
 Let's get started: [How does the Context Window work?](https://outcomeschool.com/blog/context-window)
 
-### 4.8 What is the Lost in the Middle Problem in LLMs and How to Fix It?
+### 4.9 What is the Lost in the Middle Problem in LLMs and How to Fix It?
 
 In this blog, we will learn about the Lost in the Middle problem in LLMs, the strange behaviour where a model reads a very long text, uses the beginning and the end very well, and quietly ignores whatever is sitting in the middle. We will also see what a context window really means, how the accuracy forms a U-shaped curve, why the middle gets forgotten, how this silently breaks RAG systems and long conversations, how we can test our own model for it, and what we can do to fix it.
 
@@ -1913,7 +1934,7 @@ Let's get started: [What is the Lost in the Middle Problem in LLMs and How to Fi
 
 Watch the video: [Why is the context window limited in LLMs?](https://www.youtube.com/watch?v=CGIhxIaOg3M)
 
-### 4.9 Why Do LLMs Hallucinate? The Token-Level Explanation
+### 4.10 Why Do LLMs Hallucinate? The Token-Level Explanation
 
 In this blog, we will learn about why LLMs hallucinate, explained at the level of a single token. We will also see what a hallucination really is, how an LLM picks one token at a time with no step for checking whether something is true, why the tokens that carry facts are the risky ones, how a sharp guess differs from a flat guess, the six reasons hallucinations happen, and how we can reduce them at the token level.
 
