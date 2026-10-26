@@ -186,7 +186,7 @@ Let's get started.
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                            | 4       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                                        | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                              | 8       |
-| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 13      |
+| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 14      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
 | 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 5       |
@@ -4575,11 +4575,12 @@ By the end of this module, we will be able to design an AI system end to end, fr
 6. [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
 7. [How does Model Serving work?](https://outcomeschool.com/blog/model-serving)
 8. [How does a Model Registry work?](https://outcomeschool.com/blog/model-registry)
-9. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
-10. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
-11. [What is System Design?](https://outcomeschool.com/blog/system-design)
-12. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-13. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+9. [How does a feature store work?](https://outcomeschool.com/blog/feature-store)
+10. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
+11. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
+12. [What is System Design?](https://outcomeschool.com/blog/system-design)
+13. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+14. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -4752,13 +4753,31 @@ We will cover the following:
 
 Let's get started: [How does a Model Registry work?](https://outcomeschool.com/blog/model-registry)
 
-### 16.9 Android TensorFlow Lite Machine Learning Example
+### 16.9 How does a feature store work?
+
+In this blog, we will learn about how a feature store works. We will also see the problem before feature stores, how the offline store and the online store serve training and live predictions, the training-serving skew problem, point-in-time correctness, and when to use a feature store.
+
+We will cover the following:
+
+- What is a feature?
+- What is a feature store?
+- The problem before feature stores
+- How a feature store works
+- The offline store and the online store
+- The training-serving skew problem
+- A simple end-to-end example
+- Point-in-time correctness
+- When to use a feature store
+
+Let's get started: [How does a feature store work?](https://outcomeschool.com/blog/feature-store)
+
+### 16.10 Android TensorFlow Lite Machine Learning Example
 
 In this blog, we will see Android TensorFlow Lite Machine Learning example.
 
 Let's get started: [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
 
-### 16.10 What is LLM Routing? How to Send Each Query to the Right LLM
+### 16.11 What is LLM Routing? How to Send Each Query to the Right LLM
 
 In this blog, we will learn about LLM Routing, why it matters, and how to send each user query to the right LLM based on cost, latency, and quality.
 
@@ -4779,7 +4798,7 @@ Let's get started: [What is LLM Routing? How to Send Each Query to the Right LLM
 
 **Supporting lessons for AI System Design:**
 
-### 16.11 What is System Design?
+### 16.12 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -4791,7 +4810,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.12 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.13 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -4805,7 +4824,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.13 How do Voice And Video Call Work?
+### 16.14 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
