@@ -171,7 +171,7 @@ Let's get started.
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 25      |
-| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 26      |
+| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 27      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 9       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
@@ -723,9 +723,10 @@ By the end of this module, we will be able to explain how a neural network train
 21. [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
 22. [Convolutional Neural Networks](https://outcomeschool.com/blog/convolutional-neural-network-cnn)
 23. [How does Object Detection work?](https://outcomeschool.com/blog/object-detection)
-24. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
-25. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
-26. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
+24. [How does Semantic Segmentation work?](https://outcomeschool.com/blog/semantic-segmentation)
+25. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
+26. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
+27. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
 
 ---
 
@@ -1139,13 +1140,30 @@ We will cover the following:
 
 Let's get started: [How does Object Detection work?](https://outcomeschool.com/blog/object-detection)
 
-### 2.24 What is a Recurrent Neural Network (RNN)?
+### 2.24 How does Semantic Segmentation work?
+
+In this blog, we will learn about how Semantic Segmentation works. We will also see how it differs from Image Classification and Object Detection, why we need it, how an encoder and a decoder label every pixel in an image, how the model learns, and where it is used in the real world.
+
+We will cover the following:
+
+- What is Semantic Segmentation?
+- Image Classification vs Object Detection vs Semantic Segmentation
+- Why do we need Semantic Segmentation?
+- How does Semantic Segmentation work step by step?
+- What is an Encoder and a Decoder?
+- A simple worked example with numbers
+- How does the model learn?
+- Real-world use cases
+
+Let's get started: [How does Semantic Segmentation work?](https://outcomeschool.com/blog/semantic-segmentation)
+
+### 2.25 What is a Recurrent Neural Network (RNN)?
 
 In this blog, we will learn about the Recurrent Neural Network.
 
 Let's get started: [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
 
-### 2.25 How does PyTorch work?
+### 2.26 How does PyTorch work?
 
 In this blog, we will learn about how PyTorch works. We will also see what a tensor is, how the computation graph and autograd work together to train a model, and why PyTorch uses the GPU to become one of the most popular tools in the real world.
 
@@ -1162,7 +1180,7 @@ We will cover the following:
 
 Let's get started: [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
 
-### 2.26 How Does The Machine Learning Library TensorFlow Work?
+### 2.27 How Does The Machine Learning Library TensorFlow Work?
 
 In this blog, we will learn how the Machine Learning library TensorFlow works.
 
