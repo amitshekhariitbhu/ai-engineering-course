@@ -128,7 +128,7 @@ In this AI Engineering Course, we will learn:
 - **Machine Learning foundations:** supervised, unsupervised, and reinforcement learning, loss functions, regularization, precision and recall.
 - **Deep Learning:** gradient descent, backpropagation, cross-entropy, dropout, normalization, RNNs, PyTorch, and TensorFlow.
 - **The Transformer architecture:** tokenization, BPE, embeddings, self attention, the math behind Q, K, and V, multi-head attention, causal masking, RoPE, and the feed-forward network.
-- **How LLMs generate text:** temperature, top-k and top-p sampling, token streaming, and the lost in the middle problem.
+- **How LLMs generate text:** temperature, top-k and top-p sampling, token streaming, the context window, and the lost in the middle problem.
 - **Modern LLM architecture:** Mixture of Experts (MoE), Grouped Query Attention (GQA), sliding window attention, attention sinks, Flash Attention, and DeepSeek-V4.
 - **Types of language models:** SLMs, Large Reasoning Models, Recursive Language Models, Diffusion Language Models, and System One Models.
 - **Fine-tuning and alignment:** fine-tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
@@ -173,7 +173,7 @@ Let's get started.
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 13      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 21      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
-| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 6       |
+| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 7       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 11      |
@@ -1201,8 +1201,9 @@ By the end of this module, we will know exactly what happens between the prompt 
 2. [How do Top-k and Top-p Sampling work?](https://outcomeschool.com/blog/how-do-top-k-and-top-p-sampling-work)
 3. [Stop Tokens in LLMs](https://outcomeschool.com/blog/stop-tokens-in-llms)
 4. [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
-5. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
-6. [Why Do LLMs Hallucinate? The Token-Level Explanation](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation)
+5. [How does the Context Window work?](https://outcomeschool.com/blog/context-window)
+6. [What is the Lost in the Middle Problem in LLMs and How to Fix It?](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms)
+7. [Why Do LLMs Hallucinate? The Token-Level Explanation](https://outcomeschool.com/blog/why-do-llms-hallucinate-the-token-level-explanation)
 
 ---
 
@@ -1283,7 +1284,24 @@ We will cover the following:
 
 Let's get started: [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
 
-### 4.5 What is the Lost in the Middle Problem in LLMs and How to Fix It?
+### 4.5 How does the Context Window work?
+
+In this blog, we will learn about how the Context Window works in Large Language Models. We will also see why we need it, what tokens are, how the model reads everything inside it, what happens when it gets full, how to manage it, and the common mistakes we must avoid.
+
+We will cover the following:
+
+- What is a Context Window?
+- Why do we need a Context Window?
+- What are tokens?
+- How does the model read the Context Window?
+- A step-by-step walkthrough of a conversation
+- What happens when the Context Window gets full?
+- How to manage the Context Window
+- Common mistakes while using the Context Window
+
+Let's get started: [How does the Context Window work?](https://outcomeschool.com/blog/context-window)
+
+### 4.6 What is the Lost in the Middle Problem in LLMs and How to Fix It?
 
 In this blog, we will learn about the Lost in the Middle problem in LLMs, the strange behaviour where a model reads a very long text, uses the beginning and the end very well, and quietly ignores whatever is sitting in the middle. We will also see what a context window really means, how the accuracy forms a U-shaped curve, why the middle gets forgotten, how this silently breaks RAG systems and long conversations, how we can test our own model for it, and what we can do to fix it.
 
@@ -1303,7 +1321,7 @@ Let's get started: [What is the Lost in the Middle Problem in LLMs and How to Fi
 
 Watch the video: [Why is the context window limited in LLMs?](https://www.youtube.com/watch?v=CGIhxIaOg3M)
 
-### 4.6 Why Do LLMs Hallucinate? The Token-Level Explanation
+### 4.7 Why Do LLMs Hallucinate? The Token-Level Explanation
 
 In this blog, we will learn about why LLMs hallucinate, explained at the level of a single token. We will also see what a hallucination really is, how an LLM picks one token at a time with no step for checking whether something is true, why the tokens that carry facts are the risky ones, how a sharp guess differs from a flat guess, the six reasons hallucinations happen, and how we can reduce them at the token level.
 
