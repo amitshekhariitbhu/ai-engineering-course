@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 14      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 15      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -4058,6 +4058,7 @@ By the end of this module, we will understand how a voice agent holds a natural 
 12. [How does a voice agent tell a real interruption from a cough or background noise?](https://outcomeschool.com/blog/interruption-vs-background-noise)
 13. [What are backchannels, and why should "mm-hmm" not stop the agent?](https://outcomeschool.com/blog/backchannels-in-voice-agents)
 14. [How does a voice agent stop speaking instantly when interrupted?](https://outcomeschool.com/blog/stopping-speech-on-interruption)
+15. [Why does TTS audio buffering make interruptions slow?](https://outcomeschool.com/blog/tts-audio-buffering)
 
 ---
 
@@ -4338,6 +4339,27 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How does a voice agent stop speaking instantly when interrupted?](https://outcomeschool.com/blog/stopping-speech-on-interruption)
+
+---
+
+### 17.15 Why does TTS audio buffering make interruptions slow?
+
+In this blog, we will learn about why TTS audio buffering makes interruptions slow. We will also see how a TTS model creates audio faster than real time, where the extra audio waits before we hear it, how much delay a full buffer adds when we interrupt, why we cannot simply remove all the buffers, how pacing the audio keeps the buffers small, and where this works well and where it fails.
+
+We will cover the following:
+
+- What is TTS audio buffering?
+- TTS creates audio faster than we can hear it
+- Where the extra audio waits
+- What happens when we interrupt
+- How much delay does the buffer add?
+- Why we cannot remove the buffers
+- The fix: send audio at the speed of speech
+- Clearing what is left
+- A complete example
+- Where it works well and where it fails
+
+Let's get started: [Why does TTS audio buffering make interruptions slow?](https://outcomeschool.com/blog/tts-audio-buffering)
 
 ---
 
