@@ -186,7 +186,7 @@ Let's get started.
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                            | 5       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                                        | 5       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                              | 8       |
-| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 15      |
+| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 16      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
 | 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 13      |
@@ -4788,9 +4788,10 @@ By the end of this module, we will be able to design an AI system end to end, fr
 10. [How does a feature store work?](https://outcomeschool.com/blog/feature-store)
 11. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
 12. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
-13. [What is System Design?](https://outcomeschool.com/blog/system-design)
-14. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-15. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+13. [How does an LLM Gateway work?](https://outcomeschool.com/blog/llm-gateway)
+14. [What is System Design?](https://outcomeschool.com/blog/system-design)
+15. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+16. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -5023,9 +5024,32 @@ We will cover the following:
 
 Let's get started: [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
 
+### 16.13 How does an LLM Gateway work?
+
+In this blog, we will learn about how an LLM Gateway works. We will also see the problem we face when many apps talk to many LLM providers directly, what happens to a request step by step inside the gateway, how routing, fallback, caching, rate limiting, and cost tracking work, a simple example with code, and when we need a gateway and when we do not.
+
+We will cover the following:
+
+- The problem without an LLM Gateway
+- What is an LLM Gateway?
+- The journey of a request through the gateway
+- One API for all providers
+- Authentication and virtual keys
+- Routing and load balancing
+- Retries and fallback
+- Caching
+- Rate limiting and budgets
+- Guardrails
+- Logging, monitoring, and cost tracking
+- A simple example with code
+- Gateway vs calling the provider directly
+- When do we need an LLM Gateway?
+
+Let's get started: [How does an LLM Gateway work?](https://outcomeschool.com/blog/llm-gateway)
+
 **Supporting lessons for AI System Design:**
 
-### 16.13 What is System Design?
+### 16.14 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -5037,7 +5061,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.14 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.15 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -5051,7 +5075,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.15 How do Voice And Video Call Work?
+### 16.16 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
@@ -6392,6 +6416,7 @@ Quick definitions of the most important AI Engineering terms, taken from the les
 - **[Variational Autoencoder (VAE)](https://outcomeschool.com/blog/variational-autoencoders):** A Variational Autoencoder, also called a VAE, is a special type of Autoencoder that learns a smooth and organized latent space, so that we can pick any random point from it and generate brand new, meaningful data.
 - **[LPU](https://outcomeschool.com/blog/how-does-an-lpu-work):** An LPU is a chip that is built for one single job, running a large language model that is already trained, and producing text as fast as possible.
 - **[LLM Routing](https://outcomeschool.com/blog/llm-routing):** LLM Routing is the practice of choosing the right LLM for each user query, instead of sending every query to the same LLM.
+- **[LLM Gateway](https://outcomeschool.com/blog/llm-gateway):** An LLM Gateway is a single middle layer that sits between our applications and all the LLM providers that we use, so it can route, secure, cache, limit, log, and track the cost of every LLM call in one place.
 - **[Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent):** A Voice AI Agent is a software program that we can talk to using our voice, and it talks back to us, just like a phone call with a human, but the one on the other side is an AI.
 - **[World Model](https://outcomeschool.com/blog/how-do-world-models-work):** A World Model is an AI that learns an approximate internal copy of how an environment behaves, so that it can predict what happens next, given the current state and an action.
 - **[Recursive Self-Improvement](https://outcomeschool.com/blog/what-is-recursive-self-improvement-rsi):** Recursive Self-Improvement is a process in which an AI system improves its own abilities, and then the improved version improves itself further, and this cycle keeps repeating.
