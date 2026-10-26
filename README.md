@@ -130,7 +130,7 @@ In this AI Engineering Course, we will learn:
 - **Deep Learning:** gradient descent, backpropagation, cross-entropy, dropout, normalization, CNNs, RNNs, PyTorch, and TensorFlow.
 - **The Transformer architecture:** tokenization, BPE, embeddings, self attention, the math behind Q, K, and V, multi-head attention, causal masking, RoPE, and the feed-forward network.
 - **How LLMs generate text:** temperature, top-k and top-p sampling, greedy decoding and beam search, logprobs, constrained decoding, token streaming, the context window, and the lost in the middle problem.
-- **Modern LLM architecture:** Mixture of Experts (MoE), Grouped Query Attention (GQA), sliding window attention, attention sinks, Flash Attention, and DeepSeek-V4.
+- **Modern LLM architecture:** Mixture of Experts (MoE), Grouped Query Attention (GQA), sliding window attention, attention sinks, Flash Attention, SwiGLU, and DeepSeek-V4.
 - **Types of language models:** SLMs, Large Reasoning Models, Recursive Language Models, Diffusion Language Models, and System One Models.
 - **Fine-tuning and alignment:** fine-tuning, instruction tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
 - **Prompt Engineering and Context Engineering:** in-context learning, chain-of-thought, tree of thoughts, prompt chaining, prompt caching, context compaction, and system prompts.
@@ -175,7 +175,7 @@ Let's get started.
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                                   | 30      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                                         | 18      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                                         | 10      |
-| 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                                       | 7       |
+| 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                                       | 8       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                                     | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                               | 18      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                                 | 9       |
@@ -1996,7 +1996,8 @@ By the end of this module, we will be able to read the architecture section of a
 4. [How does Sliding Window Attention work?](https://outcomeschool.com/blog/how-does-sliding-window-attention-work)
 5. [How do Attention Sinks work?](https://outcomeschool.com/blog/how-do-attention-sinks-work)
 6. [What is Flash Attention and Why Is It So Fast?](https://outcomeschool.com/blog/decoding-flash-attention)
-7. [What is DeepSeek-V4 and How Does It Work? Architecture Explained](https://outcomeschool.com/blog/decoding-deepseek-v4)
+7. [How does SwiGLU work?](https://outcomeschool.com/blog/swiglu)
+8. [What is DeepSeek-V4 and How Does It Work? Architecture Explained](https://outcomeschool.com/blog/decoding-deepseek-v4)
 
 ---
 
@@ -2110,7 +2111,29 @@ We will cover the following:
 
 Let's get started: [What is Flash Attention and Why Is It So Fast?](https://outcomeschool.com/blog/decoding-flash-attention)
 
-### 5.7 What is DeepSeek-V4 and How Does It Work? Architecture Explained
+### 5.7 How does SwiGLU work?
+
+In this blog, we will learn about how SwiGLU works. We will also see where it sits inside a Transformer, what an activation function is, how ReLU, Sigmoid, and Swish work, what a gate and a Gated Linear Unit are, how they join together to make SwiGLU, and why models like LLaMA use it.
+
+We will cover the following:
+
+- Where does SwiGLU live inside an LLM?
+- What is a feed-forward network?
+- What is an activation function?
+- What is ReLU?
+- What is Sigmoid?
+- What is Swish?
+- What is a gate?
+- What is a Gated Linear Unit (GLU)?
+- Putting it together: SwiGLU = Swish + GLU
+- A step-by-step example with numbers
+- SwiGLU in code
+- Why does SwiGLU work better?
+- ReLU vs GELU vs SwiGLU
+
+Let's get started: [How does SwiGLU work?](https://outcomeschool.com/blog/swiglu)
+
+### 5.8 What is DeepSeek-V4 and How Does It Work? Architecture Explained
 
 In this blog, we will learn about DeepSeek-V4, the new family of open Mixture-of-Experts language models that natively supports a one-million-token context with dramatically lower inference cost.
 
