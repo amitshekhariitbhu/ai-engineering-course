@@ -139,7 +139,7 @@ In this AI Engineering Course, we will learn:
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 - **LLM Inference Engineering:** prefill vs decode, KV cache, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, Ollama, vLLM, SGLang, and TensorRT-LLM.
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
-- **AI Safety and Security:** guardrails, prompt injection, jailbreaking, and watermarking.
+- **AI Safety and Security:** guardrails, prompt injection, jailbreaking, watermarking, and data poisoning.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
 - **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, model serving, LLM routing, and system design.
 - **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, streaming TTS, voice agent system prompts, function calling in voice agents, and structured inputs in voice agents.
@@ -184,7 +184,7 @@ Let's get started.
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                                    | 8       |
 | 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                                  | 19      |
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                            | 5       |
-| 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                                        | 4       |
+| 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                                        | 5       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                              | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 15      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
@@ -4390,6 +4390,7 @@ By the end of this module, we will be able to defend an LLM application against 
 2. [What is Prompt Injection in LLMs and How Do We Defend Against It?](https://outcomeschool.com/blog/prompt-injection-in-llms)
 3. [What is jailbreaking in LLMs?](https://outcomeschool.com/blog/jailbreaking-in-llms)
 4. [How Does LLM Watermarking Work?](https://outcomeschool.com/blog/how-does-llm-watermarking-work)
+5. [What is data poisoning in AI?](https://outcomeschool.com/blog/data-poisoning)
 
 ---
 
@@ -4481,6 +4482,26 @@ We will cover the following:
 - Advantages and disadvantages of LLM watermarking
 
 Let's get started: [How Does LLM Watermarking Work?](https://outcomeschool.com/blog/how-does-llm-watermarking-work)
+
+### 14.5 What is data poisoning in AI?
+
+In this blog, we will learn about data poisoning in AI. We will also see how an AI model learns from data, why data poisoning works, the main types of data poisoning, how attackers poison LLMs, why it is so hard to catch, and how we can defend against it.
+
+We will cover the following:
+
+- How does an AI model learn?
+- What is data poisoning?
+- Why does data poisoning work?
+- Type 1: Making the model worse overall
+- Type 2: Flipping the labels
+- Type 3: Hidden backdoors
+- How can attackers poison LLMs?
+- How many poisoned examples are enough?
+- Why is data poisoning hard to catch?
+- How do we defend against data poisoning?
+- Data poisoning vs other attacks
+
+Let's get started: [What is data poisoning in AI?](https://outcomeschool.com/blog/data-poisoning)
 
 ---
 
