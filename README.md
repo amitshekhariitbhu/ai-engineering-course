@@ -172,7 +172,7 @@ Let's get started.
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                                   | 1       |
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                             | 28      |
-| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                                   | 28      |
+| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                                   | 29      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                                         | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                                         | 9       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                                       | 7       |
@@ -789,8 +789,9 @@ By the end of this module, we will be able to explain how a neural network train
 24. [How does Semantic Segmentation work?](https://outcomeschool.com/blog/semantic-segmentation)
 25. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
 26. [How do LSTM and GRU work?](https://outcomeschool.com/blog/lstm-and-gru)
-27. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
-28. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
+27. [How does OCR with Deep Learning work?](https://outcomeschool.com/blog/optical-character-recognition-ocr)
+28. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
+29. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
 
 ---
 
@@ -1252,7 +1253,26 @@ We will cover the following:
 
 Let's get started: [How do LSTM and GRU work?](https://outcomeschool.com/blog/lstm-and-gru)
 
-### 2.27 How does PyTorch work?
+### 2.27 How does OCR with Deep Learning work?
+
+In this blog, we will learn about how OCR with Deep Learning works. We will also see why we need it, why the old way failed, how the full pipeline detects and recognizes text one character at a time, how the model is trained, and where OCR is used in the real world.
+
+We will cover the following:
+
+- What is OCR?
+- Why do we need OCR?
+- The old way of doing OCR and why it failed
+- The full pipeline of OCR with Deep Learning
+- Step 1: Detecting the text in the image
+- Step 2: Recognizing the text
+- How the model reads characters one by one
+- Training the model
+- A simple code example
+- Where OCR is used in the real world
+
+Let's get started: [How does OCR with Deep Learning work?](https://outcomeschool.com/blog/optical-character-recognition-ocr)
+
+### 2.28 How does PyTorch work?
 
 In this blog, we will learn about how PyTorch works. We will also see what a tensor is, how the computation graph and autograd work together to train a model, and why PyTorch uses the GPU to become one of the most popular tools in the real world.
 
@@ -1269,7 +1289,7 @@ We will cover the following:
 
 Let's get started: [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
 
-### 2.28 How Does The Machine Learning Library TensorFlow Work?
+### 2.29 How Does The Machine Learning Library TensorFlow Work?
 
 In this blog, we will learn how the Machine Learning library TensorFlow works.
 
