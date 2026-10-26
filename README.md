@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 15      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 16      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -4127,6 +4127,7 @@ By the end of this module, we will understand how a voice agent holds a natural 
 13. [What are backchannels, and why should "mm-hmm" not stop the agent?](https://outcomeschool.com/blog/backchannels-in-voice-agents)
 14. [How does a voice agent stop speaking instantly when interrupted?](https://outcomeschool.com/blog/stopping-speech-on-interruption)
 15. [Why does TTS audio buffering make interruptions slow?](https://outcomeschool.com/blog/tts-audio-buffering)
+16. [How does a voice agent truncate its memory to only what the user actually heard?](https://outcomeschool.com/blog/truncating-context-on-interruption)
 
 ---
 
@@ -4428,6 +4429,27 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [Why does TTS audio buffering make interruptions slow?](https://outcomeschool.com/blog/tts-audio-buffering)
+
+---
+
+### 17.16 How does a voice agent truncate its memory to only what the user actually heard?
+
+In this blog, we will learn about how a voice agent truncates its memory to only what the user actually heard. We will also see what the memory of a voice agent is, why the agent prepares its reply faster than it speaks it, what goes wrong when the memory is not cut, how the agent measures what was played and turns that time into words, how a speech-to-speech API does the same thing, and which edge cases the agent must handle.
+
+We will cover the following:
+
+- What is the memory of a voice agent?
+- The problem: the agent remembers more than the user heard
+- Why the reply is ready before it is spoken
+- What goes wrong if we do not truncate
+- How the agent knows what the user actually heard
+- Turning played time into words
+- Truncating the memory step by step
+- A complete walkthrough
+- How a speech-to-speech API does this
+- Edge cases
+
+Let's get started: [How does a voice agent truncate its memory to only what the user actually heard?](https://outcomeschool.com/blog/truncating-context-on-interruption)
 
 ---
 
