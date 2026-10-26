@@ -171,7 +171,7 @@ Let's get started.
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 10      |
-| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 14      |
+| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 15      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 15      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 6       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
@@ -411,16 +411,17 @@ By the end of this module, we will be able to explain how a neural network train
 2. [What is Bias In Artificial Neural Network?](https://outcomeschool.com/blog/bias-in-artificial-neural-network)
 3. [What is a Multilayer Perceptron (MLP) and How Does It Work?](https://outcomeschool.com/blog/multilayer-perceptron-mlp)
 4. [What are Activation Functions in Neural Networks? Sigmoid, Tanh, ReLU, and Softmax Explained](https://outcomeschool.com/blog/activation-functions)
-5. [How Does Matrix Multiplication Work in Neural Networks?](https://outcomeschool.com/blog/matrix-multiplication-in-neural-networks)
-6. [How Does Gradient Descent Work?](https://outcomeschool.com/blog/math-behind-gradient-descent)
-7. [How Does Backpropagation Work? The Math Explained Step by Step](https://outcomeschool.com/blog/math-behind-backpropagation)
-8. [What is Cross-Entropy Loss?](https://outcomeschool.com/blog/math-behind-cross-entropy-loss)
-9. [What is Dropout in Neural Networks and How Does It Work?](https://outcomeschool.com/blog/dropout-in-neural-networks)
-10. [Batch Normalization vs Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization)
-11. [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
-12. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
-13. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
-14. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
+5. [What is the Softmax Function and How Does It Work?](https://outcomeschool.com/blog/softmax-function)
+6. [How Does Matrix Multiplication Work in Neural Networks?](https://outcomeschool.com/blog/matrix-multiplication-in-neural-networks)
+7. [How Does Gradient Descent Work?](https://outcomeschool.com/blog/math-behind-gradient-descent)
+8. [How Does Backpropagation Work? The Math Explained Step by Step](https://outcomeschool.com/blog/math-behind-backpropagation)
+9. [What is Cross-Entropy Loss?](https://outcomeschool.com/blog/math-behind-cross-entropy-loss)
+10. [What is Dropout in Neural Networks and How Does It Work?](https://outcomeschool.com/blog/dropout-in-neural-networks)
+11. [Batch Normalization vs Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization)
+12. [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
+13. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
+14. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
+15. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
 
 ---
 
@@ -482,7 +483,25 @@ We will cover the following:
 
 Let's get started: [What are Activation Functions in Neural Networks? Sigmoid, Tanh, ReLU, and Softmax Explained](https://outcomeschool.com/blog/activation-functions)
 
-### 2.5 How Does Matrix Multiplication Work in Neural Networks?
+### 2.5 What is the Softmax Function and How Does It Work?
+
+In this blog, we will learn about the Softmax Function and how it works. We will also see why simply dividing by the sum fails, how the exponent step fixes it with a step-by-step worked example, its important properties, how temperature controls it, the trick that keeps it stable on a computer, and where it is used in classification models, LLMs, and attention.
+
+We will cover the following:
+
+- The Problem: Raw Scores Are Not Probabilities
+- Why Not Just Divide by the Sum?
+- What is the Softmax Function?
+- A Step-by-Step Worked Example
+- Softmax in Python
+- Important Properties of Softmax
+- Temperature in Softmax
+- The Numerical Stability Trick
+- Where is Softmax Used?
+
+Let's get started: [What is the Softmax Function and How Does It Work?](https://outcomeschool.com/blog/softmax-function)
+
+### 2.6 How Does Matrix Multiplication Work in Neural Networks?
 
 In this blog, we will learn about how matrix multiplication works in neural networks. We will also see what vectors, matrices, and the dot product are, the row-times-column rule with a fully worked example, the shape rule that tells us which matrices can be multiplied, how one layer of neurons becomes one matrix multiplication plus a bias, how we process many inputs at once, and why GPUs are so good at this.
 
@@ -498,7 +517,7 @@ We will cover the following:
 
 Let's get started: [How Does Matrix Multiplication Work in Neural Networks?](https://outcomeschool.com/blog/matrix-multiplication-in-neural-networks)
 
-### 2.6 How Does Gradient Descent Work?
+### 2.7 How Does Gradient Descent Work?
 
 In this blog, we will learn about the math behind gradient descent with a step-by-step numeric example.
 
@@ -520,7 +539,7 @@ Let's get started: [How Does Gradient Descent Work?](https://outcomeschool.com/b
 
 Watch the video: [Epoch, Batch, Batch Size, Iteration](https://www.youtube.com/watch?v=NFLlXE-6vno)
 
-### 2.7 How Does Backpropagation Work? The Math Explained Step by Step
+### 2.8 How Does Backpropagation Work? The Math Explained Step by Step
 
 In this blog, we will learn about the math behind backpropagation in neural networks.
 
@@ -537,7 +556,7 @@ We will cover the following:
 
 Let's get started: [How Does Backpropagation Work? The Math Explained Step by Step](https://outcomeschool.com/blog/math-behind-backpropagation)
 
-### 2.8 What is Cross-Entropy Loss?
+### 2.9 What is Cross-Entropy Loss?
 
 In this blog, we will learn about the math behind Cross-Entropy Loss with a step-by-step numeric example.
 
@@ -558,7 +577,7 @@ Let's get started: [What is Cross-Entropy Loss?](https://outcomeschool.com/blog/
 
 Watch the video: [Softmax Activation Function in Machine Learning](https://www.youtube.com/watch?v=2Zx6x01WwWM)
 
-### 2.9 What is Dropout in Neural Networks and How Does It Work?
+### 2.10 What is Dropout in Neural Networks and How Does It Work?
 
 In this blog, we will learn about Dropout in Neural Networks. We will understand what it is, the problem it solves, how it works step by step with a simple example, and where it is used.
 
@@ -577,7 +596,7 @@ We will cover the following:
 
 Let's get started: [What is Dropout in Neural Networks and How Does It Work?](https://outcomeschool.com/blog/dropout-in-neural-networks)
 
-### 2.10 Batch Normalization vs Layer Normalization
+### 2.11 Batch Normalization vs Layer Normalization
 
 In this blog, we are going to learn about Batch Normalization vs Layer Normalization. We will also see how Batch Normalization and Layer Normalization differ from each other and when to use which one.
 
@@ -592,7 +611,7 @@ We will cover the following:
 
 Let's get started: [Batch Normalization vs Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization)
 
-### 2.11 What is RMSNorm? Root Mean Square Layer Normalization Explained
+### 2.12 What is RMSNorm? Root Mean Square Layer Normalization Explained
 
 In this blog, we will learn about RMSNorm, a faster and simpler alternative to [Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization) that powers most modern Large Language Models like Llama, Mistral, Gemma, Qwen, PaLM, and DeepSeek.
 
@@ -610,13 +629,13 @@ We will cover the following:
 
 Let's get started: [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
 
-### 2.12 What is a Recurrent Neural Network (RNN)?
+### 2.13 What is a Recurrent Neural Network (RNN)?
 
 In this blog, we will learn about the Recurrent Neural Network.
 
 Let's get started: [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
 
-### 2.13 How does PyTorch work?
+### 2.14 How does PyTorch work?
 
 In this blog, we will learn about how PyTorch works. We will also see what a tensor is, how the computation graph and autograd work together to train a model, and why PyTorch uses the GPU to become one of the most popular tools in the real world.
 
@@ -633,7 +652,7 @@ We will cover the following:
 
 Let's get started: [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
 
-### 2.14 How Does The Machine Learning Library TensorFlow Work?
+### 2.15 How Does The Machine Learning Library TensorFlow Work?
 
 In this blog, we will learn how the Machine Learning library TensorFlow works.
 
