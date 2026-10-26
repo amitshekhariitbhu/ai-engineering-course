@@ -184,7 +184,7 @@ Let's get started.
 | 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                      | 17      |
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                | 4       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
-| 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
+| 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 15      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
@@ -3718,8 +3718,9 @@ By the end of this module, we will know how models see images and how they gener
 3. [How do Image Embeddings work?](https://outcomeschool.com/blog/how-do-image-embeddings-work)
 4. [How does a Vision-Language Model (VLM) work?](https://outcomeschool.com/blog/vision-language-model-vlm)
 5. [What are Diffusion Models and How Do They Generate Images?](https://outcomeschool.com/blog/diffusion-models)
-6. [What are Generative Adversarial Networks (GANs) and How Do They Work?](https://outcomeschool.com/blog/generative-adversarial-networks)
-7. [What are Variational Autoencoders (VAEs) and How Do They Work?](https://outcomeschool.com/blog/variational-autoencoders)
+6. [How does flow matching train a generative model?](https://outcomeschool.com/blog/flow-matching)
+7. [What are Generative Adversarial Networks (GANs) and How Do They Work?](https://outcomeschool.com/blog/generative-adversarial-networks)
+8. [What are Variational Autoencoders (VAEs) and How Do They Work?](https://outcomeschool.com/blog/variational-autoencoders)
 
 ---
 
@@ -3821,7 +3822,28 @@ We will cover the following:
 
 Let's get started: [What are Diffusion Models and How Do They Generate Images?](https://outcomeschool.com/blog/diffusion-models)
 
-### 15.6 What are Generative Adversarial Networks (GANs) and How Do They Work?
+### 15.6 How does flow matching train a generative model?
+
+In this blog, we will learn about how flow matching trains a generative model. We will also see what velocity and a flow mean, how a straight line between noise and data gives a simple training target, why training on single pairs still works, how we generate new samples with small steps, how flow matching compares with diffusion, and where it works well and where it fails.
+
+We will cover the following:
+
+- The core idea: moving from noise to data
+- What is velocity?
+- What is a flow?
+- The problem: we do not know the path
+- The trick: draw a straight line
+- How flow matching trains the model
+- A step-by-step example with numbers
+- Why training on single pairs still works
+- How we generate new samples
+- Code example
+- Flow matching vs diffusion
+- Where it works well and where it fails
+
+Let's get started: [How does flow matching train a generative model?](https://outcomeschool.com/blog/flow-matching)
+
+### 15.7 What are Generative Adversarial Networks (GANs) and How Do They Work?
 
 In this blog, we will learn about Generative Adversarial Networks (GANs), one of the most fascinating ideas in Machine Learning that can create brand new images, faces, and art that never existed before.
 
@@ -3840,7 +3862,7 @@ We will cover the following:
 
 Let's get started: [What are Generative Adversarial Networks (GANs) and How Do They Work?](https://outcomeschool.com/blog/generative-adversarial-networks)
 
-### 15.7 What are Variational Autoencoders (VAEs) and How Do They Work?
+### 15.8 What are Variational Autoencoders (VAEs) and How Do They Work?
 
 In this blog, we will learn about Variational Autoencoders. We will understand what they are, why we need them, how they work step by step, and how they are able to generate brand new data like images that never existed before.
 
