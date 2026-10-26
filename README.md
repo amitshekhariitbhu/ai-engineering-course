@@ -79,15 +79,16 @@ This AI Engineering Course is completely free to read. If you want more practica
 - [Module 16: AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)
 - [Module 17: Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)
 - [Module 18: Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)
-- [Module 19: Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)
-- [Module 20: Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)
+- [Module 19: Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production)
+- [Module 20: Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)
+- [Module 21: Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)
 - [AI Engineering Key Concepts Glossary](#ai-engineering-key-concepts-glossary)
 - [AI Engineering Course FAQs](#ai-engineering-course-faqs)
 - [License](#license)
 
 ## About This AI Engineering Course
 
-**This AI Engineering Course is a free, structured, and step-by-step curriculum to learn AI Engineering from scratch. It has 20 modules and 146+ in-depth lessons, and every lesson is a detailed blog that explains one concept in simple words with examples, diagrams, and math wherever it is needed.**
+**This AI Engineering Course is a free, structured, and step-by-step curriculum to learn AI Engineering from scratch. It has 21 modules and 146+ in-depth lessons, and every lesson is a detailed blog that explains one concept in simple words with examples, diagrams, and math wherever it is needed.**
 
 In simple words, this is the course that I wish I had when I started learning AI Engineering. We start with the basics of Machine Learning, and slowly move to how a Transformer works from the inside, how an LLM generates text, how we fine-tune and align an LLM, how we build RAG systems and AI Agents, how we serve an LLM fast and cheap in production, how we evaluate and secure it, and finally how we design a complete AI system end to end.
 
@@ -141,7 +142,7 @@ In this AI Engineering Course, we will learn:
 - **AI Safety and Security:** guardrails, prompt injection, jailbreaking, and watermarking.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
 - **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, model serving, LLM routing, and system design.
-- **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, and streaming TTS.
+- **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, streaming TTS, and voice agent system prompts.
 - **Frontier Ideas in AI:** JEPA, world models, and recursive self-improvement.
 - **AI Engineering interview preparation.**
 
@@ -167,29 +168,30 @@ Let's get started.
 
 ## AI Engineering Course Curriculum at a Glance
 
-| Module | Topic                                                                                                                                  | Lessons |
-| ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 26      |
-| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 27      |
-| 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
-| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 9       |
-| 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
-| 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
-| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 18      |
-| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 8       |
-| 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 19      |
-| 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 19      |
-| 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                        | 8       |
-| 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                      | 19      |
-| 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                | 4       |
-| 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
-| 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
-| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 13      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 21      |
-| 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
-| 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
+| Module | Topic                                                                                                                                              | Lessons |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| 0      | [Must Know](#module-0-must-know)                                                                                                                   | 1       |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                             | 26      |
+| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                                   | 27      |
+| 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                                         | 17      |
+| 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                                         | 9       |
+| 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                                       | 7       |
+| 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                                     | 5       |
+| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                               | 18      |
+| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                                 | 8       |
+| 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)                           | 19      |
+| 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                                          | 19      |
+| 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                                    | 8       |
+| 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                                  | 19      |
+| 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                            | 4       |
+| 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                                        | 4       |
+| 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                              | 8       |
+| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 13      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 1       |
+| 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
+| 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
 ## AI Engineering Learning Path
 
@@ -212,7 +214,8 @@ flowchart TD
     O --> P[AI Infrastructure and System Design]
     P --> S[Voice AI Agents: Turn-Taking]
     S --> T[Voice AI Agents: Latency and Telephony]
-    T --> Q[Frontier Ideas in AI]
+    T --> U[Voice AI Agents: Conversation Design and Production]
+    U --> Q[Frontier Ideas in AI]
     Q --> R[AI Engineering Interviews]
 ```
 
@@ -5548,7 +5551,42 @@ Let's get started: [How does a voice agent transfer a call to a human with conte
 
 ---
 
-## Module 19: Frontier Ideas in AI
+## Module 19: Voice AI Agents: Conversation Design, Speech Models, and Production
+
+In this module, we will learn how to design the conversation of a voice agent, how the speech models inside it turn voice into text and text into voice, and how to run a voice agent in production with evaluation, metrics, guardrails, scaling, and cost in mind.
+
+By the end of this module, we will be able to build a voice agent that speaks naturally to callers and works reliably in production.
+
+**Lessons in this module:**
+
+1. [How do you write a system prompt for a voice agent, not a chat bot?](https://outcomeschool.com/blog/voice-agent-system-prompt)
+
+---
+
+### 19.1 How do you write a system prompt for a voice agent, not a chat bot?
+
+In this blog, we will learn about how to write a system prompt for a voice agent, not a chat bot. We will also see what a system prompt is, why text written for a screen fails on a call, how to keep replies short and free of formatting, how to make the agent speak numbers and names correctly, how to handle mishearing, tool waits, and the end of the call, and how to put all of it together into one complete prompt.
+
+We will cover the following:
+
+- What is a system prompt?
+- How is a voice agent different from a chat bot?
+- Why does a chat bot prompt fail on a voice call?
+- Rule 1: Keep every reply short
+- Rule 2: No formatting, only plain spoken text
+- Rule 3: Write numbers, dates, and symbols the way we speak them
+- Rule 4: Ask one question at a time
+- Rule 5: Plan for mishearing
+- Rule 6: Confirm the important details
+- Rule 7: Fill the silence while a tool runs
+- Rule 8: Know how to end the call
+- Putting it all together: a complete voice agent system prompt
+
+Let's get started: [How do you write a system prompt for a voice agent, not a chat bot?](https://outcomeschool.com/blog/voice-agent-system-prompt)
+
+---
+
+## Module 20: Frontier Ideas in AI
 
 In this module, we will learn the ideas that are shaping the future of AI, from models that learn an internal picture of the world to systems that improve themselves.
 
@@ -5562,7 +5600,7 @@ By the end of this module, we will understand where AI research is heading next.
 
 ---
 
-### 19.1 What is Joint Embedding Predictive Architecture (JEPA) and How Does It Work?
+### 20.1 What is Joint Embedding Predictive Architecture (JEPA) and How Does It Work?
 
 In this blog, we will learn about Joint Embedding Predictive Architecture (JEPA).
 
@@ -5584,7 +5622,7 @@ We will cover the following:
 
 Let's get started: [What is Joint Embedding Predictive Architecture (JEPA) and How Does It Work?](https://outcomeschool.com/blog/joint-embedding-predictive-architecture-jepa)
 
-### 19.2 How do World Models work?
+### 20.2 How do World Models work?
 
 In this blog, we will learn about how World Models work. We will also see why we need them, how they actually learn an internal picture of an environment, and where they are used in real systems like robotics, game-playing, and video generation.
 
@@ -5603,7 +5641,7 @@ We will cover the following:
 
 Let's get started: [How do World Models work?](https://outcomeschool.com/blog/how-do-world-models-work)
 
-### 19.3 What is Recursive Self-Improvement (RSI)?
+### 20.3 What is Recursive Self-Improvement (RSI)?
 
 In this blog, we will learn about Recursive Self-Improvement (RSI), the idea of an AI system that makes itself smarter, and then uses that new smartness to make itself even smarter, again and again. We will also see why it matters, how an AI gets better today, how the self-improvement loop works step by step, a simple example with numbers, what already exists in the real world today, why people talk about an intelligence explosion, where it works well and where it fails, and why keeping humans in the loop is very important.
 
@@ -5625,7 +5663,7 @@ Let's get started: [What is Recursive Self-Improvement (RSI)?](https://outcomesc
 
 ---
 
-## Module 20: Prepare for AI Engineering Interviews
+## Module 21: Prepare for AI Engineering Interviews
 
 Now that we have learned everything from Machine Learning foundations to AI Agents in production, it's time to prepare for the interviews.
 
