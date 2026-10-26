@@ -138,7 +138,7 @@ In this AI Engineering Course, we will learn:
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
 - **LLM Inference Engineering:** prefill vs decode, KV cache, paged attention, continuous batching, speculative decoding, Medusa, EAGLE, quantization, GGUF, llama.cpp, Ollama, vLLM, SGLang, and TensorRT-LLM.
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
-- **AI Safety and Security:** guardrails, prompt injection, and watermarking.
+- **AI Safety and Security:** guardrails, prompt injection, jailbreaking, and watermarking.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
 - **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, model serving, LLM routing, and system design.
 - **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, and streaming TTS.
@@ -183,7 +183,7 @@ Let's get started.
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                        | 8       |
 | 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                      | 17      |
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                | 4       |
-| 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 3       |
+| 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 13      |
@@ -3477,7 +3477,8 @@ By the end of this module, we will be able to defend an LLM application against 
 
 1. [How do LLM guardrails work?](https://outcomeschool.com/blog/how-do-llm-guardrails-work)
 2. [What is Prompt Injection in LLMs and How Do We Defend Against It?](https://outcomeschool.com/blog/prompt-injection-in-llms)
-3. [How Does LLM Watermarking Work?](https://outcomeschool.com/blog/how-does-llm-watermarking-work)
+3. [What is jailbreaking in LLMs?](https://outcomeschool.com/blog/jailbreaking-in-llms)
+4. [How Does LLM Watermarking Work?](https://outcomeschool.com/blog/how-does-llm-watermarking-work)
 
 ---
 
@@ -3527,7 +3528,25 @@ We will cover the following:
 
 Let's get started: [What is Prompt Injection in LLMs and How Do We Defend Against It?](https://outcomeschool.com/blog/prompt-injection-in-llms)
 
-### 14.3 How Does LLM Watermarking Work?
+### 14.3 What is jailbreaking in LLMs?
+
+In this blog, we will learn about jailbreaking in LLMs. We will also see how an LLM learns its safety rules, why those rules can be broken, the common types of jailbreak attacks, how jailbreaking is different from prompt injection, why it is a serious problem, and how we can defend against it.
+
+We will cover the following:
+
+- How does an LLM learn to say no?
+- What is jailbreaking?
+- Why is it called jailbreaking?
+- Why does jailbreaking work?
+- Common types of jailbreak attacks
+- Jailbreaking vs Prompt Injection
+- Why is jailbreaking a serious problem?
+- How do we defend against jailbreaking?
+- A simple example of a safety layer in code
+
+Let's get started: [What is jailbreaking in LLMs?](https://outcomeschool.com/blog/jailbreaking-in-llms)
+
+### 14.4 How Does LLM Watermarking Work?
 
 In this blog, we will learn about how LLM watermarking works, the hidden signal that a model quietly leaves inside the text it writes. We will also see why we need it, how an LLM picks one token at a time, how a secret key silently changes those choices without touching the meaning, how a detector finds that hidden pattern later, why the quality of the text does not break, how it is different from an AI text detector, and where it works well and where it fails.
 
