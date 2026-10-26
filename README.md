@@ -176,7 +176,7 @@ Let's get started.
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
-| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 14      |
+| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 15      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 6       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 17      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 19      |
@@ -1845,6 +1845,7 @@ By the end of this module, we will know when to fine-tune, how LoRA makes it che
 12. [What is Direct Preference Optimization (DPO) and How Does It Work?](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
 13. [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
 14. [What is Reward Hacking in Reinforcement Learning and How Do We Prevent It?](https://outcomeschool.com/blog/reward-hacking)
+15. [What is RLAIF? Reinforcement Learning from AI Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-ai-feedback-rlaif)
 
 ---
 
@@ -2116,6 +2117,26 @@ We will cover the following:
 - How do We Prevent Reward Hacking?
 
 Let's get started: [What is Reward Hacking in Reinforcement Learning and How Do We Prevent It?](https://outcomeschool.com/blog/reward-hacking)
+
+### 7.15 What is RLAIF? Reinforcement Learning from AI Feedback Explained
+
+In this blog, we will learn about RLAIF (Reinforcement Learning from AI Feedback), a way to train an LLM where another AI model, and not a human, decides which of two answers is better. We will also see how an AI labeler guided by written principles gives the preference labels, the full RLAIF pipeline step by step, direct RLAIF, its link to Constitutional AI, and where it works well and where it fails.
+
+We will cover the following:
+
+- A Quick Recap of RLHF
+- The Problem with Human Labelers
+- What is RLAIF?
+- The AI Labeler and Its Principles
+- How RLAIF Works Step by Step
+- Direct RLAIF
+- RLAIF and Constitutional AI
+- What Does the Research Say?
+- Advantages of RLAIF
+- Disadvantages of RLAIF
+- RLHF vs RLAIF
+
+Let's get started: [What is RLAIF? Reinforcement Learning from AI Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-ai-feedback-rlaif)
 
 > **Note:** We have now learned how LLMs are trained, fine-tuned, and aligned. If you want to learn these in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
