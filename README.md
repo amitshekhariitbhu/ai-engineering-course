@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 9       |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 10      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 14      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 15      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 6       |
@@ -250,8 +250,9 @@ By the end of this module, we will know how a model learns from data, how we mea
 5. [Precision vs Recall](https://outcomeschool.com/blog/precision-vs-recall)
 6. [What Are L1 and L2 Loss Functions?](https://outcomeschool.com/blog/l1-and-l2-loss-functions)
 7. [What is Regularization in Machine Learning? L1 vs L2 Explained](https://outcomeschool.com/blog/regularization-in-machine-learning)
-8. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
-9. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+8. [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
+9. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
+10. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -336,7 +337,24 @@ We will cover the following:
 
 Let's get started: [What is Regularization in Machine Learning? L1 vs L2 Explained](https://outcomeschool.com/blog/regularization-in-machine-learning)
 
-### 1.8 What is Reinforcement Learning?
+### 1.8 Why do we split data into train, validation, and test sets?
+
+In this blog, we will learn about why we split data into train, validation, and test sets. We will also see what each of the three sets does, what goes wrong when we test a model on the data it has already seen, why one test set is not enough when we tune a model, how much data goes into each set, the common mistakes that leak information between the sets, and when to use which split for our use case.
+
+We will cover the following:
+
+- The problem of testing on seen data
+- What is the training set?
+- What is the test set?
+- Why do we need a validation set?
+- How the three sets work together
+- How much data goes into each set?
+- Common mistakes: data leakage
+- When the simple split is not enough
+
+Let's get started: [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
+
+### 1.9 What is Reinforcement Learning?
 
 In this blog, we will learn about Reinforcement Learning, the branch of machine learning where an agent learns to make decisions by interacting with an environment and getting rewards or penalties for its actions.
 
@@ -357,7 +375,7 @@ We will cover the following:
 
 Let's get started: [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
 
-### 1.9 What is Contrastive Learning? How It Works Step by Step
+### 1.10 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
