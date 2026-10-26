@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 22      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 23      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 25      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 9       |
@@ -265,6 +265,7 @@ By the end of this module, we will know how a model learns from data, how we mea
 20. [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
 21. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 22. [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
+23. [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
 
 ---
 
@@ -627,6 +628,25 @@ We will cover the following:
 - Where Self-Supervised Learning is used
 
 Let's get started: [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
+
+### 1.23 How does a Recommendation System work?
+
+In this blog, we will learn about how a Recommendation System works. We will also see the main techniques behind it, the problems that arise, and how big platforms like Netflix and YouTube put it all together.
+
+We will cover the following:
+
+- What is a Recommendation System?
+- The goal of a Recommendation System
+- Content-based filtering
+- Collaborative filtering
+- The user-item interaction matrix
+- Explicit vs implicit feedback
+- Matrix factorization and embeddings
+- The cold-start problem
+- The modern two-stage design: candidate generation and ranking
+- How big platforms combine everything
+
+Let's get started: [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
 
 **Videos and more resources for Module 1:**
 
