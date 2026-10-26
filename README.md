@@ -186,7 +186,7 @@ Let's get started.
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                            | 5       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                                        | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                              | 8       |
-| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 14      |
+| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 15      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
 | 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 9       |
@@ -4676,14 +4676,15 @@ By the end of this module, we will be able to design an AI system end to end, fr
 4. [How does an LPU work?](https://outcomeschool.com/blog/how-does-an-lpu-work)
 5. [How does distributed training work?](https://outcomeschool.com/blog/distributed-training)
 6. [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
-7. [How does Model Serving work?](https://outcomeschool.com/blog/model-serving)
-8. [How does a Model Registry work?](https://outcomeschool.com/blog/model-registry)
-9. [How does a feature store work?](https://outcomeschool.com/blog/feature-store)
-10. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
-11. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
-12. [What is System Design?](https://outcomeschool.com/blog/system-design)
-13. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-14. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+7. [How does Federated Learning train without raw data?](https://outcomeschool.com/blog/federated-learning)
+8. [How does Model Serving work?](https://outcomeschool.com/blog/model-serving)
+9. [How does a Model Registry work?](https://outcomeschool.com/blog/model-registry)
+10. [How does a feature store work?](https://outcomeschool.com/blog/feature-store)
+11. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
+12. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
+13. [What is System Design?](https://outcomeschool.com/blog/system-design)
+14. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+15. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -4820,7 +4821,24 @@ We will cover the following:
 
 Let's get started: [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
 
-### 16.7 How does Model Serving work?
+### 16.7 How does Federated Learning train without raw data?
+
+In this blog, we will learn about how federated learning trains a model without ever collecting our raw data. We will also see why training on private data is a problem, how one training round works step by step, how the averaging happens in code, how the updates are kept private in real systems, and where it is used.
+
+We will cover the following:
+
+- The problem of training on private data
+- The naive fix and why it fails
+- What is federated learning?
+- How the round works step by step
+- A step-by-step numeric walkthrough
+- The averaging in code
+- Keeping the updates private
+- Where federated learning is used
+
+Let's get started: [How does Federated Learning train without raw data?](https://outcomeschool.com/blog/federated-learning)
+
+### 16.8 How does Model Serving work?
 
 In this blog, we will learn about how Model Serving works. We will also see why we need it, what happens step by step when a request comes in, how batching and replicas make it fast and scalable, online serving vs batch serving, and how monitoring and versioning keep it reliable.
 
@@ -4839,7 +4857,7 @@ We will cover the following:
 
 Let's get started: [How does Model Serving work?](https://outcomeschool.com/blog/model-serving)
 
-### 16.8 How does a Model Registry work?
+### 16.9 How does a Model Registry work?
 
 In this blog, we will learn about how a Model Registry works. We will also see what problem it solves, what it stores about each model version, how lineage tracks where a model came from, how stages like Staging and Production help us, how it connects to serving, and how a real tool like MLflow does it.
 
@@ -4856,7 +4874,7 @@ We will cover the following:
 
 Let's get started: [How does a Model Registry work?](https://outcomeschool.com/blog/model-registry)
 
-### 16.9 How does a feature store work?
+### 16.10 How does a feature store work?
 
 In this blog, we will learn about how a feature store works. We will also see the problem before feature stores, how the offline store and the online store serve training and live predictions, the training-serving skew problem, point-in-time correctness, and when to use a feature store.
 
@@ -4874,13 +4892,13 @@ We will cover the following:
 
 Let's get started: [How does a feature store work?](https://outcomeschool.com/blog/feature-store)
 
-### 16.10 Android TensorFlow Lite Machine Learning Example
+### 16.11 Android TensorFlow Lite Machine Learning Example
 
 In this blog, we will see Android TensorFlow Lite Machine Learning example.
 
 Let's get started: [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
 
-### 16.11 What is LLM Routing? How to Send Each Query to the Right LLM
+### 16.12 What is LLM Routing? How to Send Each Query to the Right LLM
 
 In this blog, we will learn about LLM Routing, why it matters, and how to send each user query to the right LLM based on cost, latency, and quality.
 
@@ -4901,7 +4919,7 @@ Let's get started: [What is LLM Routing? How to Send Each Query to the Right LLM
 
 **Supporting lessons for AI System Design:**
 
-### 16.12 What is System Design?
+### 16.13 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -4913,7 +4931,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.13 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.14 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -4927,7 +4945,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.14 How do Voice And Video Call Work?
+### 16.15 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
