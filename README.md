@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 3       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 10      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 11      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -3858,6 +3858,7 @@ By the end of this module, we will understand how a voice agent holds a natural 
 8. [Why does a voice agent cut people off mid-sentence?](https://outcomeschool.com/blog/voice-agents-cutting-users-off)
 9. [What is barge-in in a voice AI agent?](https://outcomeschool.com/blog/what-is-barge-in-in-a-voice-ai-agent)
 10. [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
+11. [How do half-duplex and full-duplex voice agents differ?](https://outcomeschool.com/blog/half-duplex-vs-full-duplex-voice-agents)
 
 ---
 
@@ -4059,6 +4060,25 @@ We will cover the following:
 - How to choose the right voice agent architecture
 
 Let's get started: [Cascaded vs Speech-to-Speech: How to choose the right voice agent architecture?](https://outcomeschool.com/blog/cascaded-vs-speech-to-speech)
+
+### 17.11 How do half-duplex and full-duplex voice agents differ?
+
+In this blog, we will learn about how half-duplex and full-duplex voice agents differ. We will also see what the word duplex means, how a half-duplex voice agent works step by step, why it feels slow and unnatural, how barge-in tries to fix it, how a full-duplex voice agent listens and speaks together, and when to use which one.
+
+We will cover the following:
+
+- What does duplex mean?
+- What is a half-duplex voice agent?
+- How a half-duplex voice agent works step by step
+- The problems with half-duplex
+- Barge-in on top of half-duplex
+- What is a full-duplex voice agent?
+- How a full-duplex voice agent works
+- The same conversation in both agents
+- Half-duplex vs full-duplex
+- When to use which one
+
+Let's get started: [How do half-duplex and full-duplex voice agents differ?](https://outcomeschool.com/blog/half-duplex-vs-full-duplex-voice-agents)
 
 ---
 
