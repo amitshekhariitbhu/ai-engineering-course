@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 9       |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 10      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -4779,6 +4779,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 7. [How do filler phrases hide latency in a voice agent?](https://outcomeschool.com/blog/filler-phrases-in-voice-agents)
 8. [How does a voice agent hide the delay of a slow tool call?](https://outcomeschool.com/blog/slow-tool-calls-in-voice-agents)
 9. [What are audio frames and chunk sizes in a real-time voice pipeline?](https://outcomeschool.com/blog/audio-frames-and-chunk-sizes)
+10. [Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?](https://outcomeschool.com/blog/sample-rates-for-voice-agents)
 
 ---
 
@@ -4944,6 +4945,25 @@ We will cover the following:
 - How to pick the right chunk size
 
 Let's get started: [What are audio frames and chunk sizes in a real-time voice pipeline?](https://outcomeschool.com/blog/audio-frames-and-chunk-sizes)
+
+### 18.10 Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?
+
+In this blog, we will learn about why sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents. We will also see how a computer turns sound into numbers, what a sample rate really is, how much of our voice each sample rate keeps, where 8 kHz, 16 kHz, and 24 kHz are used inside a voice agent, what goes wrong when the sample rates do not match, and how to pick the right one for each part of the agent.
+
+We will cover the following:
+
+- How Does a Computer Store Sound?
+- What is a Sample Rate?
+- How Much of Our Voice Does a Sample Rate Keep?
+- 8 kHz: The Phone Call Sample Rate
+- 16 kHz: The Speech Recognition Sample Rate
+- 24 kHz: The Voice Output Sample Rate
+- How Sample Rates Flow Through a Voice Agent
+- What Happens When Sample Rates Do Not Match?
+- Sample Rate and the Size of the Audio
+- How to Pick the Right Sample Rate
+
+Let's get started: [Why do sample rates like 8 kHz, 16 kHz, and 24 kHz matter for voice agents?](https://outcomeschool.com/blog/sample-rates-for-voice-agents)
 
 ---
 
