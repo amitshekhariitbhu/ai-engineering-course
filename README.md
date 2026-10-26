@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 23      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 24      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 25      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 9       |
@@ -266,6 +266,7 @@ By the end of this module, we will know how a model learns from data, how we mea
 21. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 22. [How does Self-Supervised Learning work?](https://outcomeschool.com/blog/self-supervised-learning)
 23. [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
+24. [What is Explainable AI?](https://outcomeschool.com/blog/explainable-ai-xai)
 
 ---
 
@@ -647,6 +648,22 @@ We will cover the following:
 - How big platforms combine everything
 
 Let's get started: [How does a Recommendation System work?](https://outcomeschool.com/blog/recommendation-system)
+
+### 1.24 What is Explainable AI?
+
+In this blog, we will learn about Explainable AI. We will also see the problem of the black box, why explanations are important, the difference between global and local explanations, the common methods, the accuracy and explainability trade-off, and where it is used.
+
+We will cover the following:
+
+- The problem of the black box
+- What is Explainable AI?
+- Importance of Explainable AI
+- Global and local explanations
+- The common methods
+- The accuracy and explainability trade-off
+- Where it is used
+
+Let's get started: [What is Explainable AI?](https://outcomeschool.com/blog/explainable-ai-xai)
 
 **Videos and more resources for Module 1:**
 
