@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 16      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 17      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -4167,6 +4167,7 @@ By the end of this module, we will understand how a voice agent holds a natural 
 14. [How does a voice agent stop speaking instantly when interrupted?](https://outcomeschool.com/blog/stopping-speech-on-interruption)
 15. [Why does TTS audio buffering make interruptions slow?](https://outcomeschool.com/blog/tts-audio-buffering)
 16. [How does a voice agent truncate its memory to only what the user actually heard?](https://outcomeschool.com/blog/truncating-context-on-interruption)
+17. [How does a voice agent recover from a false interruption?](https://outcomeschool.com/blog/false-interruption-recovery)
 
 ---
 
@@ -4489,6 +4490,26 @@ We will cover the following:
 - Edge cases
 
 Let's get started: [How does a voice agent truncate its memory to only what the user actually heard?](https://outcomeschool.com/blog/truncating-context-on-interruption)
+
+---
+
+### 17.17 How does a voice agent recover from a false interruption?
+
+In this blog, we will learn about how a voice agent recovers from a false interruption. We will also see what a false interruption is, why pausing works better than stopping, how the agent decides that an interruption was false, how it continues speaking from the right place, how it keeps the conversation history correct, and how to tune the waiting time.
+
+We will cover the following:
+
+- What is a false interruption?
+- What goes wrong without recovery
+- Pause, do not stop
+- How does the agent decide that an interruption was false?
+- How does the agent continue speaking?
+- When the interruption turns out to be real
+- Keeping the conversation history correct
+- A complete example from start to end
+- Tuning the waiting time
+
+Let's get started: [How does a voice agent recover from a false interruption?](https://outcomeschool.com/blog/false-interruption-recovery)
 
 ---
 
