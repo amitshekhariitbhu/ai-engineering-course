@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 12      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 18      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 19      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -5045,6 +5045,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 16. [How do SIP and RTP carry a phone call to a voice agent?](https://outcomeschool.com/blog/sip-and-rtp)
 17. [Why does phone audio make speech recognition worse?](https://outcomeschool.com/blog/phone-audio-and-speech-recognition)
 18. [How does DTMF keypad input work in a voice agent?](https://outcomeschool.com/blog/dtmf-in-voice-agents)
+19. [How does voicemail and answering machine detection work?](https://outcomeschool.com/blog/answering-machine-detection)
 
 ---
 
@@ -5391,6 +5392,27 @@ We will cover the following:
 - When the voice agent presses the keys
 
 Let's get started: [How does DTMF keypad input work in a voice agent?](https://outcomeschool.com/blog/dtmf-in-voice-agents)
+
+---
+
+### 18.19 How does voicemail and answering machine detection work?
+
+In this blog, we will learn about how voicemail and answering machine detection works. We will also see why a calling system needs it, how a person and a machine sound different in the first few seconds, how simple timing rules catch many machines, how the beep is found, how AI models and transcripts make the decision more accurate, and where the detection works well and where it fails.
+
+We will cover the following:
+
+- What is Answering Machine Detection?
+- Why do we need Answering Machine Detection?
+- How a person and a machine sound different
+- Approach 1: Timing rules on speech and silence
+- Finding the beep
+- Approach 2: An AI model that listens to the audio
+- Approach 3: Reading the words
+- Speed vs accuracy
+- Where it fails
+- How a voice agent uses it end to end
+
+Let's get started: [How does voicemail and answering machine detection work?](https://outcomeschool.com/blog/answering-machine-detection)
 
 ---
 
