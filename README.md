@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 18      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 19      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 22      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
@@ -260,7 +260,8 @@ By the end of this module, we will know how a model learns from data, how we mea
 15. [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
 16. [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
 17. [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
-18. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+18. [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
+19. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -537,7 +538,25 @@ We will cover the following:
 
 Let's get started: [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
 
-### 1.18 What is Contrastive Learning? How It Works Step by Step
+### 1.18 What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained
+
+In this blog, we will learn about Actor-Critic in Reinforcement Learning and the Advantage Function, a way to train an AI agent where one part, the Actor, picks the actions, and another part, the Critic, judges how good each action was right after it happens.
+
+We will cover the following:
+
+- The problem with REINFORCE
+- What is Actor-Critic?
+- What is the Advantage Function?
+- Advantage with real numbers
+- TD Error: estimating the advantage in one step
+- The Actor-Critic update loop
+- Actor-Critic in code
+- Why Actor-Critic works better
+- Where Actor-Critic is used
+
+Let's get started: [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
+
+### 1.19 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
