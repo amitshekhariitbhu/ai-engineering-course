@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 14      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 7       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 8       |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5795,6 +5795,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 5. [How does a voice agent manage conversation state across a long call?](https://outcomeschool.com/blog/conversation-state-in-voice-agents)
 6. [How do multi-agent handoffs work in a voice AI system?](https://outcomeschool.com/blog/multi-agent-handoffs-in-voice-ai)
 7. [How does a voice agent decide when to end the call?](https://outcomeschool.com/blog/call-ending-in-voice-agents)
+8. [How does SSML control how a voice agent speaks?](https://outcomeschool.com/blog/speech-synthesis-markup-language-ssml)
 
 ---
 
@@ -5952,6 +5953,30 @@ We will cover the following:
 - Putting it all together in code
 
 Let's get started: [How does a voice agent decide when to end the call?](https://outcomeschool.com/blog/call-ending-in-voice-agents)
+
+---
+
+### 19.8 How does SSML control how a voice agent speaks?
+
+In this blog, we will learn about how SSML controls how a voice agent speaks. We will also see why plain text is not enough for a voice agent, how the main SSML tags control pauses, speed, stress, and pronunciation, where SSML fits inside a voice agent, who writes the tags, how SSML works with streaming, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is SSML?
+- Why plain text is not enough
+- How an SSML document looks
+- Adding pauses with break
+- Controlling speed, pitch, and volume with prosody
+- Stressing a word with emphasis
+- Reading numbers and dates with say-as
+- Fixing pronunciation with phoneme and sub
+- Putting the tags together
+- Where SSML fits in a voice agent
+- Who writes the SSML: our code or the LLM
+- SSML and streaming
+- Where SSML works well and where it fails
+
+Let's get started: [How does SSML control how a voice agent speaks?](https://outcomeschool.com/blog/speech-synthesis-markup-language-ssml)
 
 ---
 
