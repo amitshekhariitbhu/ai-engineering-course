@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 14      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 8       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 9       |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5815,6 +5815,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 6. [How do multi-agent handoffs work in a voice AI system?](https://outcomeschool.com/blog/multi-agent-handoffs-in-voice-ai)
 7. [How does a voice agent decide when to end the call?](https://outcomeschool.com/blog/call-ending-in-voice-agents)
 8. [How does SSML control how a voice agent speaks?](https://outcomeschool.com/blog/speech-synthesis-markup-language-ssml)
+9. [How do pronunciation dictionaries fix how TTS says names and brands?](https://outcomeschool.com/blog/pronunciation-dictionaries-for-tts)
 
 ---
 
@@ -5996,6 +5997,27 @@ We will cover the following:
 - Where SSML works well and where it fails
 
 Let's get started: [How does SSML control how a voice agent speaks?](https://outcomeschool.com/blog/speech-synthesis-markup-language-ssml)
+
+---
+
+### 19.9 How do pronunciation dictionaries fix how TTS says names and brands?
+
+In this blog, we will learn about how pronunciation dictionaries fix how TTS says names and brands. We will also see why TTS gets names wrong in the first place, the two kinds of rules (alias and phoneme), how the dictionary is applied, how a dictionary file looks, how it fits inside a voice agent, and where it works well and where it fails.
+
+We will cover the following:
+
+- Why TTS mispronounces names and brands
+- How TTS turns letters into sounds
+- What is a pronunciation dictionary?
+- Alias rules
+- Phoneme rules
+- How the dictionary is applied
+- What a dictionary file looks like
+- How matching works: case and whole words
+- Using a pronunciation dictionary in a voice agent
+- Where it works well and where it fails
+
+Let's get started: [How do pronunciation dictionaries fix how TTS says names and brands?](https://outcomeschool.com/blog/pronunciation-dictionaries-for-tts)
 
 ---
 
