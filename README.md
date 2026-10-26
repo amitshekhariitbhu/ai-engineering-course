@@ -187,7 +187,7 @@ Let's get started.
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 12      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 19      |
-| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 15      |
+| 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 16      |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
 
@@ -4968,6 +4968,7 @@ By the end of this module, we will be able to make a voice agent respond fast an
 13. [How does a jitter buffer keep voice audio smooth over a bad network?](https://outcomeschool.com/blog/jitter-buffer)
 14. [How does packet loss concealment hide missing audio?](https://outcomeschool.com/blog/packet-loss-concealment)
 15. [How does a voice AI agent answer a phone call?](https://outcomeschool.com/blog/phone-calls-in-voice-agents)
+16. [How do SIP and RTP carry a phone call to a voice agent?](https://outcomeschool.com/blog/sip-and-rtp)
 
 ---
 
@@ -5253,6 +5254,27 @@ We will cover the following:
 - How the call ends
 
 Let's get started: [How does a voice AI agent answer a phone call?](https://outcomeschool.com/blog/phone-calls-in-voice-agents)
+
+---
+
+### 18.16 How do SIP and RTP carry a phone call to a voice agent?
+
+In this blog, we will learn about how SIP and RTP carry a phone call to a voice agent. We will also see how a normal phone call reaches the internet, how SIP rings the voice agent and agrees on the audio format, how RTP packs the voice into small packets, what happens inside the voice agent when those packets arrive, how the agent speaks back, and how the call finally ends.
+
+We will cover the following:
+
+- The journey of a phone call to a voice agent
+- What is SIP?
+- What does a SIP call setup look like?
+- What is SDP?
+- What is RTP?
+- What is inside an RTP packet?
+- What the voice agent does with the RTP packets
+- How the voice agent speaks back
+- How the call ends
+- SIP vs RTP
+
+Let's get started: [How do SIP and RTP carry a phone call to a voice agent?](https://outcomeschool.com/blog/sip-and-rtp)
 
 ---
 
