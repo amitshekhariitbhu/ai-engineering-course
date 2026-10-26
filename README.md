@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 14      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 5       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 6       |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5732,6 +5732,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 3. [How does a voice agent handle structured inputs like dates, numbers, and addresses?](https://outcomeschool.com/blog/structured-inputs-in-voice-agents)
 4. [How does a voice agent confirm and correct misheard information?](https://outcomeschool.com/blog/confirm-and-correct-in-voice-agents)
 5. [How does a voice agent manage conversation state across a long call?](https://outcomeschool.com/blog/conversation-state-in-voice-agents)
+6. [How do multi-agent handoffs work in a voice AI system?](https://outcomeschool.com/blog/multi-agent-handoffs-in-voice-ai)
 
 ---
 
@@ -5842,6 +5843,30 @@ We will cover the following:
 - Putting it all together
 
 Let's get started: [How does a voice agent manage conversation state across a long call?](https://outcomeschool.com/blog/conversation-state-in-voice-agents)
+
+---
+
+### 19.6 How do multi-agent handoffs work in a voice AI system?
+
+In this blog, we will learn about how multi-agent handoffs work in a voice AI system. We will also see why one big agent is not enough, how a handoff is described to the LLM as a tool, what our code does when the LLM recommends a handoff, how the conversation history travels to the next agent, what makes a handoff smooth for the caller, and where handoffs go wrong.
+
+We will cover the following:
+
+- What is a multi-agent voice AI system?
+- Why not one big agent?
+- What is a handoff?
+- Where the handoff happens in the voice pipeline
+- Step 1: Describe the handoff as a tool
+- Step 2: The LLM recommends a handoff
+- Step 3: Our code swaps the active agent
+- Step 4: The context travels with the call
+- Step 5: The new agent speaks
+- The complete flow in one diagram
+- Making the handoff smooth for the caller
+- Handing back and handoff loops
+- Putting it all together in code
+
+Let's get started: [How do multi-agent handoffs work in a voice AI system?](https://outcomeschool.com/blog/multi-agent-handoffs-in-voice-ai)
 
 ---
 
