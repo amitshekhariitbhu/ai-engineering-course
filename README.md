@@ -183,7 +183,7 @@ Let's get started.
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                                          | 19      |
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                                    | 8       |
 | 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                                  | 19      |
-| 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                            | 4       |
+| 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                            | 5       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                                        | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                              | 8       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 14      |
@@ -4201,9 +4201,10 @@ By the end of this module, we will be able to build an evaluation suite and trac
 **Lessons in this module:**
 
 1. [What is LLM Evaluation? Metrics, Benchmarks, and Methods Explained](https://outcomeschool.com/blog/llm-evaluation)
-2. [What is LLM as a Judge? How to Use an LLM to Evaluate LLM Outputs](https://outcomeschool.com/blog/llm-as-a-judge)
-3. [How to Evaluate AI Agents? Metrics, Methods, and Best Practices](https://outcomeschool.com/blog/ai-agent-evaluation)
-4. [What is AI Agent Observability? Traces, Spans, and Metrics Explained](https://outcomeschool.com/blog/ai-agent-observability)
+2. [What is perplexity in a language model?](https://outcomeschool.com/blog/perplexity-in-language-models)
+3. [What is LLM as a Judge? How to Use an LLM to Evaluate LLM Outputs](https://outcomeschool.com/blog/llm-as-a-judge)
+4. [How to Evaluate AI Agents? Metrics, Methods, and Best Practices](https://outcomeschool.com/blog/ai-agent-evaluation)
+5. [What is AI Agent Observability? Traces, Spans, and Metrics Explained](https://outcomeschool.com/blog/ai-agent-observability)
 
 ---
 
@@ -4228,7 +4229,24 @@ We will cover the following:
 
 Let's get started: [What is LLM Evaluation? Metrics, Benchmarks, and Methods Explained](https://outcomeschool.com/blog/llm-evaluation)
 
-### 13.2 What is LLM as a Judge? How to Use an LLM to Evaluate LLM Outputs
+### 13.2 What is perplexity in a language model?
+
+In this blog, we will learn about perplexity in a language model. We will also see how a model predicts the next word, why we need a number to grade a model, how perplexity works like a guessing game, a step-by-step example with its formula and code, and why it is called an intrinsic metric.
+
+We will cover the following:
+
+- What does "predicting the next word" mean?
+- The problem: how do we grade a model?
+- What is perplexity?
+- Perplexity as a guessing game
+- A simple step-by-step example
+- The formula behind perplexity
+- Low perplexity vs high perplexity
+- Why perplexity is called an intrinsic metric
+
+Let's get started: [What is perplexity in a language model?](https://outcomeschool.com/blog/perplexity-in-language-models)
+
+### 13.3 What is LLM as a Judge? How to Use an LLM to Evaluate LLM Outputs
 
 In this blog, we will learn about LLM as a Judge. We will also see how it works, why we need it, and how we can use it to evaluate the output of other LLMs.
 
@@ -4247,7 +4265,7 @@ We will cover the following:
 
 Let's get started: [What is LLM as a Judge? How to Use an LLM to Evaluate LLM Outputs](https://outcomeschool.com/blog/llm-as-a-judge)
 
-### 13.3 How to Evaluate AI Agents? Metrics, Methods, and Best Practices
+### 13.4 How to Evaluate AI Agents? Metrics, Methods, and Best Practices
 
 In this blog, we will learn about AI Agent Evaluation. We will also see why it is different from LLM Evaluation, the types of evaluation we can do, the key metrics we must track, the methods we can use, and the best practices to follow.
 
@@ -4271,7 +4289,7 @@ We will cover the following:
 
 Let's get started: [How to Evaluate AI Agents? Metrics, Methods, and Best Practices](https://outcomeschool.com/blog/ai-agent-evaluation)
 
-### 13.4 What is AI Agent Observability? Traces, Spans, and Metrics Explained
+### 13.5 What is AI Agent Observability? Traces, Spans, and Metrics Explained
 
 In this blog, we will learn about AI Agent Observability. We will also see why we need it, how it is different from normal software monitoring, what we must observe inside an agent, the key concepts like traces and spans, the metrics we must track, the tools we can use, and the best practices to follow.
 
