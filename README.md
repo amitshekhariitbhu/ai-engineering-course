@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 13      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 4       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 5       |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5689,6 +5689,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 2. [How does function calling work in a voice AI agent?](https://outcomeschool.com/blog/function-calling-in-voice-agents)
 3. [How does a voice agent handle structured inputs like dates, numbers, and addresses?](https://outcomeschool.com/blog/structured-inputs-in-voice-agents)
 4. [How does a voice agent confirm and correct misheard information?](https://outcomeschool.com/blog/confirm-and-correct-in-voice-agents)
+5. [How does a voice agent manage conversation state across a long call?](https://outcomeschool.com/blog/conversation-state-in-voice-agents)
 
 ---
 
@@ -5777,6 +5778,28 @@ We will cover the following:
 - When to confirm and when to skip
 
 Let's get started: [How does a voice agent confirm and correct misheard information?](https://outcomeschool.com/blog/confirm-and-correct-in-voice-agents)
+
+---
+
+### 19.5 How does a voice agent manage conversation state across a long call?
+
+In this blog, we will learn about how a voice agent manages conversation state across a long call. We will also see what conversation state is, why a long call breaks the simple approach, how the agent trims and summarizes old turns, how it keeps facts in a structured state, how it tracks the stage of the call, and how it keeps the state safe when the call drops.
+
+We will cover the following:
+
+- What is conversation state?
+- How does the simple approach work?
+- Why does a long call break the simple approach?
+- Approach 1: Keep only the recent turns
+- Approach 2: Summarize the older turns
+- Approach 3: Keep the important facts in a structured state
+- Tracking the stage of the call
+- Keeping tool results small
+- Saving only what the user actually heard
+- Keeping the state safe when the call drops
+- Putting it all together
+
+Let's get started: [How does a voice agent manage conversation state across a long call?](https://outcomeschool.com/blog/conversation-state-in-voice-agents)
 
 ---
 
