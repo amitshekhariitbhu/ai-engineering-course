@@ -177,7 +177,7 @@ Let's get started.
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 15      |
-| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 6       |
+| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 7       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 17      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 19      |
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                        | 8       |
@@ -2150,16 +2150,36 @@ By the end of this module, we will be able to design prompts and contexts that m
 
 **Lessons in this module:**
 
-1. [How does Chain-of-Thought (CoT) Prompting work?](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work)
-2. [How does Tree of Thoughts work?](https://outcomeschool.com/blog/how-does-tree-of-thoughts-work)
-3. [How does Prompt Chaining work?](https://outcomeschool.com/blog/how-does-prompt-chaining-work)
-4. [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
-5. [What is Context Engineering?](https://outcomeschool.com/blog/context-engineering)
-6. [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
+1. [How does Prompt Engineering work?](https://outcomeschool.com/blog/prompt-engineering)
+2. [How does Chain-of-Thought (CoT) Prompting work?](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work)
+3. [How does Tree of Thoughts work?](https://outcomeschool.com/blog/how-does-tree-of-thoughts-work)
+4. [How does Prompt Chaining work?](https://outcomeschool.com/blog/how-does-prompt-chaining-work)
+5. [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
+6. [What is Context Engineering?](https://outcomeschool.com/blog/context-engineering)
+7. [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
 
 ---
 
-### 8.1 How does Chain-of-Thought (CoT) Prompting work?
+### 8.1 How does Prompt Engineering work?
+
+In this blog, we will learn about how Prompt Engineering works. We will also see why we need it, how a prompt shapes the answer of the model, the building blocks of a good prompt, how zero-shot, few-shot, and chain-of-thought prompting work, how system and user prompts work together, and the best practices to follow.
+
+We will cover the following:
+
+- What is Prompt Engineering?
+- Why do we need Prompt Engineering?
+- How does Prompt Engineering work?
+- The building blocks of a good prompt
+- Zero-shot prompting
+- Few-shot prompting
+- Chain-of-Thought prompting
+- System prompt and user prompt
+- A step-by-step example
+- Best practices for Prompt Engineering
+
+Let's get started: [How does Prompt Engineering work?](https://outcomeschool.com/blog/prompt-engineering)
+
+### 8.2 How does Chain-of-Thought (CoT) Prompting work?
 
 In this blog, we will learn about how Chain-of-Thought (CoT) Prompting works. We will also see why a model that jumps straight to the answer often gets it wrong, how making it reason step by step fixes this, the difference between zero-shot and few-shot CoT, and where this technique is truly useful.
 
@@ -2178,7 +2198,7 @@ We will cover the following:
 
 Let's get started: [How does Chain-of-Thought (CoT) Prompting work?](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work)
 
-### 8.2 How does Tree of Thoughts work?
+### 8.3 How does Tree of Thoughts work?
 
 In this blog, we will learn about how Tree of Thoughts works. We will also see the problem with the single straight path of Chain of Thought, how Tree of Thoughts lets the model explore many reasoning paths, judge them, and go back from a bad step, and where it works well and where it fails.
 
@@ -2200,7 +2220,7 @@ We will cover the following:
 
 Let's get started: [How does Tree of Thoughts work?](https://outcomeschool.com/blog/how-does-tree-of-thoughts-work)
 
-### 8.3 How does Prompt Chaining work?
+### 8.4 How does Prompt Chaining work?
 
 In this blog, we will learn about how Prompt Chaining works. We will also see why we need it, how it works step by step by passing the output of one prompt into the next, and where it is used in the real world to solve bigger tasks reliably.
 
@@ -2219,7 +2239,7 @@ We will cover the following:
 
 Let's get started: [How does Prompt Chaining work?](https://outcomeschool.com/blog/how-does-prompt-chaining-work)
 
-### 8.4 How does Prompt Caching work?
+### 8.5 How does Prompt Caching work?
 
 In this blog, we will learn about how Prompt Caching works. We will also see why we need it, how it actually works inside a large language model, and where it is used in real systems like AI assistants and agents.
 
@@ -2238,7 +2258,7 @@ We will cover the following:
 
 Let's get started: [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
 
-### 8.5 What is Context Engineering?
+### 8.6 What is Context Engineering?
 
 In this blog, we will learn about Context Engineering - what it is, why it has become the most important skill for building reliable AI applications, how it differs from Prompt Engineering, the components that make up the context, common patterns like RAG, few-shot examples, tools, and memory, and the best practices and common mistakes to keep in mind.
 
@@ -2256,7 +2276,7 @@ We will cover the following:
 
 Let's get started: [What is Context Engineering?](https://outcomeschool.com/blog/context-engineering)
 
-### 8.6 How does context compaction work?
+### 8.7 How does context compaction work?
 
 In this blog, we will learn about how context compaction works in Large Language Models. We will also see why long conversations overflow the context window, how summarization shrinks the older messages without losing the important points, and where compaction is used in real AI agents.
 
