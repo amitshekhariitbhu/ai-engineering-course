@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 16      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 17      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 22      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
@@ -258,7 +258,8 @@ By the end of this module, we will know how a model learns from data, how we mea
 13. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
 14. [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
 15. [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
-16. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+16. [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
+17. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -495,7 +496,28 @@ We will cover the following:
 
 Let's get started: [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
 
-### 1.16 What is Contrastive Learning? How It Works Step by Step
+### 1.16 What is a Value Function? Q-Learning Explained Step by Step
+
+In this blog, we will learn about what a Value Function is and how Q-Learning works step by step, where an agent learns how much total reward it can expect from every situation and action by trial and error.
+
+We will cover the following:
+
+- Return and Discount
+- What is a Value Function?
+- State Value Function V(s)
+- Action Value Function Q(s, a)
+- The Bellman Idea
+- What is Q-Learning?
+- The Q-Learning Update Rule
+- Our Tiny Corridor
+- Q-Learning Step by Step
+- Epsilon-Greedy
+- Q-Learning in Python
+- Limitation of the Q-table and Deep Q-Network
+
+Let's get started: [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
+
+### 1.17 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
