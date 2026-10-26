@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 15      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 10      |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 11      |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5879,6 +5879,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 8. [How does SSML control how a voice agent speaks?](https://outcomeschool.com/blog/speech-synthesis-markup-language-ssml)
 9. [How do pronunciation dictionaries fix how TTS says names and brands?](https://outcomeschool.com/blog/pronunciation-dictionaries-for-tts)
 10. [How does keyword boosting help ASR recognize domain words?](https://outcomeschool.com/blog/keyword-boosting-in-asr)
+11. [How does a voice agent handle accents and noisy environments?](https://outcomeschool.com/blog/accents-and-noise-in-voice-agents)
 
 ---
 
@@ -6101,6 +6102,25 @@ We will cover the following:
 - Where keyword boosting works well and where it fails
 
 Let's get started: [How does keyword boosting help ASR recognize domain words?](https://outcomeschool.com/blog/keyword-boosting-in-asr)
+
+---
+
+### 19.11 How does a voice agent handle accents and noisy environments?
+
+In this blog, we will learn about how a voice agent handles accents and noisy environments. We will also see why accents and noise confuse a voice agent, how the sound is cleaned before the agent listens, how the agent avoids treating background noise as the caller's turn, how the speech recognition model learns to understand many voices, how the agent uses context and confidence to recover from mistakes, and where this works well and where it still fails.
+
+We will cover the following:
+
+- How a voice agent hears us
+- Why accents and noise confuse a voice agent
+- Layer 1: Cleaning the sound before listening
+- Layer 2: Knowing when the caller is really speaking
+- Layer 3: A speech recognition model that has heard many voices
+- Layer 4: Using context to fix what was misheard
+- Layer 5: Confidence and confirmation
+- Where it works well and where it still fails
+
+Let's get started: [How does a voice agent handle accents and noisy environments?](https://outcomeschool.com/blog/accents-and-noise-in-voice-agents)
 
 ---
 
