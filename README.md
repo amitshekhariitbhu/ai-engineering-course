@@ -176,7 +176,7 @@ Let's get started.
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                         | 5       |
-| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 15      |
+| 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                   | 16      |
 | 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                     | 7       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 17      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 19      |
@@ -1846,6 +1846,7 @@ By the end of this module, we will know when to fine-tune, how LoRA makes it che
 13. [What is Group Relative Policy Optimization (GRPO) and How Does It Work?](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
 14. [What is Reward Hacking in Reinforcement Learning and How Do We Prevent It?](https://outcomeschool.com/blog/reward-hacking)
 15. [What is RLAIF? Reinforcement Learning from AI Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-ai-feedback-rlaif)
+16. [What is Reinforcement Learning with Verifiable Rewards (RLVR)?](https://outcomeschool.com/blog/reinforcement-learning-with-verifiable-rewards-rlvr)
 
 ---
 
@@ -2137,6 +2138,23 @@ We will cover the following:
 - RLHF vs RLAIF
 
 Let's get started: [What is RLAIF? Reinforcement Learning from AI Feedback Explained](https://outcomeschool.com/blog/reinforcement-learning-from-ai-feedback-rlaif)
+
+### 7.16 What is Reinforcement Learning with Verifiable Rewards (RLVR)?
+
+In this blog, we will learn about Reinforcement Learning with Verifiable Rewards (RLVR), a way to train an LLM where a program checks the model's final answer and gives a reward of 1 if it is correct and 0 if it is wrong. We will also see the problem with learned reward models, what a verifier is, how the RLVR training loop works step by step, how GRPO compares answers within a group with a small worked example, how RLVR led to reasoning models, where it works well and where it fails, and how it differs from RLHF.
+
+We will cover the following:
+
+- The problem with learned reward models
+- What is Reinforcement Learning with Verifiable Rewards (RLVR)?
+- What is a verifier?
+- How the RLVR training loop works
+- How GRPO compares answers within a group
+- How RLVR led to reasoning models
+- Limits of RLVR
+- RLHF vs RLVR
+
+Let's get started: [What is Reinforcement Learning with Verifiable Rewards (RLVR)?](https://outcomeschool.com/blog/reinforcement-learning-with-verifiable-rewards-rlvr)
 
 > **Note:** We have now learned how LLMs are trained, fine-tuned, and aligned. If you want to learn these in a more practical and in-depth way with me in live classes, check out our **paid** live program: [AI and Machine Learning](https://outcomeschool.com/program/ai-and-machine-learning) at Outcome School.
 
