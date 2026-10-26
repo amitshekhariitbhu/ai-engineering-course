@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 19      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 20      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 22      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
@@ -254,14 +254,15 @@ By the end of this module, we will know how a model learns from data, how we mea
 9. [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
 10. [How does the Bias-Variance Tradeoff work?](https://outcomeschool.com/blog/bias-variance-tradeoff)
 11. [How do Decision Trees and Random Forests work?](https://outcomeschool.com/blog/decision-trees-and-random-forests)
-12. [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
-13. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
-14. [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
-15. [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
-16. [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
-17. [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
-18. [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
-19. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+12. [How does K-Means Clustering work?](https://outcomeschool.com/blog/k-means-clustering)
+13. [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
+14. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
+15. [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
+16. [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
+17. [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
+18. [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
+19. [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
+20. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -421,7 +422,26 @@ We will cover the following:
 
 Let's get started: [How do Decision Trees and Random Forests work?](https://outcomeschool.com/blog/decision-trees-and-random-forests)
 
-### 1.12 How does Data Augmentation work?
+### 1.12 How does K-Means Clustering work?
+
+In this blog, we will learn about how K-Means Clustering works. We will also see what clustering means, what a centroid is, the four steps that K-Means repeats with a full example with numbers, how to pick the right value of K using the elbow method, the common problems like bad starting points and unscaled data, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is clustering?
+- What is K-Means Clustering?
+- What is a centroid?
+- How do we measure closeness?
+- How does K-Means work? The four steps
+- A step-by-step example with numbers
+- Seeing it in code
+- How to choose the value of K?
+- Common problems and how to fix them
+- Where K-Means works well and where it fails
+
+Let's get started: [How does K-Means Clustering work?](https://outcomeschool.com/blog/k-means-clustering)
+
+### 1.13 How does Data Augmentation work?
 
 In this blog, we will learn about how Data Augmentation works. We will also see why we need it, how it creates new training examples from images and text, a simple code example, a step-by-step numeric walkthrough, and when to use it.
 
@@ -438,7 +458,7 @@ We will cover the following:
 
 Let's get started: [How does Data Augmentation work?](https://outcomeschool.com/blog/data-augmentation)
 
-### 1.13 What is Reinforcement Learning?
+### 1.14 What is Reinforcement Learning?
 
 In this blog, we will learn about Reinforcement Learning, the branch of machine learning where an agent learns to make decisions by interacting with an environment and getting rewards or penalties for its actions.
 
@@ -459,7 +479,7 @@ We will cover the following:
 
 Let's get started: [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
 
-### 1.14 What is a Markov Decision Process (MDP)?
+### 1.15 What is a Markov Decision Process (MDP)?
 
 In this blog, we will learn about the Markov Decision Process (MDP), the standard way to write down a reinforcement learning problem, where an agent makes decisions step by step, each decision changes the situation, and each step brings a reward.
 
@@ -477,7 +497,7 @@ We will cover the following:
 
 Let's get started: [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
 
-### 1.15 What is Exploration vs Exploitation in Reinforcement Learning?
+### 1.16 What is Exploration vs Exploitation in Reinforcement Learning?
 
 In this blog, we will learn about exploration vs exploitation in reinforcement learning, the choice an agent faces at every step: use the action it already knows works well, or try a different action to learn something new that can work even better.
 
@@ -498,7 +518,7 @@ We will cover the following:
 
 Let's get started: [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
 
-### 1.16 What is a Value Function? Q-Learning Explained Step by Step
+### 1.17 What is a Value Function? Q-Learning Explained Step by Step
 
 In this blog, we will learn about what a Value Function is and how Q-Learning works step by step, where an agent learns how much total reward it can expect from every situation and action by trial and error.
 
@@ -519,7 +539,7 @@ We will cover the following:
 
 Let's get started: [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
 
-### 1.17 What is Policy Gradient? The REINFORCE Algorithm Explained
+### 1.18 What is Policy Gradient? The REINFORCE Algorithm Explained
 
 In this blog, we will learn about Policy Gradient and the REINFORCE algorithm, a way to train an AI agent by directly making the actions that led to good results more likely, and the actions that led to bad results less likely.
 
@@ -538,7 +558,7 @@ We will cover the following:
 
 Let's get started: [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
 
-### 1.18 What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained
+### 1.19 What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained
 
 In this blog, we will learn about Actor-Critic in Reinforcement Learning and the Advantage Function, a way to train an AI agent where one part, the Actor, picks the actions, and another part, the Critic, judges how good each action was right after it happens.
 
@@ -556,7 +576,7 @@ We will cover the following:
 
 Let's get started: [What is Actor-Critic in Reinforcement Learning? The Advantage Function Explained](https://outcomeschool.com/blog/actor-critic)
 
-### 1.19 What is Contrastive Learning? How It Works Step by Step
+### 1.20 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
