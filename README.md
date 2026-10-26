@@ -142,7 +142,7 @@ In this AI Engineering Course, we will learn:
 - **AI Safety and Security:** guardrails, prompt injection, jailbreaking, and watermarking.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
 - **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, model serving, LLM routing, and system design.
-- **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, streaming TTS, and voice agent system prompts.
+- **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, streaming TTS, voice agent system prompts, and function calling in voice agents.
 - **Frontier Ideas in AI:** JEPA, world models, and recursive self-improvement.
 - **AI Engineering interview preparation.**
 
@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 13      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 1       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 2       |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5598,6 +5598,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 **Lessons in this module:**
 
 1. [How do you write a system prompt for a voice agent, not a chat bot?](https://outcomeschool.com/blog/voice-agent-system-prompt)
+2. [How does function calling work in a voice AI agent?](https://outcomeschool.com/blog/function-calling-in-voice-agents)
 
 ---
 
@@ -5621,6 +5622,29 @@ We will cover the following:
 - Putting it all together: a complete voice agent system prompt
 
 Let's get started: [How do you write a system prompt for a voice agent, not a chat bot?](https://outcomeschool.com/blog/voice-agent-system-prompt)
+
+---
+
+### 19.2 How does function calling work in a voice AI agent?
+
+In this blog, we will learn about how function calling works in a voice AI agent. We will also see how we describe our functions to the LLM, how the LLM picks a function from what the user said, how our code runs it and sends the result back, how the agent turns that result into a spoken reply, what changes when the input is a voice instead of typed text, and how it works with a speech-to-speech model.
+
+We will cover the following:
+
+- What is function calling?
+- Where function calling fits in a voice AI agent
+- Step 1: Describe the functions to the LLM
+- Step 2: The user speaks
+- Step 3: The LLM picks a function and its inputs
+- Step 4: Our code runs the function
+- Step 5: The result goes back to the LLM
+- Step 6: The agent speaks the answer
+- The complete flow in one diagram
+- What changes when the input is a voice
+- Function calling with a speech-to-speech model
+- Putting it all together in code
+
+Let's get started: [How does function calling work in a voice AI agent?](https://outcomeschool.com/blog/function-calling-in-voice-agents)
 
 ---
 
