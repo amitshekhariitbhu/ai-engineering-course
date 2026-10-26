@@ -186,7 +186,7 @@ Let's get started.
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
-| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 13      |
+| 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 14      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
 | 20     | [Prepare for AI Engineering Interviews](#module-20-prepare-for-ai-engineering-interviews)                                              | 1       |
@@ -4012,6 +4012,7 @@ By the end of this module, we will understand how a voice agent holds a natural 
 11. [How do half-duplex and full-duplex voice agents differ?](https://outcomeschool.com/blog/half-duplex-vs-full-duplex-voice-agents)
 12. [How does a voice agent tell a real interruption from a cough or background noise?](https://outcomeschool.com/blog/interruption-vs-background-noise)
 13. [What are backchannels, and why should "mm-hmm" not stop the agent?](https://outcomeschool.com/blog/backchannels-in-voice-agents)
+14. [How does a voice agent stop speaking instantly when interrupted?](https://outcomeschool.com/blog/stopping-speech-on-interruption)
 
 ---
 
@@ -4269,6 +4270,29 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [What are backchannels, and why should "mm-hmm" not stop the agent?](https://outcomeschool.com/blog/backchannels-in-voice-agents)
+
+---
+
+### 17.14 How does a voice agent stop speaking instantly when interrupted?
+
+In this blog, we will learn about how a voice agent stops speaking instantly when interrupted. We will also see where the agent's audio waits before we hear it, why stopping only the LLM is not enough, how the agent clears every waiting area in the right order, how it ignores late audio that is still on the way, how it remembers only what we actually heard, and where it works well and where it fails.
+
+We will cover the following:
+
+- What does stopping instantly mean?
+- How a voice agent speaks
+- Where the audio waits before we hear it
+- Why stopping the LLM is not enough
+- Step 1: Stop the sound at our ear
+- Step 2: Clear the server buffer
+- Step 3: Cancel the work that makes new audio
+- Step 4: Ignore late audio with a reply number
+- Step 5: Remember only what was heard
+- Keeping the waiting areas small
+- A complete example
+- Where it works well and where it fails
+
+Let's get started: [How does a voice agent stop speaking instantly when interrupted?](https://outcomeschool.com/blog/stopping-speech-on-interruption)
 
 ---
 
