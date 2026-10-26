@@ -181,7 +181,7 @@ Let's get started.
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)               | 17      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                              | 16      |
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                        | 8       |
-| 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                      | 17      |
+| 12     | [LLM Inference Engineering](#module-12-llm-inference-engineering)                                                                      | 19      |
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                | 4       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 4       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 8       |
@@ -3160,19 +3160,20 @@ By the end of this module, we will understand TTFT, TPOT, and throughput, and kn
 3. [What is Prefill-Decode Disaggregation in LLM Inference?](https://outcomeschool.com/blog/prefill-decode-disaggregation)
 4. [KV Cache in LLMs](https://outcomeschool.com/blog/kv-cache-in-llms)
 5. [What is KV Cache Compression?](https://outcomeschool.com/blog/kv-cache-compression)
-6. [What is Paged Attention in LLMs and How Does It Work?](https://outcomeschool.com/blog/paged-attention-in-llms)
-7. [What is Continuous Batching in LLMs and How Does It Work?](https://outcomeschool.com/blog/continuous-batching-in-llms)
-8. [What is Speculative Decoding and How Does It Make LLMs Faster?](https://outcomeschool.com/blog/speculative-decoding)
-9. [What is N-gram Speculation in LLMs and How Does It Speed Up Generation?](https://outcomeschool.com/blog/n-gram-speculation-in-llms)
-10. [What is Medusa? Multi-Head Speculative Decoding Explained](https://outcomeschool.com/blog/decoding-medusa)
-11. [What is EAGLE? Feature-Level Speculative Decoding Explained](https://outcomeschool.com/blog/decoding-eagle)
-12. [How does Model Quantization work?](https://outcomeschool.com/blog/how-does-model-quantization-work)
-13. [How does GGUF work?](https://outcomeschool.com/blog/how-does-gguf-work)
-14. [How does llama.cpp run LLMs on everyday hardware?](https://outcomeschool.com/blog/how-does-llama-cpp-run-llms-on-everyday-hardware)
-15. [How does Ollama work?](https://outcomeschool.com/blog/how-does-ollama-work)
-16. [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work)
-17. [How does SGLang work?](https://outcomeschool.com/blog/how-does-sglang-work)
-18. [How does TensorRT-LLM work?](https://outcomeschool.com/blog/how-does-tensorrt-llm-work)
+6. [How does an LLM use GPU memory?](https://outcomeschool.com/blog/llm-gpu-memory)
+7. [What is Paged Attention in LLMs and How Does It Work?](https://outcomeschool.com/blog/paged-attention-in-llms)
+8. [What is Continuous Batching in LLMs and How Does It Work?](https://outcomeschool.com/blog/continuous-batching-in-llms)
+9. [What is Speculative Decoding and How Does It Make LLMs Faster?](https://outcomeschool.com/blog/speculative-decoding)
+10. [What is N-gram Speculation in LLMs and How Does It Speed Up Generation?](https://outcomeschool.com/blog/n-gram-speculation-in-llms)
+11. [What is Medusa? Multi-Head Speculative Decoding Explained](https://outcomeschool.com/blog/decoding-medusa)
+12. [What is EAGLE? Feature-Level Speculative Decoding Explained](https://outcomeschool.com/blog/decoding-eagle)
+13. [How does Model Quantization work?](https://outcomeschool.com/blog/how-does-model-quantization-work)
+14. [How does GGUF work?](https://outcomeschool.com/blog/how-does-gguf-work)
+15. [How does llama.cpp run LLMs on everyday hardware?](https://outcomeschool.com/blog/how-does-llama-cpp-run-llms-on-everyday-hardware)
+16. [How does Ollama work?](https://outcomeschool.com/blog/how-does-ollama-work)
+17. [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work)
+18. [How does SGLang work?](https://outcomeschool.com/blog/how-does-sglang-work)
+19. [How does TensorRT-LLM work?](https://outcomeschool.com/blog/how-does-tensorrt-llm-work)
 
 ---
 
@@ -3279,7 +3280,23 @@ We will cover the following:
 
 Let's get started: [What is KV Cache Compression?](https://outcomeschool.com/blog/kv-cache-compression)
 
-### 12.6 What is Paged Attention in LLMs and How Does It Work?
+### 12.6 How does an LLM use GPU memory?
+
+In this blog, we will learn about how an LLM uses GPU memory. We will also see what GPU memory is, the formula VRAM = weights + KV cache + overhead, how the weights, the KV cache, and the overhead each take up space, a complete worked-out example, and how we can reduce GPU memory usage.
+
+We will cover the following:
+
+- What is GPU memory (VRAM)?
+- The simple formula for GPU memory usage
+- What are weights and how much memory they take
+- What is the KV cache and how much memory it takes?
+- What is the overhead?
+- A complete worked-out example
+- How to reduce GPU memory usage
+
+Let's get started: [How does an LLM use GPU memory?](https://outcomeschool.com/blog/llm-gpu-memory)
+
+### 12.7 What is Paged Attention in LLMs and How Does It Work?
 
 In this blog, we will learn about **Paged Attention**, a technique that solves the memory waste problem of KV Cache, allowing LLMs to serve many more users at the same time.
 
@@ -3294,7 +3311,7 @@ We will cover the following:
 
 Let's get started: [What is Paged Attention in LLMs and How Does It Work?](https://outcomeschool.com/blog/paged-attention-in-llms)
 
-### 12.7 What is Continuous Batching in LLMs and How Does It Work?
+### 12.8 What is Continuous Batching in LLMs and How Does It Work?
 
 In this blog, we will learn about Continuous Batching, a technique that lets LLM servers handle many more users at the same time by keeping the GPU busy at every single step of generation.
 
@@ -3316,7 +3333,7 @@ We will cover the following:
 
 Let's get started: [What is Continuous Batching in LLMs and How Does It Work?](https://outcomeschool.com/blog/continuous-batching-in-llms)
 
-### 12.8 What is Speculative Decoding and How Does It Make LLMs Faster?
+### 12.9 What is Speculative Decoding and How Does It Make LLMs Faster?
 
 In this blog, we will learn about Speculative Decoding - what it is, why LLM generation is slow without it, how a small draft model and a big target model work together to produce tokens faster, the rejection sampling math that guarantees no quality loss, real numbers showing the 2x to 3x speedup, where it is used in production, and the trade-offs to watch out for.
 
@@ -3335,7 +3352,7 @@ We will cover the following:
 
 Let's get started: [What is Speculative Decoding and How Does It Make LLMs Faster?](https://outcomeschool.com/blog/speculative-decoding)
 
-### 12.9 What is N-gram Speculation in LLMs and How Does It Speed Up Generation?
+### 12.10 What is N-gram Speculation in LLMs and How Does It Speed Up Generation?
 
 In this blog, we will learn about N-gram Speculation in LLMs, a simple trick that makes a language model write its answer faster by guessing the next few words from the text it has already seen. We will also see how an LLM writes one token at a time, why that is slow, what Speculative Decoding is, what an n-gram is, how N-gram Speculation guesses the next tokens by looking up the prompt, how the model verifies those guesses without changing the final answer, and where it works well and where it fails.
 
@@ -3354,7 +3371,7 @@ We will cover the following:
 
 Let's get started: [What is N-gram Speculation in LLMs and How Does It Speed Up Generation?](https://outcomeschool.com/blog/n-gram-speculation-in-llms)
 
-### 12.10 What is Medusa? Multi-Head Speculative Decoding Explained
+### 12.11 What is Medusa? Multi-Head Speculative Decoding Explained
 
 In this blog, we will learn about Medusa, a simple way to make a language model generate text 2 to 3 times faster by giving it several extra heads that guess multiple future tokens at once.
 
@@ -3373,7 +3390,7 @@ We will cover the following:
 
 Let's get started: [What is Medusa? Multi-Head Speculative Decoding Explained](https://outcomeschool.com/blog/decoding-medusa)
 
-### 12.11 What is EAGLE? Feature-Level Speculative Decoding Explained
+### 12.12 What is EAGLE? Feature-Level Speculative Decoding Explained
 
 In this blog, we will learn about EAGLE, a state-of-the-art way to speed up language model generation by drafting tokens at the feature level instead of the token level.
 
@@ -3391,7 +3408,7 @@ We will cover the following:
 
 Let's get started: [What is EAGLE? Feature-Level Speculative Decoding Explained](https://outcomeschool.com/blog/decoding-eagle)
 
-### 12.12 How does Model Quantization work?
+### 12.13 How does Model Quantization work?
 
 In this blog, we will learn about how Model Quantization works. We will also see why we need it, how it shrinks big AI models, and how it lets us run them on a laptop, a phone, or a single GPU.
 
@@ -3412,7 +3429,7 @@ We will cover the following:
 
 Let's get started: [How does Model Quantization work?](https://outcomeschool.com/blog/how-does-model-quantization-work)
 
-### 12.13 How does GGUF work?
+### 12.14 How does GGUF work?
 
 In this blog, we will learn about how GGUF works. We will also see what problem it solves, what is stored inside a GGUF file, how quantization makes big models fit on a normal laptop, and where it is used in real tools.
 
@@ -3431,7 +3448,7 @@ We will cover the following:
 
 Let's get started: [How does GGUF work?](https://outcomeschool.com/blog/how-does-gguf-work)
 
-### 12.14 How does llama.cpp run LLMs on everyday hardware?
+### 12.15 How does llama.cpp run LLMs on everyday hardware?
 
 In this blog, we will learn about how llama.cpp runs large language models on everyday hardware. We will also see what llama.cpp is, why it was created, how it shrinks huge models with quantization, how it loads them quickly, and how it shares work between the CPU and the GPU.
 
@@ -3452,7 +3469,7 @@ We will cover the following:
 
 Let's get started: [How does llama.cpp run LLMs on everyday hardware?](https://outcomeschool.com/blog/how-does-llama-cpp-run-llms-on-everyday-hardware)
 
-### 12.15 How does Ollama work?
+### 12.16 How does Ollama work?
 
 In this blog, we will learn about how Ollama works. We will also see what running an LLM locally means, how quantization and the GGUF format make big models fit on a laptop, how the client and server talk to each other, what happens step by step when we run a model, and how we can use Ollama from our code.
 
@@ -3472,7 +3489,7 @@ We will cover the following:
 
 Let's get started: [How does Ollama work?](https://outcomeschool.com/blog/how-does-ollama-work)
 
-### 12.16 How does vLLM work?
+### 12.17 How does vLLM work?
 
 In this blog, we will learn about how vLLM works. We will also see why we need it, how it manages memory so cleverly, and where it is used in the real world to serve large language models to many users at once.
 
@@ -3492,7 +3509,7 @@ We will cover the following:
 
 Let's get started: [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work)
 
-### 12.17 How does SGLang work?
+### 12.18 How does SGLang work?
 
 In this blog, we will learn about how SGLang works. We will also see what problem it solves, how it makes serving large language models faster, and the clever ideas that make it special.
 
@@ -3513,7 +3530,7 @@ We will cover the following:
 
 Let's get started: [How does SGLang work?](https://outcomeschool.com/blog/how-does-sglang-work)
 
-### 12.18 How does TensorRT-LLM work?
+### 12.19 How does TensorRT-LLM work?
 
 In this blog, we will learn about how TensorRT-LLM works, NVIDIA's own engine that squeezes the highest possible speed out of an NVIDIA GPU when it runs a large language model. We will also see what inference means, what a GPU kernel is, why a normal model run wastes a lot of the GPU's time, how TensorRT-LLM prepares the model ahead of time instead of figuring things out on the fly, how kernel fusion, quantization, the paged KV cache, in-flight batching, CUDA graphs, and speculative decoding each add speed, how one model is spread across many GPUs, and where it works well and where it fails.
 
