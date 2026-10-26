@@ -133,7 +133,7 @@ In this AI Engineering Course, we will learn:
 - **Modern LLM architecture:** Mixture of Experts (MoE), Grouped Query Attention (GQA), sliding window attention, attention sinks, Flash Attention, and DeepSeek-V4.
 - **Types of language models:** SLMs, Large Reasoning Models, Recursive Language Models, Diffusion Language Models, and System One Models.
 - **Fine-tuning and alignment:** fine-tuning, instruction tuning, LoRA, prefix tuning, knowledge distillation, continual learning, RLHF, InstructGPT, PPO, DPO, and GRPO.
-- **Prompt Engineering and Context Engineering:** in-context learning, chain-of-thought, tree of thoughts, prompt chaining, prompt caching, and context compaction.
+- **Prompt Engineering and Context Engineering:** in-context learning, chain-of-thought, tree of thoughts, prompt chaining, prompt caching, context compaction, and system prompts.
 - **RAG and Vector Search:** vector databases, ANN search, semantic search, inverted index, hybrid search, rerankers, ColBERT, chunking, Contextual Retrieval, HyDE, query rewriting, multi-query retrieval, caching, Agentic RAG, GraphRAG, and Vectorless RAG.
 - **AI Agents:** function calling, the agent loop, ReAct, Plan-and-Execute, Reflection, memory, MCP, Agent Skills, multi-agent systems, SubAgents, orchestration, computer-use agents, browser agents, and human-in-the-loop agents.
 - **Agentic Engineering:** harness engineering, loop engineering, graph engineering, LangChain, LangGraph, Claude Code, and Cursor.
@@ -178,7 +178,7 @@ Let's get started.
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                                       | 7       |
 | 6      | [Types of Language Models](#module-6-types-of-language-models)                                                                                     | 5       |
 | 7      | [Training, Fine-Tuning, and Alignment](#module-7-training-fine-tuning-and-alignment)                                                               | 18      |
-| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                                 | 8       |
+| 8      | [Prompt Engineering and Context Engineering](#module-8-prompt-engineering-and-context-engineering)                                                 | 9       |
 | 9      | [Vector Search and Retrieval-Augmented Generation (RAG)](#module-9-vector-search-and-retrieval-augmented-generation-rag)                           | 19      |
 | 10     | [AI Agents and Agentic Systems](#module-10-ai-agents-and-agentic-systems)                                                                          | 19      |
 | 11     | [Agentic Engineering and Agent Frameworks](#module-11-agentic-engineering-and-agent-frameworks)                                                    | 8       |
@@ -2526,6 +2526,7 @@ By the end of this module, we will be able to design prompts and contexts that m
 6. [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
 7. [What is Context Engineering?](https://outcomeschool.com/blog/context-engineering)
 8. [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
+9. [How does the System Prompt work?](https://outcomeschool.com/blog/system-prompt)
 
 ---
 
@@ -2681,6 +2682,25 @@ We will cover the following:
 - Why context compaction is important
 
 Let's get started: [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
+
+### 8.9 How does the System Prompt work?
+
+In this blog, we will learn about how the System Prompt works. We will also see the three roles in a chat with an LLM, how the system prompt is joined with our messages before the LLM reads them, why the LLM gives it extra importance, why it must be sent again on every request, how to write a good one, and where it works well and where it fails.
+
+We will cover the following:
+
+- What is a System Prompt?
+- The three roles in a chat
+- A simple example
+- How does the System Prompt work behind the scenes?
+- Why does the LLM follow the System Prompt?
+- The System Prompt is sent every time
+- System Prompt in code
+- What do we put inside a System Prompt?
+- Limitations of the System Prompt
+- System Prompt vs User Prompt
+
+Let's get started: [How does the System Prompt work?](https://outcomeschool.com/blog/system-prompt)
 
 ---
 
