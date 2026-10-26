@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 10      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 11      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 17      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 6       |
@@ -247,12 +247,13 @@ By the end of this module, we will know how a model learns from data, how we mea
 2. [Supervised vs Unsupervised Learning](https://outcomeschool.com/blog/supervised-vs-unsupervised-learning)
 3. [Linear Regression vs Logistic Regression](https://outcomeschool.com/blog/linear-regression-vs-logistic-regression)
 4. [What is Feature Engineering in Machine Learning?](https://outcomeschool.com/blog/feature-engineering)
-5. [Precision vs Recall](https://outcomeschool.com/blog/precision-vs-recall)
-6. [What Are L1 and L2 Loss Functions?](https://outcomeschool.com/blog/l1-and-l2-loss-functions)
-7. [What is Regularization in Machine Learning? L1 vs L2 Explained](https://outcomeschool.com/blog/regularization-in-machine-learning)
-8. [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
-9. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
-10. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+5. [What is One-hot Encoding in Machine Learning?](https://outcomeschool.com/blog/one-hot-encoding)
+6. [Precision vs Recall](https://outcomeschool.com/blog/precision-vs-recall)
+7. [What Are L1 and L2 Loss Functions?](https://outcomeschool.com/blog/l1-and-l2-loss-functions)
+8. [What is Regularization in Machine Learning? L1 vs L2 Explained](https://outcomeschool.com/blog/regularization-in-machine-learning)
+9. [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
+10. [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
+11. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -294,9 +295,27 @@ Let's get started: [What is Feature Engineering in Machine Learning?](https://ou
 
 Watch the video: [Feature Engineering in Machine Learning](https://www.youtube.com/watch?v=QLlywrWuXag)
 
+### 1.5 What is One-hot Encoding in Machine Learning?
+
+In this blog, we will learn about One-hot Encoding in Machine Learning. We will also see why a model needs numbers, what goes wrong with simple label encoding, how One-hot Encoding works step by step with Python code, how it is used for the correct answer in classification, how LLMs use it for tokens and why embeddings replace it, and where it works well and where it fails.
+
+We will cover the following:
+
+- Why does a model need numbers?
+- The problem with label encoding
+- What is One-hot Encoding?
+- One-hot Encoding step by step
+- One-hot Encoding in Python
+- One-hot Encoding for the correct answer in classification
+- One-hot Encoding of tokens in LLMs
+- Why embeddings replace one-hot vectors
+- Disadvantages of One-hot Encoding
+
+Let's get started: [What is One-hot Encoding in Machine Learning?](https://outcomeschool.com/blog/one-hot-encoding)
+
 Watch the video: [One-hot Encoding in Machine Learning](https://www.youtube.com/watch?v=6AmedU5i9go)
 
-### 1.5 Precision vs Recall
+### 1.6 Precision vs Recall
 
 In this blog, we will learn about Precision vs Recall, the two numbers we use to measure how good a system is at making yes-or-no decisions. We will also see how Precision and Recall differ from each other and when to use which one, what the four possible outcomes of any such decision are, why these two numbers pull against each other, and how the cost of a mistake decides which one we must care about more.
 
@@ -313,7 +332,7 @@ We will cover the following:
 
 Let's get started: [Precision vs Recall](https://outcomeschool.com/blog/precision-vs-recall)
 
-### 1.6 What Are L1 and L2 Loss Functions?
+### 1.7 What Are L1 and L2 Loss Functions?
 
 In this blog, we will learn about the L1 and L2 Loss functions.
 
@@ -325,7 +344,7 @@ We will cover the following:
 
 Let's get started: [What Are L1 and L2 Loss Functions?](https://outcomeschool.com/blog/l1-and-l2-loss-functions)
 
-### 1.7 What is Regularization in Machine Learning? L1 vs L2 Explained
+### 1.8 What is Regularization in Machine Learning? L1 vs L2 Explained
 
 In this blog, we will learn about the Regularization In Machine Learning.
 
@@ -337,7 +356,7 @@ We will cover the following:
 
 Let's get started: [What is Regularization in Machine Learning? L1 vs L2 Explained](https://outcomeschool.com/blog/regularization-in-machine-learning)
 
-### 1.8 Why do we split data into train, validation, and test sets?
+### 1.9 Why do we split data into train, validation, and test sets?
 
 In this blog, we will learn about why we split data into train, validation, and test sets. We will also see what each of the three sets does, what goes wrong when we test a model on the data it has already seen, why one test set is not enough when we tune a model, how much data goes into each set, the common mistakes that leak information between the sets, and when to use which split for our use case.
 
@@ -354,7 +373,7 @@ We will cover the following:
 
 Let's get started: [Why do we split data into train, validation, and test sets?](https://outcomeschool.com/blog/train-validation-test-split)
 
-### 1.9 What is Reinforcement Learning?
+### 1.10 What is Reinforcement Learning?
 
 In this blog, we will learn about Reinforcement Learning, the branch of machine learning where an agent learns to make decisions by interacting with an environment and getting rewards or penalties for its actions.
 
@@ -375,7 +394,7 @@ We will cover the following:
 
 Let's get started: [What is Reinforcement Learning?](https://outcomeschool.com/blog/reinforcement-learning)
 
-### 1.10 What is Contrastive Learning? How It Works Step by Step
+### 1.11 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
