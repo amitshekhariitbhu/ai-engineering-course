@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 17      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 14      |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 15      |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -6014,6 +6014,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 12. [How does a voice agent detect and switch the user's language mid-call?](https://outcomeschool.com/blog/language-switching-in-voice-agents)
 13. [How does a voice agent match its tone and emotion to the user?](https://outcomeschool.com/blog/emotion-matching-in-voice-agents)
 14. [How do you evaluate a voice AI agent?](https://outcomeschool.com/blog/voice-agent-evaluation)
+15. [How do simulated callers test a voice agent automatically?](https://outcomeschool.com/blog/simulated-caller-testing)
 
 ---
 
@@ -6322,6 +6323,24 @@ We will cover the following:
 - Where it works well and where it fails
 
 Let's get started: [How do you evaluate a voice AI agent?](https://outcomeschool.com/blog/voice-agent-evaluation)
+
+### 19.15 How do simulated callers test a voice agent automatically?
+
+In this blog, we will learn about how simulated callers test a voice agent automatically. We will also see why testing a voice agent by hand is so hard, what a simulated caller is made of, how one test call runs from start to end, how the call gets graded, how we make the callers sound like real people, and where simulated callers work well and where they fail.
+
+We will cover the following:
+
+- What is a voice agent?
+- Why is testing a voice agent by hand so hard?
+- What is a simulated caller?
+- What a simulated caller is made of
+- How one test call runs from start to end
+- How the test call gets graded
+- Making simulated callers sound like real callers
+- Running hundreds of test calls at once
+- Where simulated callers work well and where they fail
+
+Let's get started: [How do simulated callers test a voice agent automatically?](https://outcomeschool.com/blog/simulated-caller-testing)
 
 ---
 
