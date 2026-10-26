@@ -140,7 +140,7 @@ In this AI Engineering Course, we will learn:
 - **Evaluation and Observability:** LLM evaluation, LLM as a judge, AI agent evaluation, and agent observability.
 - **AI Safety and Security:** guardrails, prompt injection, and watermarking.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
-- **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, LLM routing, and system design.
+- **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, model serving, LLM routing, and system design.
 - **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, and streaming TTS.
 - **Frontier Ideas in AI:** JEPA, world models, and recursive self-improvement.
 - **AI Engineering interview preparation.**
@@ -185,7 +185,7 @@ Let's get started.
 | 13     | [Evaluation and Observability](#module-13-evaluation-and-observability)                                                                | 4       |
 | 14     | [AI Safety and Security](#module-14-ai-safety-and-security)                                                                            | 3       |
 | 15     | [Multimodal AI and Generative Models](#module-15-multimodal-ai-and-generative-models)                                                  | 7       |
-| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 10      |
+| 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                          | 11      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions) | 10      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                               | 8       |
 | 19     | [Frontier Ideas in AI](#module-19-frontier-ideas-in-ai)                                                                                | 3       |
@@ -3598,11 +3598,12 @@ By the end of this module, we will be able to design an AI system end to end, fr
 3. [How does a Google TPU work?](https://outcomeschool.com/blog/how-does-a-google-tpu-work)
 4. [How does an LPU work?](https://outcomeschool.com/blog/how-does-an-lpu-work)
 5. [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
-6. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
-7. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
-8. [What is System Design?](https://outcomeschool.com/blog/system-design)
-9. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
-10. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
+6. [How does Model Serving work?](https://outcomeschool.com/blog/model-serving)
+7. [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
+8. [What is LLM Routing? How to Send Each Query to the Right LLM](https://outcomeschool.com/blog/llm-routing)
+9. [What is System Design?](https://outcomeschool.com/blog/system-design)
+10. [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
+11. [How do Voice And Video Call Work?](https://outcomeschool.com/blog/voice-and-video-call)
 
 ---
 
@@ -3716,13 +3717,32 @@ We will cover the following:
 
 Let's get started: [Cloud vs On-device Model Deployment](https://outcomeschool.com/blog/cloud-vs-on-device-model-deployment)
 
-### 16.6 Android TensorFlow Lite Machine Learning Example
+### 16.6 How does Model Serving work?
+
+In this blog, we will learn about how Model Serving works. We will also see why we need it, what happens step by step when a request comes in, how batching and replicas make it fast and scalable, online serving vs batch serving, and how monitoring and versioning keep it reliable.
+
+We will cover the following:
+
+- What is Model Serving?
+- Why we need Model Serving
+- The steps inside Model Serving
+- Loading the model weights into memory
+- Batching requests together for the GPU
+- Latency vs throughput
+- Scaling with replicas and a load balancer
+- Online serving vs batch serving
+- Serving frameworks
+- Monitoring and versioning
+
+Let's get started: [How does Model Serving work?](https://outcomeschool.com/blog/model-serving)
+
+### 16.7 Android TensorFlow Lite Machine Learning Example
 
 In this blog, we will see Android TensorFlow Lite Machine Learning example.
 
 Let's get started: [Android TensorFlow Lite Machine Learning Example](https://outcomeschool.com/blog/android-tensorflow-lite-machine-learning-example)
 
-### 16.7 What is LLM Routing? How to Send Each Query to the Right LLM
+### 16.8 What is LLM Routing? How to Send Each Query to the Right LLM
 
 In this blog, we will learn about LLM Routing, why it matters, and how to send each user query to the right LLM based on cost, latency, and quality.
 
@@ -3743,7 +3763,7 @@ Let's get started: [What is LLM Routing? How to Send Each Query to the Right LLM
 
 **Supporting lessons for AI System Design:**
 
-### 16.8 What is System Design?
+### 16.9 What is System Design?
 
 In this blog, we will learn what is System Design.
 
@@ -3755,7 +3775,7 @@ We will cover the following:
 
 Let's get started: [What is System Design?](https://outcomeschool.com/blog/system-design)
 
-### 16.9 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
+### 16.10 HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events
 
 In this blog, we are going to learn the **HTTP Request** vs **Http Long-Polling** vs **WebSocket** vs **Server-Sent Events(SSE)**.
 
@@ -3769,7 +3789,7 @@ We will cover the following:
 
 Let's get started: [HTTP Request vs HTTP Long-Polling vs WebSocket vs Server-Sent Events](https://outcomeschool.com/blog/http-request-long-polling-websocket-sse)
 
-### 16.10 How do Voice And Video Call Work?
+### 16.11 How do Voice And Video Call Work?
 
 This blog is all about how voice and video call works on a high level.
 
