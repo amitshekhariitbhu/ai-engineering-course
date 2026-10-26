@@ -170,7 +170,7 @@ Let's get started.
 | Module | Topic                                                                                                                                  | Lessons |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
-| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 17      |
+| 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 18      |
 | 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 22      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 8       |
@@ -259,7 +259,8 @@ By the end of this module, we will know how a model learns from data, how we mea
 14. [What is a Markov Decision Process (MDP)?](https://outcomeschool.com/blog/markov-decision-process-mdp)
 15. [What is Exploration vs Exploitation in Reinforcement Learning?](https://outcomeschool.com/blog/exploration-vs-exploitation)
 16. [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
-17. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
+17. [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
+18. [What is Contrastive Learning? How It Works Step by Step](https://outcomeschool.com/blog/contrastive-learning)
 
 ---
 
@@ -517,7 +518,26 @@ We will cover the following:
 
 Let's get started: [What is a Value Function? Q-Learning Explained Step by Step](https://outcomeschool.com/blog/value-function-and-q-learning)
 
-### 1.17 What is Contrastive Learning? How It Works Step by Step
+### 1.17 What is Policy Gradient? The REINFORCE Algorithm Explained
+
+In this blog, we will learn about Policy Gradient and the REINFORCE algorithm, a way to train an AI agent by directly making the actions that led to good results more likely, and the actions that led to bad results less likely.
+
+We will cover the following:
+
+- Value-based vs Policy-based methods
+- What is a Policy?
+- What is Policy Gradient?
+- The Policy Gradient Formula
+- Why does the log probability appear?
+- The REINFORCE Algorithm
+- A Worked Example
+- The Problem of High Variance
+- Baseline Subtraction
+- Connection to LLM Training
+
+Let's get started: [What is Policy Gradient? The REINFORCE Algorithm Explained](https://outcomeschool.com/blog/policy-gradient-reinforce)
+
+### 1.18 What is Contrastive Learning? How It Works Step by Step
 
 In this blog, we will learn about Contrastive Learning. We will also see how it works step-by-step and where it is used in the real world.
 
