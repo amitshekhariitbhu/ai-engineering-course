@@ -171,7 +171,7 @@ Let's get started.
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 0      | [Must Know](#module-0-must-know)                                                                                                       | 1       |
 | 1      | [Machine Learning Foundations](#module-1-machine-learning-foundations)                                                                 | 25      |
-| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 25      |
+| 2      | [Deep Learning and Neural Networks](#module-2-deep-learning-and-neural-networks)                                                       | 26      |
 | 3      | [Generative AI and the Transformer Architecture](#module-3-generative-ai-and-the-transformer-architecture)                             | 17      |
 | 4      | [How LLMs Generate Text](#module-4-how-llms-generate-text)                                                                             | 9       |
 | 5      | [Modern LLM Architecture](#module-5-modern-llm-architecture)                                                                           | 7       |
@@ -718,13 +718,14 @@ By the end of this module, we will be able to explain how a neural network train
 16. [What is Cross-Entropy Loss?](https://outcomeschool.com/blog/math-behind-cross-entropy-loss)
 17. [What is KL Divergence? The Math Explained Step by Step](https://outcomeschool.com/blog/kl-divergence)
 18. [What is Dropout in Neural Networks and How Does It Work?](https://outcomeschool.com/blog/dropout-in-neural-networks)
-19. [Batch Normalization vs Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization)
-20. [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
-21. [Convolutional Neural Networks](https://outcomeschool.com/blog/convolutional-neural-network-cnn)
-22. [How does Object Detection work?](https://outcomeschool.com/blog/object-detection)
-23. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
-24. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
-25. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
+19. [How does early stopping work?](https://outcomeschool.com/blog/early-stopping)
+20. [Batch Normalization vs Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization)
+21. [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
+22. [Convolutional Neural Networks](https://outcomeschool.com/blog/convolutional-neural-network-cnn)
+23. [How does Object Detection work?](https://outcomeschool.com/blog/object-detection)
+24. [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
+25. [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
+26. [How Does The Machine Learning Library TensorFlow Work?](https://outcomeschool.com/blog/how-does-the-machine-learning-library-tensorflow-work)
 
 ---
 
@@ -1043,7 +1044,24 @@ We will cover the following:
 
 Let's get started: [What is Dropout in Neural Networks and How Does It Work?](https://outcomeschool.com/blog/dropout-in-neural-networks)
 
-### 2.19 Batch Normalization vs Layer Normalization
+### 2.19 How does early stopping work?
+
+In this blog, we will learn about how early stopping works. We will also see what overfitting is, how the validation loss tells us when to stop, what a validation-loss plateau is, why early stopping acts as implicit regularization, how patience works in code, and when to use early stopping.
+
+We will cover the following:
+
+- What is overfitting?
+- What is early stopping?
+- How does early stopping work?
+- What is a validation-loss plateau?
+- Early stopping as implicit regularization
+- The algorithm with patience
+- A simple code example
+- When to use early stopping
+
+Let's get started: [How does early stopping work?](https://outcomeschool.com/blog/early-stopping)
+
+### 2.20 Batch Normalization vs Layer Normalization
 
 In this blog, we are going to learn about Batch Normalization vs Layer Normalization. We will also see how Batch Normalization and Layer Normalization differ from each other and when to use which one.
 
@@ -1058,7 +1076,7 @@ We will cover the following:
 
 Let's get started: [Batch Normalization vs Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization)
 
-### 2.20 What is RMSNorm? Root Mean Square Layer Normalization Explained
+### 2.21 What is RMSNorm? Root Mean Square Layer Normalization Explained
 
 In this blog, we will learn about RMSNorm, a faster and simpler alternative to [Layer Normalization](https://outcomeschool.com/blog/batch-normalization-vs-layer-normalization) that powers most modern Large Language Models like Llama, Mistral, Gemma, Qwen, PaLM, and DeepSeek.
 
@@ -1076,7 +1094,7 @@ We will cover the following:
 
 Let's get started: [What is RMSNorm? Root Mean Square Layer Normalization Explained](https://outcomeschool.com/blog/rmsnorm-root-mean-square-layer-normalization)
 
-### 2.21 Convolutional Neural Networks
+### 2.22 Convolutional Neural Networks
 
 In this blog, we will learn about Convolutional Neural Networks. We will also see why a normal neural network struggles with images, how a filter slides over an image to find patterns, what feature maps, stride, padding, and pooling are, how many layers work together to go from edges to whole objects, how to write a small CNN in code, and where CNNs work well and where they fail.
 
@@ -1099,7 +1117,7 @@ We will cover the following:
 
 Let's get started: [Convolutional Neural Networks](https://outcomeschool.com/blog/convolutional-neural-network-cnn)
 
-### 2.22 How does Object Detection work?
+### 2.23 How does Object Detection work?
 
 In this blog, we will learn about how Object Detection works. We will also see why the naive approach fails, how modern detection uses bounding boxes, anchor boxes, and confidence scores, how Non-Maximum Suppression and IoU clean up the extra boxes, how the model learns through training, and where object detection is used in the real world.
 
@@ -1121,13 +1139,13 @@ We will cover the following:
 
 Let's get started: [How does Object Detection work?](https://outcomeschool.com/blog/object-detection)
 
-### 2.23 What is a Recurrent Neural Network (RNN)?
+### 2.24 What is a Recurrent Neural Network (RNN)?
 
 In this blog, we will learn about the Recurrent Neural Network.
 
 Let's get started: [What is a Recurrent Neural Network (RNN)?](https://outcomeschool.com/blog/recurrent-neural-network)
 
-### 2.24 How does PyTorch work?
+### 2.25 How does PyTorch work?
 
 In this blog, we will learn about how PyTorch works. We will also see what a tensor is, how the computation graph and autograd work together to train a model, and why PyTorch uses the GPU to become one of the most popular tools in the real world.
 
@@ -1144,7 +1162,7 @@ We will cover the following:
 
 Let's get started: [How does PyTorch work?](https://outcomeschool.com/blog/how-does-pytorch-work)
 
-### 2.25 How Does The Machine Learning Library TensorFlow Work?
+### 2.26 How Does The Machine Learning Library TensorFlow Work?
 
 In this blog, we will learn how the Machine Learning library TensorFlow works.
 
