@@ -142,7 +142,7 @@ In this AI Engineering Course, we will learn:
 - **AI Safety and Security:** guardrails, prompt injection, jailbreaking, and watermarking.
 - **Multimodal AI and Generative Models:** Vision Transformers, image embeddings, diffusion models, GANs, and VAEs.
 - **AI Infrastructure and System Design:** GPUs, CUDA kernels, TPUs, LPUs, cloud vs on-device deployment, model serving, LLM routing, and system design.
-- **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, streaming TTS, voice agent system prompts, and function calling in voice agents.
+- **Voice AI Agents:** voice agent architecture, turn-taking, barge-in, latency budgets, streaming TTS, voice agent system prompts, function calling in voice agents, and structured inputs in voice agents.
 - **Frontier Ideas in AI:** JEPA, world models, and recursive self-improvement.
 - **AI Engineering interview preparation.**
 
@@ -189,7 +189,7 @@ Let's get started.
 | 16     | [AI Infrastructure, Deployment, and System Design](#module-16-ai-infrastructure-deployment-and-system-design)                                      | 13      |
 | 17     | [Voice AI Agents: Architecture, Turn-Taking, and Interruptions](#module-17-voice-ai-agents-architecture-turn-taking-and-interruptions)             | 19      |
 | 18     | [Voice AI Agents: Latency, Audio, and Telephony](#module-18-voice-ai-agents-latency-audio-and-telephony)                                           | 21      |
-| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 2       |
+| 19     | [Voice AI Agents: Conversation Design, Speech Models, and Production](#module-19-voice-ai-agents-conversation-design-speech-models-and-production) | 3       |
 | 20     | [Frontier Ideas in AI](#module-20-frontier-ideas-in-ai)                                                                                            | 3       |
 | 21     | [Prepare for AI Engineering Interviews](#module-21-prepare-for-ai-engineering-interviews)                                                          | 1       |
 
@@ -5625,6 +5625,7 @@ By the end of this module, we will be able to build a voice agent that speaks na
 
 1. [How do you write a system prompt for a voice agent, not a chat bot?](https://outcomeschool.com/blog/voice-agent-system-prompt)
 2. [How does function calling work in a voice AI agent?](https://outcomeschool.com/blog/function-calling-in-voice-agents)
+3. [How does a voice agent handle structured inputs like dates, numbers, and addresses?](https://outcomeschool.com/blog/structured-inputs-in-voice-agents)
 
 ---
 
@@ -5671,6 +5672,28 @@ We will cover the following:
 - Putting it all together in code
 
 Let's get started: [How does function calling work in a voice AI agent?](https://outcomeschool.com/blog/function-calling-in-voice-agents)
+
+---
+
+### 19.3 How does a voice agent handle structured inputs like dates, numbers, and addresses?
+
+In this blog, we will learn about how a voice agent handles structured inputs like dates, numbers, and addresses. We will also see why these inputs are hard to capture over a call, how spoken words are turned into written values, how the LLM fills the right fields, how the agent checks and confirms each value, how it speaks these values back clearly, and the tricks that make dates, phone numbers, spellings, and addresses work reliably.
+
+We will cover the following:
+
+- What is a structured input?
+- Why structured inputs are hard for a voice agent
+- The journey of a spoken value
+- Turning spoken words into written values
+- Filling the fields with the LLM
+- Checking the value
+- Confirming with the caller
+- Speaking structured values back
+- Handling dates
+- Handling numbers and phone numbers
+- Handling names, spellings, and addresses
+
+Let's get started: [How does a voice agent handle structured inputs like dates, numbers, and addresses?](https://outcomeschool.com/blog/structured-inputs-in-voice-agents)
 
 ---
 
